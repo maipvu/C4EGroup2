@@ -1,9 +1,755 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Documnent</title>
-  </head>
-  <body></body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FURNITURE - STORE</title>
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="bt.css">
+    <!-- ===== FONTS AWESOME ===== -->
+    <script src="https://kit.fontawesome.com/d71051032c.js" crossorigin="anonymous"></script>
+    <!-- ===== SWIPER ===== -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+    <!-- ===== NAV  ===== -->
+    <nav id="home">
+        <div class="navigation">
+            <!-- ---
+            # LOGO
+            --- -->
+            <img src="https://github.com/Mateo-codeMaxi/Ecomerce-Furniture.github.io/blob/main/TEMPLATE%20-%20FURNITURE%20STORE/img/logo.png?raw=true"
+                alt="" class="logo">
+            <!-- ---
+            # MENU
+            --- -->
+            <div class="menu">
+                <i class="fa-sharp fa-solid fa-xmark btn__close"></i>
+                <a href="#home">HOME</a>
+                <a href="#collection">COLLECTION</a>
+                <a href="#features">FEATURES</a>
+                <a href="#store">STORE</a>
+                <a href="#contact">CONTACT</a>
+            </div>
+            <!-- ---
+            # ICONS LINKS
+            --- -->
+            <div class="icon__links">
+                <i class="fa-regular fa-user"></i>
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-truck-fast"></i>
+            </div>
+            <!-- ---
+            # HAMBURGUER
+            --- -->
+            <button class="hamburguer">
+                <i class="fa-sharp fa-solid fa-bars btn__menu"></i>
+            </button>
+        </div>
+    </nav>
+    <!-- ===== NAV END ===== -->
+
+    <!-- ===== SWIPER  ===== -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <!-- --- SWIPER-SLIDE 1 --- -->
+            <div data-hash="slide1" class="swiper-slide">
+                <div class="title__slide">
+                    <span>MHT</span>
+                    <h1>MADE WITH LOVE</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur impedit quisquam.</p>
+                    <a href="#"><button class="btn__slide">Read More</button></a>
+                </div>
+                <!-- PICTURE SLIDE -->
+                <div class="picture__slide-1">
+                    <img class="particle-1" src="" alt="">
+                    <img src="" alt="">
+                    <img class="particle-2" src="" alt="">
+                </div>
+            </div>
+            <!-- --- SWIPER-SLIDE 2 --- -->
+            <div data-hash="slide2" class="swiper-slide">
+                <div class="title__slide">
+                    <span>Tailored</span>
+                    <h1>CLASSIC INTERIORS</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur impedit quisquam.</p>
+                    <a href="#"><button class="btn__slide">Read More</button></a>
+                </div>
+                <!-- PICTURE SLIDE -->
+                <div class="picture__slide-2">
+                    <img class="particle-1" src="" alt="">
+                    <img src="" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- --- BUTONS SWIPER --- -->
+        <div class="swiper-button-next" style="color: #000;"></div>
+        <div class="swiper-button-prev" style="color: #000;"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <!-- ===== SWIPER END  ===== -->
+
+    <!-- ===== ITEMS ===== -->
+    <div class="container__items">
+        <!-- --- ITEMS 1 --- -->
+        <div class="items">
+            <img src="https://bizweb.dktcdn.net/100/153/764/products/ke-tivi-2t.jpg?v=1607165572710" alt="">
+            <div class="title__items">
+                <h3>Online store</h3>
+                <a href="#"><button class="btn__items">Shop Now</button></a>
+            </div>
+        </div>
+        <!-- --- ITEMS 2 --- -->
+        <div class="items">
+            <img src="https://noithattana.vn/wp-content/uploads/2020/04/N31-D.jpg" alt="">
+            <div class="title__items">
+                <h3>ACCSESSORISE</h3>
+                <a href="#"><button class="btn__items">Shop Now</button></a>
+            </div>
+        </div>
+        <!-- --- ITEMS 3 --- -->
+        <div class="items">
+            <img src="https://bepabig.com/wp-content/uploads/Thiet-ke-chua-co-ten-1-5.png" alt="">
+            <div class="title__items">
+                <h3>NEW ITEMS</h3>
+                <a href="#"><button class="btn__items">Shop Now</button></a>
+            </div>
+        </div>
+        <!-- --- ITEMS 4 --- -->
+        <div class="items">
+            <img src="https://product.hstatic.net/200000324557/product/o1cn012shjj81xkduesbr9e___4217972962-0-cib_d520b43a02894658a71a45a789b47e0c_master.jpg"
+                alt="">
+            <div class="title__items">
+                <h3>NEW ITEMS</h3>
+                <a href="#"><button class="btn__items">Shop Now</button></a>
+            </div>
+        </div>
+    </div>
+    <!-- ===== ITEMS END ===== -->
+
+    <main>
+        <!-- ===== CARDS ESSENTIAL ===== -->
+        <section class="section__cards contain" id="collection">
+            <!-- ---
+            # TITLE SECTIONS
+            --- -->
+            <div class="title__section">
+                <span>Latest Collection</span>
+                <h2>ESSENTIAL ITEMS</h2>
+            </div>
+
+            <div class="container__cards">
+                <!-- --- CARD 1 --- -->
+                <div class="card">
+                    <!-- CARD PICTURE -->
+                    <div class="card__picture">
+                        <img src="https://www.target.com.au/medias/static_content/product/images/large/85/83/A1788583.jpg"
+                            alt="">
+                    </div>
+                    <!-- CARD HOVER -->
+                    <div class="card__hover">
+                        <div class="icon__hover">
+                            <i class="fa-solid fa-heart"></i>
+                            <i class="fa-regular fa-eye"></i>
+                        </div>
+                        <div class="link__hover">
+                            <a href="#"><button class="btn__hover">Add To Cart</button></a>
+                        </div>
+                    </div>
+                    <!-- CARD TITLE PRODUCT -->
+                    <div class="card__title">
+                        <div class="cards__name">
+                            <h4>COMFY CHAIR</h4>
+                            <p>Handmade</p>
+                        </div>
+                        <div class="price">
+                            <span>$40.00</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- --- CARD 2 --- -->
+                <div class="card">
+                    <!-- CARD PICTURE -->
+                    <div class="card__picture">
+                        <img src="https://decordi.vn/wp-content/uploads/2021/08/den-am-tran.jpg" alt="">
+                    </div>
+                    <!-- CARD HOVER -->
+                    <div class="card__hover">
+                        <div class="icon__hover">
+                            <i class="fa-solid fa-heart"></i>
+                            <i class="fa-regular fa-eye"></i>
+                        </div>
+                        <div class="link__hover">
+                            <a href="#"><button class="btn__hover">Add To Cart</button></a>
+                        </div>
+                    </div>
+                    <!-- CARD TITLE PRODUCT -->
+                    <div class="card__title">
+                        <div class="cards__name">
+                            <h4>LIGHTS</h4>
+                            <p>Handmade</p>
+                        </div>
+                        <div class="price">
+                            <span>$40.00</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- --- CARD 3 --- -->
+                <div class="card">
+                    <!-- CARD PICTURE -->
+                    <div class="card__picture">
+                        <img src="https://dehome.vn/upload_images/images/G%C6%B0%C6%A1ng-soi-to%C3%A0n-th%C3%A2n-Dehome.jpg"
+                            alt="">
+                    </div>
+                    <!-- CARD HOVER -->
+                    <div class="card__hover">
+                        <div class="icon__hover">
+                            <i class="fa-solid fa-heart"></i>
+                            <i class="fa-regular fa-eye"></i>
+                        </div>
+                        <div class="link__hover">
+                            <a href="#"><button class="btn__hover">Add To Cart</button></a>
+                        </div>
+                    </div>
+                    <!-- CARD TITLE PRODUCT -->
+                    <div class="card__title">
+                        <div class="cards__name">
+                            <h4>DECORACTIVE MIRROR</h4>
+                            <p>Handmade</p>
+                        </div>
+                        <div class="price">
+                            <span>$40.00</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- --- CARD 4 --- -->
+                <div class="card">
+                    <!-- CARD PICTURE -->
+                    <div class="card__picture">
+                        <img src="https://bizweb.dktcdn.net/thumb/1024x1024/100/441/307/products/71c6bffa-5d0e-44b0-9804-b0b2a725e61c.jpg?v=1647691087540"
+                            alt="">
+                    </div>
+                    <!-- CARD HOVER -->
+                    <div class="card__hover">
+                        <div class="icon__hover">
+                            <i class="fa-solid fa-heart"></i>
+                            <i class="fa-regular fa-eye"></i>
+                        </div>
+                        <div class="link__hover">
+                            <a href="#"><button class="btn__hover">Add To Cart</button></a>
+                        </div>
+                    </div>
+                    <!-- CARD TITLE PRODUCT -->
+                    <div class="card__title">
+                        <div class="cards__name">
+                            <h4>LEATHER BED</h4>
+                            <p>Handmade</p>
+                        </div>
+                        <div class="price">
+                            <span>$40.00</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- --- CARD 5 --- -->
+                <div class="card">
+                    <!-- CARD PICTURE -->
+                    <div class="card__picture">
+                        <img src="https://bizweb.dktcdn.net/100/153/764/products/ban-ghe-an-gia-re-61t.jpg?v=1576732949677"
+                            alt="">
+                    </div>
+                    <!-- CARD HOVER -->
+                    <div class="card__hover">
+                        <div class="icon__hover">
+                            <i class="fa-solid fa-heart"></i>
+                            <i class="fa-regular fa-eye"></i>
+                        </div>
+                        <div class="link__hover">
+                            <a href="#"><button class="btn__hover">Add To Cart</button></a>
+                        </div>
+                    </div>
+                    <!-- CARD TITLE PRODUCT -->
+                    <div class="card__title">
+                        <div class="cards__name">
+                            <h4>DINING TABLE</h4>
+                            <p>Handmade</p>
+                        </div>
+                        <div class="price">
+                            <span>$40.00</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- --- CARD 6 --- -->
+                <div class="card">
+                    <!-- CARD PICTURE -->
+                    <div class="card__picture">
+                        <img src="https://down-vn.img.susercontent.com/file/866ea477093b3a2a1732fe7bfc5e9769" alt="">
+                    </div>
+                    <!-- CARD HOVER -->
+                    <div class="card__hover">
+                        <div class="icon__hover">
+                            <i class="fa-solid fa-heart"></i>
+                            <i class="fa-regular fa-eye"></i>
+                        </div>
+                        <div class="link__hover">
+                            <a href="#"><button class="btn__hover">Add To Cart</button></a>
+                        </div>
+                    </div>
+                    <!-- CARD TITLE PRODUCT -->
+                    <div class="card__title">
+                        <div class="cards__name">
+                            <h4>LAMP</h4>
+                            <p>Handmade</p>
+                        </div>
+                        <div class="price">
+                            <span>$40.00</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- --- CARD 7 --- -->
+                <div class="card">
+                    <!-- CARD PICTURE -->
+                    <div class="card__picture">
+                        <img src="https://everon.com/upload_images/images/2021/11/24/giuong-ngu-boc-da-11.jpg" alt="">
+                    </div>
+                    <!-- CARD HOVER -->
+                    <div class="card__hover">
+                        <div class="icon__hover">
+                            <i class="fa-solid fa-heart"></i>
+                            <i class="fa-regular fa-eye"></i>
+                        </div>
+                        <div class="link__hover">
+                            <a href="#"><button class="btn__hover">Add To Cart</button></a>
+                        </div>
+                    </div>
+                    <!-- CARD TITLE PRODUCT -->
+                    <div class="card__title">
+                        <div class="cards__name">
+                            <h4>LEATHER BED</h4>
+                            <p>Handmade</p>
+                        </div>
+                        <div class="price">
+                            <span>$40.00</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- --- CARD 8 --- -->
+                <div class="card">
+                    <!-- CARD PICTURE -->
+                    <div class="card__picture">
+                        <img src="https://ironstyle.vn/uploads/product/VgXl_vien%20sat%20vang%20mat%20den%202.jpg"
+                            alt="">
+                    </div>
+                    <!-- CARD HOVER -->
+                    <div class="card__hover">
+                        <div class="icon__hover">
+                            <i class="fa-solid fa-heart"></i>
+                            <i class="fa-regular fa-eye"></i>
+                        </div>
+                        <div class="link__hover">
+                            <a href="#"><button class="btn__hover">Add To Cart</button></a>
+                        </div>
+                    </div>
+                    <!-- CARD TITLE PRODUCT -->
+                    <div class="card__title">
+                        <div class="cards__name">
+                            <h4>CLOCKWATCHER</h4>
+                            <p>Handmade</p>
+                        </div>
+                        <div class="price">
+                            <span>$40.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ===== CARDS ESSENTIAL END ===== -->
+
+        <!-- ===== BANNER  ===== -->
+        <section class="section__banner">
+            <!-- --- BANNER PICTURE --- -->
+            <div class="banner__picture">
+                <img src="https://github.com/Mateo-codeMaxi/Ecomerce-Furniture.github.io/blob/main/TEMPLATE%20-%20FURNITURE%20STORE/img/particle-2.png?raw=true"
+                    alt="" class="banner__particle-2">
+                <img src="https://raw.githubusercontent.com/dophambichtram/BichTram-MindXC4E/b55f349c7d3ee680a41787322e0ad101977fe1d2/ghe-sofa-ni-phong-cach-hien-dai-1.png"
+                    alt="" class="banner__cabinet">
+            </div>
+            <!-- --- BANNER INFO --- -->
+            <div class="banner__title">
+                <h2>CABINET</h2>
+                <span>%175.00</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, unde neque obcaecati illum
+                    nesciunt.</p>
+                <a href="#"><button class="btn__slide">Read More</button></a>
+            </div>
+        </section>
+        <!-- ===== BANNER END ===== -->
+
+        <!-- ===== BRANDS  ===== -->
+        <section class="section__brands">
+            <img src="https://github.com/Mateo-codeMaxi/Ecomerce-Furniture.github.io/blob/main/TEMPLATE%20-%20FURNITURE%20STORE/img/brand-1.png?raw=true"
+                alt="">
+            <img src="https://github.com/Mateo-codeMaxi/Ecomerce-Furniture.github.io/blob/main/TEMPLATE%20-%20FURNITURE%20STORE/img/brand-2.png?raw=true"
+                alt="">
+            <img src="https://github.com/Mateo-codeMaxi/Ecomerce-Furniture.github.io/blob/main/TEMPLATE%20-%20FURNITURE%20STORE/img/brand-3.png?raw=true"
+                alt="">
+            <img src="https://github.com/Mateo-codeMaxi/Ecomerce-Furniture.github.io/blob/main/TEMPLATE%20-%20FURNITURE%20STORE/img/brand-4.png?raw=true"
+                alt="">
+            <img src="https://github.com/Mateo-codeMaxi/Ecomerce-Furniture.github.io/blob/main/TEMPLATE%20-%20FURNITURE%20STORE/img/brand-5.png?raw=true"
+                alt="">
+        </section>
+        <!-- ===== BRANDS END  ===== -->
+
+        <!-- ===== CARDS  ===== -->
+        <section class="section__cards contain" id="features">
+            <!-- ---
+            # TITLE SECTIONS
+            --- -->
+            <div class="title__section">
+                <span>Summer Collection</span>
+                <h2>FEATURES ELEMENTS</h2>
+            </div>
+
+            <div class="container__cards">
+                <!-- --- CARD 9 --- -->
+                <div class="card card__features">
+                    <!-- CARD PICTURE -->
+                    <img src="https://github.com/Mateo-codeMaxi/Ecomerce-Furniture.github.io/blob/main/TEMPLATE%20-%20FURNITURE%20STORE/img/cards-9.jpg?raw=true"
+                        alt="">
+                    <!-- CARD HOVER -->
+                    <div class="card__hover card__hover--features">
+                        <div class="icon__hover">
+                            <i class="fa-solid fa-heart"></i>
+                            <i class="fa-regular fa-eye"></i>
+                        </div>
+                        <div class="link__hover">
+                            <a href="#"><button class="btn__hover">Add To Cart</button></a>
+                        </div>
+                    </div>
+                    <!-- CARD TITLE PRODUCT -->
+                    <div class="card__title card__title--features">
+                        <div class="cards__name">
+                            <h4>COMFY CHAIR</h4>
+                            <p>Handmade</p>
+                        </div>
+                        <div class="price">
+                            <span>$40.00</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- --- CARD 10 --- -->
+                <div class="card card__features">
+                    <!-- CARD PICTURE -->
+                    <img src="https://github.com/Mateo-codeMaxi/Ecomerce-Furniture.github.io/blob/main/TEMPLATE%20-%20FURNITURE%20STORE/img/cards-10.jpg?raw=true"
+                        alt="">
+                    <!-- CARD HOVER -->
+                    <div class="card__hover card__hover--features">
+                        <div class="icon__hover">
+                            <i class="fa-solid fa-heart"></i>
+                            <i class="fa-regular fa-eye"></i>
+                        </div>
+                        <div class="link__hover">
+                            <a href="#"><button class="btn__hover">Add To Cart</button></a>
+                        </div>
+                    </div>
+                    <!-- CARD TITLE PRODUCT -->
+                    <div class="card__title card__title--features">
+                        <div class="cards__name">
+                            <h4>COMFY CHAIR</h4>
+                            <p>Handmade</p>
+                        </div>
+                        <div class="price">
+                            <span>$40.00</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- --- CARD 11 --- -->
+                <div class="card card__features">
+                    <!-- CARD PICTURE -->
+                    <img src="https://github.com/Mateo-codeMaxi/Ecomerce-Furniture.github.io/blob/main/TEMPLATE%20-%20FURNITURE%20STORE/img/cards-11.jpg?raw=true"
+                        alt="">
+                    <!-- CARD HOVER -->
+                    <div class="card__hover card__hover--features">
+                        <div class="icon__hover">
+                            <i class="fa-solid fa-heart"></i>
+                            <i class="fa-regular fa-eye"></i>
+                        </div>
+                        <div class="link__hover">
+                            <a href="#"><button class="btn__hover">Add To Cart</button></a>
+                        </div>
+                    </div>
+                    <!-- CARD TITLE PRODUCT -->
+                    <div class="card__title card__title--features">
+                        <div class="cards__name">
+                            <h4>COMFY CHAIR</h4>
+                            <p>Handmade</p>
+                        </div>
+                        <div class="price">
+                            <span>$40.00</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- ===== CARDS END  ===== -->
+
+        <!-- ===== ELEMENTS   ===== -->
+        <section class="section__elements" id="store">
+            <!-- ICON ELEMENTS 1 -->
+            <div class="elements">
+                <img src="https://github.com/Mateo-codeMaxi/Ecomerce-Furniture.github.io/blob/main/TEMPLATE%20-%20FURNITURE%20STORE/img/icon-1.png?raw=true"
+                    alt="">
+                <div class="elements__title">
+                    <h3>24H SERVICE</h3>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+            <!-- ICON ELEMENTS 2 -->
+            <div class="elements">
+                <img src="https://github.com/Mateo-codeMaxi/Ecomerce-Furniture.github.io/blob/main/TEMPLATE%20-%20FURNITURE%20STORE/img/icon-2.png?raw=true"
+                    alt="">
+                <div class="elements__title">
+                    <h3>FREE RETURNS</h3>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+            <!-- ICON ELEMENTS 3 -->
+            <div class="elements">
+                <img src="https://github.com/Mateo-codeMaxi/Ecomerce-Furniture.github.io/blob/main/TEMPLATE%20-%20FURNITURE%20STORE/img/icon-3.png?raw=true"
+                    alt="">
+                <div class="elements__title">
+                    <h3>ORDER TRACKING</h3>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+            <!-- ICON ELEMENTS 4 -->
+            <div class="elements">
+                <img src="https://github.com/Mateo-codeMaxi/Ecomerce-Furniture.github.io/blob/main/TEMPLATE%20-%20FURNITURE%20STORE/img/icon-4.png?raw=true"
+                    alt="">
+                <div class="elements__title">
+                    <h3>FAST DELIVERY</h3>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+        </section>
+        <!-- ===== ELEMENTS END  ===== -->
+
+
+        <!-- ===== PICTURES SOCIAL  ===== -->
+        <section class="section__picture">
+            <!-- PICTURE SOCIAL 1 -->
+            <div class="picture__social">
+                <img src="https://github.com/Mateo-codeMaxi/Ecomerce-Furniture.github.io/blob/main/TEMPLATE%20-%20FURNITURE%20STORE/img/picture-social--1.jpg?raw=true"
+                    alt="">
+                <div class="picture__hover">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+            <!-- PICTURE SOCIAL 2 -->
+            <div class="picture__social">
+                <img src="https://github.com/Mateo-codeMaxi/Ecomerce-Furniture.github.io/blob/main/TEMPLATE%20-%20FURNITURE%20STORE/img/picture-social--2.jpg?raw=true"
+                    alt="">
+                <div class="picture__hover">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+            <!-- PICTURE SOCIAL 3 -->
+            <div class="picture__social">
+                <img src="https://github.com/Mateo-codeMaxi/Ecomerce-Furniture.github.io/blob/main/TEMPLATE%20-%20FURNITURE%20STORE/img/picture-social--3.jpg?raw=true"
+                    alt="">
+                <div class="picture__hover">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+            <!-- PICTURE SOCIAL 4 -->
+            <div class="picture__social">
+                <img src="https://github.com/Mateo-codeMaxi/Ecomerce-Furniture.github.io/blob/main/TEMPLATE%20-%20FURNITURE%20STORE/img/picture-social--4.jpg?raw=true"
+                    alt="">
+                <div class="picture__hover">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+            <!-- PICTURE SOCIAL 5 -->
+            <div class="picture__social">
+                <img src="https://github.com/Mateo-codeMaxi/Ecomerce-Furniture.github.io/blob/main/TEMPLATE%20-%20FURNITURE%20STORE/img/picture-social--5.jpg?raw=true"
+                    alt="">
+                <div class="picture__hover">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+            <!-- PICTURE SOCIAL 6 -->
+            <div class="picture__social">
+                <img src="https://github.com/Mateo-codeMaxi/Ecomerce-Furniture.github.io/blob/main/TEMPLATE%20-%20FURNITURE%20STORE/img/picture-social--6.jpg?raw=true"
+                    alt="">
+                <div class="picture__hover">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+        </section>
+        <!-- ===== PICTURES SOCIAL END  ===== -->
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+
+            <div class="footer-top section">
+
+                <div class="footer-brand">
+
+                    <a href="#" class="logo">MHT</a>
+
+                    <ul>
+
+                        <li class="footer-list-item">
+                            <ion-icon name="location-sharp" aria-hidden="true"></ion-icon>
+
+                            <address class="address">
+                                MHT, HoChiMinh, VietNam 2023
+                            </address>
+                        </li>
+
+                        <li class="footer-list-item">
+                            <ion-icon name="call-sharp" aria-hidden="true"></ion-icon>
+
+                            <a href="tel:+1234567890" class="footer-link">+1234567890</a>
+                        </li>
+
+                        <li>
+                            <ul class="social-list">
+
+                                <li>
+                                    <a href="#" class="social-link">
+                                        <ion-icon name="logo-facebook"></ion-icon>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="social-link">
+                                        <ion-icon name="logo-twitter"></ion-icon>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="social-link">
+                                        <ion-icon name="logo-tumblr"></ion-icon>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <ul class="footer-list">
+
+                    <li>
+                        <p class="footer-list-title">Công ty</p>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Trang chủ</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Về chúng tôi</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Cửa hàng</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Liên hệ</a>
+                    </li>
+
+                </ul>
+
+                <ul class="footer-list">
+
+                    <li>
+                        <p class="footer-list-title">Thông tin</p>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Điều khoản và điều kiện </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Hương dẫn mẫu</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Nhật ký thay đổi</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Giấy phép</a>
+                    </li>
+
+                </ul>
+
+                <div class="footer-list">
+
+                    <p class="footer-list-title">Newsletter</p>
+
+                    <form action="" class="footer-form">
+                        <input type="email" name="email_address" placeholder="Your email address" required
+                            class="email-field">
+
+                        <button type="submit" class="footer-form-btn">
+                            <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                        </button>
+                    </form>
+
+                    <div class="wrapper">
+
+                        <a href="#" class="footer-link">Term & Condition</a>
+                        <a href="#" class="footer-link">Policy</a>
+                        <a href="#" class="footer-link">Map</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+
+                <p class="copyright">
+                    &copy; 2022 All Rights Reserved by <a href="#" class="copyright-link">codewithsadee</a>.
+                </p>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- 
+    - #BACK TO TOP
+  -->
+
+    <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+        <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+    </a>
+
+    <!-- ===== SCRIPTS ===== -->
+    <script src="bt.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- 
+    - ionicon link
+  -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+</body>
+
 </html>
