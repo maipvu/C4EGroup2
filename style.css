@@ -1,0 +1,989 @@
+/*-----------------------------------*\
+  # WEBSITE DESIGN FURNITURE STORE
+\*-----------------------------------*/
+/**
+ * copyright 2022 CODEMAXI
+ */
+
+/*-----------------------------------*\
+  # GOOGLE FONTS
+\*-----------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Reem+Kufi+Ink&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&family=Reem+Kufi+Ink&display=swap");
+
+/*-----------------------------------*\
+  # RESET
+\*-----------------------------------*/
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+button {
+    border: none;
+    color: inherit;
+    cursor: pointer;
+    transition: var(--transition);
+    font-family: "Kaushan Script", cursive;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+/*-----------------------------------*\
+  # REUSED STYLE
+\*-----------------------------------*/
+.title__slide span {
+    color: var(--main-color);
+    font-size: 2.4rem;
+    font-family: "Kaushan Script", cursive;
+}
+
+h1 {
+    font-size: 3.2rem;
+    font-family: "Reem Kufi Ink", sans-serif;
+    letter-spacing: 10px;
+}
+
+h3,
+h4 {
+    font-family: "Reem Kufi Ink", sans-serif;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+}
+
+h2 {
+    font-family: "Reem Kufi Ink", sans-serif;
+    letter-spacing: 4px;
+    font-size: 1.8rem;
+    margin-top: 1rem;
+}
+
+p {
+    line-height: 1.7;
+    font-size: 1.1rem;
+    color: var(--paragraph-color);
+}
+
+.title__section span {
+    color: var(--main-color);
+    font-size: 1.2rem;
+    font-family: "Kaushan Script", cursive;
+}
+
+.contain {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/*-----------------------------------*\
+  # CUSTOM PROPERTIES
+\*-----------------------------------*/
+:root {
+    --main-color: #ef5e47;
+    --title-color: #1d1d1d;
+    --paragraph-color: #797776;
+    --transition: all 0.4s;
+}
+
+/*-----------------------------------*\
+  # NAV
+\*-----------------------------------*/
+nav {
+    width: 100%;
+    background-color: #fff;
+}
+
+.navigation {
+    width: 95%;
+    margin: 0 auto;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 160px;
+}
+
+.menu {
+    display: flex;
+    column-gap: 5rem;
+}
+
+.menu a {
+    color: #000;
+    text-transform: uppercase;
+    font-size: .9rem;
+    transition: var(--transition);
+}
+
+.menu a:hover {
+    color: var(--main-color);
+}
+
+.icon__links {
+    display: flex;
+    gap: 2rem;
+    font-size: 18px;
+}
+
+.icon__links i {
+    cursor: pointer;
+}
+
+.hamburguer {
+    display: none;
+}
+
+.btn__close {
+    display: none;
+    color: transparent;
+}
+
+/*-----------------------------------*\
+  # HEADER -- SWIPER
+\*-----------------------------------*/
+.swiper {
+    width: 100%;
+    height: 66vh;
+}
+
+.swiper-slide {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.swiper-slide:nth-child(1) {
+    background: rgba(249, 243, 235, 255);
+}
+
+.swiper-slide:nth-child(2) {
+    background-color: #e9f0f3;
+}
+
+.title__slide {
+    width: 50%;
+    margin-left: 8rem;
+}
+
+.title__slide p {
+    width: 80%;
+}
+
+.picture__slide-1 {
+    width: 60%;
+    height: 100%;
+    background: url("../img/bg-slider--1.png") no-repeat;
+    background-size: cover;
+    margin-right: -18rem;
+    display: flex;
+    align-items: center;
+}
+
+.picture__slide-2 {
+    margin-top: -18rem;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    background: url("../img/particle-3.png") no-repeat;
+}
+
+.picture__slide-2 img {
+    width: 30%;
+}
+
+.picture__slide-1 img {
+    width: 30%;
+}
+
+.picture__slide-1 .particle-1 {
+    width: 14%;
+}
+
+.picture__slide-1 .particle-2 {
+    width: 22%;
+}
+
+.btn__slide {
+    background-color: transparent;
+    padding: 16px 30px;
+    border: 1px solid #797776;
+    color: #797776;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    margin-top: 2rem;
+}
+
+.btn__slide:hover {
+    color: #000;
+}
+
+/*-----------------------------------*\
+  # ITEMS
+\*-----------------------------------*/
+.container__items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.items {
+    width: 350px;
+    height: 230px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+}
+
+.items img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.items:hover.items img {
+    transform: scale(1.1);
+}
+
+.title__items {
+    position: absolute;
+    right: 1rem;
+    bottom: 3rem;
+}
+
+.title__items h3 {
+    text-transform: uppercase;
+}
+
+.btn__items {
+    background-color: transparent;
+    font-size: 1rem;
+    position: absolute;
+    right: 1rem;
+}
+
+.btn__items::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(207, 204, 209, 0.507);
+}
+
+.btn__items::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 30%;
+    height: 3px;
+    border-radius: 20px;
+    background-color: var(--main-color);
+    transition: var(--transition);
+}
+
+.btn__items:hover.btn__items::before {
+    width: 100%;
+}
+
+/*-----------------------------------*\
+  # CARDS
+\*-----------------------------------*/
+.section__cards {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.container__cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+    justify-content: space-evenly;
+}
+
+.title__section {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.card {
+    width: 310px;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.card__picture {
+    width: 100%;
+    height: 420px;
+    overflow: hidden;
+}
+
+.card__picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card__hover {
+    position: absolute;
+    width: 100%;
+    height: 420px;
+    top: 0;
+    left: 0;
+    background-color: #f7f8f9c9;
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.card:hover .card__hover {
+    opacity: 1;
+}
+
+.icon__hover {
+    width: 90%;
+    display: flex;
+    column-gap: 1rem;
+    margin: 1rem auto;
+}
+
+.icon__hover i {
+    font-size: 18px;
+}
+
+.link__hover {
+    width: 90%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.btn__hover {
+    background-color: transparent;
+    font-size: 1rem;
+    position: relative;
+}
+
+.btn__hover::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(219, 216, 221, 0.856);
+}
+
+.btn__hover::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 30%;
+    height: 3px;
+    border-radius: 20px;
+    background-color: var(--main-color);
+    transition: var(--transition);
+    z-index: 1;
+}
+
+.btn__hover:hover.btn__hover::before {
+    width: 100%;
+}
+
+.card__title {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.price span {
+    font-family: "Kaushan Script", cursive;
+}
+
+
+/*-----------------------------------*\
+  # BANNER
+\*-----------------------------------*/
+.section__banner {
+    background-color: #e9f0f3;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    width: 100%;
+    height: 600px;
+}
+
+.banner__picture {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.banner__title {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.banner__title p {
+    width: 70%;
+}
+
+.banner__cabinet {
+    position: relative;
+    top: 2rem;
+    left: -5rem;
+    width: 80%;
+}
+
+.banner__particle-2 {
+    width: 30%;
+}
+
+/*-----------------------------------*\
+  # BRANDS
+\*-----------------------------------*/
+.section__brands {
+    width: 100%;
+    height: 220px;
+    background-color: #9db97b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.section__brands img {
+    transition: var(--transition);
+}
+
+.section__brands img:hover {
+    transform: scaleX(1.2);
+}
+
+/*-----------------------------------*\
+  # CARDS
+\*-----------------------------------*/
+.card__features {
+    width: 480px;
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.card__features img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card__title--features {
+    position: absolute;
+    width: 100%;
+    margin: 0 auto;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 14px;
+}
+
+.card__hover--features {
+    height: 100%;
+}
+
+/*-----------------------------------*\
+  # ELEMENTS
+\*-----------------------------------*/
+.section__elements {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.elements {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.elements img {
+    width: 60px;
+}
+
+.elements__title a {
+    font-family: "Kaushan Script", cursive;
+    transition: var(--transition);
+}
+
+.elements__title a:hover {
+    color: var(--main-color);
+}
+
+/*-----------------------------------*\
+  # PICTURE SOCIAL
+\*-----------------------------------*/
+.section__picture {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 120px;
+}
+
+.picture__social {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.picture__social img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.picture__hover {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.342);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: var(--transition);
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.picture__hover i {
+    font-size: 20px;
+    color: #fff;
+}
+
+.picture__social:hover .picture__hover {
+    opacity: 1;
+}
+
+/*-----------------------------------*\
+  # FOOTER
+\*-----------------------------------*/
+
+/* footer {
+    display: block;
+} */
+
+.social-list {
+    display: flex;
+    gap: 30px;
+} 
+
+.footer-top {
+    display: grid;
+    gap: 30px;
+    padding-block-end: 40px;
+  }
+  
+  .footer-list-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .footer-link {
+    padding-block: 4px;
+    transition: var(--transition-1);
+  }
+  
+  .footer-link:is(:hover, :focus) { color: var(--tan-crayola); }
+  
+  .footer-brand .social-list { margin-block-start: 30px; }
+  
+  .footer-list-title {
+    color: var(--smokey-black);
+    font-size: var(--fs-4);
+    font-weight: var(--fw-500);
+    margin-block-end: 15px;
+  }
+  
+  .footer-form { position: relative; }
+  
+  .footer .email-field {
+    padding-block: 10px;
+    padding-inline-end: 35px;
+    border-block-end: 1px solid var(--black_25);
+    outline: none;
+  }
+  
+  .footer .email-field:focus { border-color: var(--tan-crayola); }
+  
+  .footer-form-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 20px;
+    color: var(--granite-gray);
+  }
+  
+  .footer-list .wrapper {
+    display: flex;
+    gap: 20px;
+    margin-block-start: 20px;
+  }
+  
+  .copyright {
+    text-align: center;
+    padding-block: 20px;
+  }
+  
+  .copyright-link { display: inline-block; }
+
+/*-----------------------------------*\
+    #BACK TO TOP
+  \*-----------------------------------*/
+  
+  .back-top-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: var(--tan-crayola);
+    color: var(--white);
+    font-size: 24px;
+    padding: 18px;
+    border-radius: 50%;
+    z-index: 4;
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition-1);
+  }
+  
+  .back-top-btn.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-10px);
+  }
+  
+  
+/* footer {
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+    margin-top: 4rem;
+    background-color: #eeeeeece;
+}
+
+footer span {
+    font-family: "Kaushan Script", cursive;
+    color: #797776;
+}  */
+
+/*-----------------------------------*\
+  # WEBSITE DESIGN FURNITURE STORE
+\*-----------------------------------*/
+/**
+ * copyright 2022 CODEMAXI
+ */
+
+/*-----------------------------------*\
+  # RESPONSIVE MOBILE
+\*-----------------------------------*/
+@media screen and (max-width:820px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    .title__slide span {
+        font-size: 1.8rem;
+    }
+
+    * {
+        cursor: none;
+    }
+
+    a {
+        cursor: none;
+    }
+
+    button {
+        cursor: none;
+    }
+
+    /*-----------------------------------*\
+    # NAV
+    \*-----------------------------------*/
+    nav {
+        width: 100%;
+        background-color: #fff;
+        position: fixed;
+        z-index: 100;
+        box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.034);
+    }
+
+    .navigation {
+        width: 95%;
+        margin: 0 auto;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo {
+        width: 130px;
+    }
+
+    .menu {
+        flex-direction: column;
+        position: fixed;
+        left: 0;
+        z-index: 100;
+        padding: 20px;
+        top: 0;
+        background-color: #fefefe;
+        gap: 4rem;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(-100%);
+        transition: var(--transition);
+    }
+
+    .menu.menu--active {
+        transform: translateX(0);
+    }
+
+    .btn__close {
+        position: absolute;
+        color: #000;
+        top: 2rem;
+        right: 2rem;
+        display: block;
+    }
+
+    .btn__close {
+        font-size: 32px;
+        transition: var(--transition);
+    }
+
+    .btn__close:hover {
+        color: var(--main-color);
+    }
+
+    .icon__links {
+        display: flex;
+        gap: 2rem;
+        font-size: 18px;
+    }
+
+    .hamburguer {
+        display: block;
+        background-color: transparent;
+    }
+
+    .hamburguer i {
+        font-size: 24px;
+        transition: var(--transition);
+    }
+
+    .hamburguer i:hover {
+        color: var(--main-color);
+    }
+
+    .icon__links {
+        display: none;
+    }
+
+    /*-----------------------------------*\
+    # HEADER -- SWIPER
+    \*-----------------------------------*/
+    .swiper {
+        width: 100%;
+        height: 85vh;
+    }
+
+    .swiper-slide {
+        display: flex;
+        top: 2rem;
+    }
+
+    .title__slide {
+        width: 90%;
+        margin-left: 2rem;
+    }
+
+    .title__slide p {
+        width: 90%;
+    }
+
+    .picture__slide-1 {
+        display: none;
+    }
+
+    .picture__slide-2 {
+        display: none;
+    }
+
+    .btn__slide {
+        background-color: transparent;
+        padding: 16px 30px;
+        border: 1px solid #797776;
+        color: #797776;
+        font-size: 1.1rem;
+        letter-spacing: 2px;
+        margin-top: 2rem;
+    }
+
+    .swiper-slide:nth-child(1) {
+        background-image: url(../img/bg-slider--1.png);
+        background-position-x: -20%;
+        background-repeat: no-repeat;
+    }
+
+    .swiper-slide:nth-child(2) {
+        background-color: #e9f0f3;
+        background-image: url(../img/particle-3.png);
+        background-repeat: no-repeat;
+    }
+
+    /*-----------------------------------*\
+    # BANNER
+    \*-----------------------------------*/
+    .section__banner {
+        display: none;
+    }
+
+    /*-----------------------------------*\
+    # BRANDS
+    \*-----------------------------------*/
+    .section__brands {
+        display: flex;
+        flex-wrap: wrap;
+        height: 100%;
+        gap: 2rem;
+        padding: 20px;
+    }
+
+
+    /*-----------------------------------*\
+    # PICTURE SOCIAL
+    \*-----------------------------------*/
+    .section__picture {
+        display: none;
+    }
+
+    .footer-top { grid-template-columns: 1fr 1fr; }
+}
+
+/*-----------------------------------*\
+  # RESPONSIVE TABLET
+\*-----------------------------------*/
+@media screen and (min-width:820px) and (max-width:1200px) {
+    .icon__links {
+        display: none;
+    }
+    /*-----------------------------------*\
+    # HEADER -- SWIPER
+    \*-----------------------------------*/
+    .swiper {
+        width: 100%;
+        height: 66vh;
+    }
+
+    .swiper-slide {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .swiper-slide:nth-child(2) {
+        background-color: #e9f0f3;
+    }
+
+    .title__slide {
+        width: 50%;
+        margin-left: 4rem;
+    }
+
+    .title__slide p {
+        width: 90%;
+    }
+
+    .picture__slide-1 {
+        width: 80%;
+        height: 100%;
+        background: url("../img/bg-slider--1.png") no-repeat;
+        background-size: cover;
+        margin-right: -18rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .picture__slide-2 {
+        margin-top: -18rem;
+        display: flex;
+        align-items: center;
+        gap: 4rem;
+        background: url("../img/particle-3.png") no-repeat;
+    }
+
+    .picture__slide-2 img {
+        width: 40%;
+    }
+
+    .picture__slide-1 img {
+        width: 35%;
+    }
+
+    .picture__slide-1 .particle-1 {
+        width: 15%;
+    }
+
+    .picture__slide-1 .particle-2 {
+        width: 25%;
+    }
+}
