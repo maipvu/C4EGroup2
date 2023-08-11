@@ -677,6 +677,7 @@ nav {
   
   .copyright-link { display: inline-block; } */
 
+<<<<<<< HEAD
 /*-----------------------------------*\
     #BACK TO TOP
   \*-----------------------------------*/
@@ -702,6 +703,9 @@ nav {
   transform: translateY(-10px);
 }
 
+=======
+  
+>>>>>>> 85d0cb31be95795bda074651ff8757727ae5e8e6
 /* footer {
     width: 100%;
     padding: 30px;
