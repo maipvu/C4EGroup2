@@ -103,58 +103,58 @@ p {
 /*-----------------------------------*\
   # NAV
 \*-----------------------------------*/
-nav {
-  width: 100%;
-  background-color: #fff;
+/* nav {
+    width: 100%;
+    background-color: #fff;
 }
 
 .navigation {
-  width: 95%;
-  margin: 0 auto;
-  padding: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    width: 95%;
+    margin: 0 auto;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .logo {
-  width: 160px;
+    width: 160px;
 }
 
 .menu {
-  display: flex;
-  column-gap: 5rem;
+    display: flex;
+    column-gap: 5rem;
 }
 
 .menu a {
-  color: #000;
-  text-transform: uppercase;
-  font-size: 0.9rem;
-  transition: var(--transition);
+    color: #000;
+    text-transform: uppercase;
+    font-size: .9rem;
+    transition: var(--transition);
 }
 
 .menu a:hover {
-  color: var(--main-color);
+    color: var(--main-color);
 }
 
 .icon__links {
-  display: flex;
-  gap: 2rem;
-  font-size: 18px;
+    display: flex;
+    gap: 2rem;
+    font-size: 18px;
 }
 
 .icon__links i {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 .hamburguer {
-  display: none;
+    display: none;
 }
 
 .btn__close {
-  display: none;
-  color: transparent;
-}
+    display: none;
+    color: transparent;
+} */
 
 /*-----------------------------------*\
   # HEADER -- SWIPER
@@ -440,7 +440,8 @@ nav {
   align-items: center;
   gap: 4rem;
   width: 100%;
-  height: 600px;
+  height: 450px;
+  padding-bottom: 30px;
 }
 
 .banner__picture {
@@ -604,126 +605,10 @@ nav {
 }
 
 /*-----------------------------------*\
-  # FOOTER
-\*-----------------------------------*/
-
-/* footer {
-    display: block;
-} */
-
-/* .social-list {
-    display: flex;
-    gap: 30px;
-} 
-
-.footer-top {
-    display: grid;
-    gap: 30px;
-    padding-block-end: 40px;
-  }
-  
-  .footer-list-item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  .footer-link {
-    padding-block: 4px;
-    transition: var(--transition-1);
-  }
-  
-  .footer-link:is(:hover, :focus) { color: var(--tan-crayola); }
-  
-  .footer-brand .social-list { margin-block-start: 30px; }
-  
-  .footer-list-title {
-    color: var(--smokey-black);
-    font-size: var(--fs-4);
-    font-weight: var(--fw-500);
-    margin-block-end: 15px;
-  }
-  
-  .footer-form { position: relative; }
-  
-  .footer .email-field {
-    padding-block: 10px;
-    padding-inline-end: 35px;
-    border-block-end: 1px solid var(--black_25);
-    outline: none;
-  }
-  
-  .footer .email-field:focus { border-color: var(--tan-crayola); }
-  
-  .footer-form-btn {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    font-size: 20px;
-    color: var(--granite-gray);
-  }
-  
-  .footer-list .wrapper {
-    display: flex;
-    gap: 20px;
-    margin-block-start: 20px;
-  }
-  
-  .copyright {
-    text-align: center;
-    padding-block: 20px;
-  }
-  
-  .copyright-link { display: inline-block; } */
-
-<<<<<<< HEAD
-/*-----------------------------------*\
-    #BACK TO TOP
-  \*-----------------------------------*/
-
-.back-top-btn {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  background-color: var(--tan-crayola);
-  color: var(--white);
-  font-size: 24px;
-  padding: 18px;
-  border-radius: 50%;
-  z-index: 4;
-  opacity: 0;
-  visibility: hidden;
-  transition: var(--transition-1);
-}
-
-.back-top-btn.active {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(-10px);
-}
-
-=======
-  
->>>>>>> 85d0cb31be95795bda074651ff8757727ae5e8e6
-/* footer {
-    width: 100%;
-    padding: 30px;
-    text-align: center;
-    margin-top: 4rem;
-    background-color: #eeeeeece;
-}
-
-footer span {
-    font-family: "Kaushan Script", cursive;
-    color: #797776;
-}  */
-
-/*-----------------------------------*\
   # WEBSITE DESIGN FURNITURE STORE
 \*-----------------------------------*/
 /**
- * copyright 2022 CODEMAXI
+ * copyright 2023 C4EGroup2
  */
 
 /*-----------------------------------*\

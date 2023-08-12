@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,66 +9,86 @@
     <!-- ===== CSS ===== -->
     <link rel="stylesheet" href="style.css" />
     <!-- ===== FONTS AWESOME ===== -->
-    <script
-      src="https://kit.fontawesome.com/d71051032c.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/d71051032c.js" crossorigin="anonymous"></script>
     <!-- ===== SWIPER ===== -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 
   </head>
+  <body>
+    <!-- ===== NAV  ===== -->
+    <nav id="home" class="w-full bg-white">
+      <div class="navigation mx-auto flex justify-between items-center px-8 py-8">
+        <!-- Logo -->
+        <img
+          src="./Pictures/logo.png"
+          alt="" class="w-40" />
 
-
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FURNITURE - STORE</title>
-  <!-- ===== CSS ===== -->
-  <link rel="stylesheet" href="style.css" />
-  <!-- ===== FONTS AWESOME ===== -->
-  <script src="https://kit.fontawesome.com/d71051032c.js" crossorigin="anonymous"></script>
-  <!-- ===== SWIPER ===== -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-</head>
-
-<body>
-  <!-- ===== NAV  ===== -->
-  <nav id="home">
-    <div class="navigation">
-      <!-- ---
-            # LOGO
-            --- -->
-      <img
-        src="https://github.com/Mateo-codeMaxi/Ecomerce-Furniture.github.io/blob/main/TEMPLATE%20-%20FURNITURE%20STORE/img/logo.png?raw=true"
-        alt="" class="logo" />
-      <!-- ---
-            # MENU
-            --- -->
-      <div class="menu">
-        <i class="fa-sharp fa-solid fa-xmark btn__close"></i>
-        <a href="#home">HOME</a>
-        <a href="#collection">COLLECTION</a>
-        <a href="#features">FEATURES</a>
-        <a href="#store">STORE</a>
-        <a href="#contact">CONTACT</a>
-      </div>
-      <!-- ---
-            # ICONS LINKS
-            --- -->
-        <div class="icon__links">
-          <i class="fa-regular fa-user"></i>
-          <i class="fa-regular fa-heart"></i>
-          <i class="fa-solid fa-truck-fast"></i>
+        <!-- Menu -->
+        <div class="menu flex space-x-12">
+          <i class="fa-sharp fa-solid fa-xmark btn__close hidden"></i>
+          <a href="#home" class="text-black uppercase text-sm hover:text-primary transition">HOME</a>
+          <a href="#collection" class="text-black uppercase text-sm hover:text-primary transition">COLLECTION</a>
+          <a href="#features" class="text-black uppercase text-sm hover:text-primary transition">FEATURES</a>
+          <a href="#store" class="text-black uppercase text-sm hover:text-primary transition">STORE</a>
+          <a href="#contact" class="text-black uppercase text-sm hover:text-primary transition">CONTACT</a>
         </div>
-        <!-- ---
-            # HAMBURGER
-            --- -->
-        <button class="hamburguer">
+
+        <!-- Icons Links -->
+        <div class="icon__links flex space-x-8 text-xl">
+          <i class="fa-regular fa-user cursor-pointer"></i>
+          <i class="fa-regular fa-heart cursor-pointer"></i>
+          <i class="fa-solid fa-truck-fast cursor-pointer"></i>
+        </div>
+
+        <!-- Hamburger -->
+        <button class="hamburguer hidden">
           <i class="fa-sharp fa-solid fa-bars btn__menu"></i>
         </button>
       </div>
     </nav>
+
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <!-- Swiper-Slide 1 -->
+        <div data-hash="slide1" class="swiper-slide flex items-center justify-between">
+          <div class="title__slide">
+            <span>MHT</span>
+            <h1 class="text-xl">MADE WITH LOVE</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur impedit quisquam.</p>
+            <a href="#" class="btn__slide bg-primary py-2 px-4 rounded text-white">Read More</a>
+          </div>
+
+          <!-- Picture Slide -->
+          <div class="picture__slide-1 flex items-center">
+            <img class="particle-1" src="" alt="" />
+            <img src="" alt="" />
+            <img class="particle-2" src="" alt="" />
+          </div>
+        </div>
+
+        <!-- Swiper-Slide 2 -->
+        <div data-hash="slide2" class="swiper-slide flex items-center justify-between">
+          <div class="title__slide">
+            <span>Tailored</span>
+            <h1 class="text-xl">CLASSIC INTERIORS</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur impedit quisquam.</p>
+            <a href="#" class="btn__slide bg-primary py-2 px-4 rounded text-white">Read More</a>
+          </div>
+
+          <!-- Picture Slide -->
+          <div class="picture__slide-2 flex items-center">
+            <img class="particle-1" src="" alt="" />
+            <img src="" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Buttons Swiper -->
+      <div class="swiper-button-next text-black"></div>
+      <div class="swiper-button-prev text-black"></div>
+      <div class="swiper-pagination"></div>
+    </div>
     <!-- ===== NAV END ===== -->
 
     <!-- ===== SWIPER  ===== -->
@@ -84,2011 +105,1832 @@
             </p>
             <a href="#"><button class="btn__slide">Read More</button></a>
           </div>
-          <!-- PICTURE SLIDE -->
-          <div class="picture__slide-1">
-            <img class="particle-1" src="" alt="" />
-            <img src="" alt="" />
-            <img class="particle-2" src="" alt="" />
+          </section>
+          <!-- ===== BANNER END ===== -->
+
+          <!-- ===== BRANDS  ===== -->
+          <section class="section__brands">
+            <img
+              src="./Pictures/brand-1.png"
+              alt="" />
+            <img
+              src="./Pictures/brand-2.png"
+              alt="" />
+            <img
+              src="./Pictures/brand-3.png"
+              alt="" />
+            <img
+              src="./Pictures/brand-4.png"
+              alt="" />
+            <img
+              src="./Pictures/brand-5.png"
+              alt="" />
+          </section>
+          <!-- ===== BRANDS END  ===== -->
+
+          <!-- ===== CARDS  ===== -->
+          <section class="section__cards contain" id="features">
+            <!-- TITLE SECTIONS -->
+            <div class="title__section">
+              <span>Summer Collection</span>
+              <h2>FEATURES ELEMENTS</h2>
+            </div>
+          
+            <div class="container__cards grid grid-cols-1 md:grid-cols-3 gap-8">
+              <!-- CARD 9 -->
+              <div class="card card__features">
+                <img src="./Pictures/cards-9.jpg" alt="" />
+                <div class="card__hover card__hover--features">
+                  <div class="icon__hover">
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-regular fa-eye"></i>
+                  </div>
+                  <div class="link__hover">
+                    <a href="#"><button class="btn__hover">Add To Cart</button></a>
+                  </div>
+                </div>
+                <div class="card__title card__title--features">
+                  <div class="cards__name">
+                    <h4>COMFY CHAIR</h4>
+                    <p>Handmade</p>
+                  </div>
+                  <div class="price">
+                    <span>$40.00</span>
+                  </div>
+                </div>
+              </div>
+              <!-- CARD 10 -->
+              <div class="card card__features">
+                <img src="./Pictures/cards-10.jpg" alt="" />
+                <div class="card__hover card__hover--features">
+                  <div class="icon__hover">
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-regular fa-eye"></i>
+                  </div>
+                  <div class="link__hover">
+                    <a href="#"><button class="btn__hover">Add To Cart</button></a>
+                  </div>
+                </div>
+                <div class="card__title card__title--features">
+                  <div class="cards__name">
+                    <h4>COMFY CHAIR</h4>
+                    <p>Handmade</p>
+                  </div>
+                  <div class="price">
+                    <span>$40.00</span>
+                  </div>
+                </div>
+              </div>
+              <!-- CARD 11 -->
+              <div class="card card__features">
+                <img src="./Pictures/cards-11.jpg" alt="" />
+                <div class="card__hover card__hover--features">
+                  <div class="icon__hover">
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-regular fa-eye"></i>
+                  </div>
+                  <div class="link__hover">
+                    <a href="#"><button class="btn__hover">Add To Cart</button></a>
+                  </div>
+                </div>
+                <div class="card__title card__title--features">
+                  <div class="cards__name">
+                    <h4>COMFY CHAIR</h4>
+                    <p>Handmade</p>
+                  </div>
+                  <div class="price">
+                    <span>$40.00</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          <!-- ===== CARDS END  ===== -->
+
+          <!-- ===== ELEMENTS   ===== -->
+          <section class="section__elements" id="store">
+            <!-- ICON ELEMENTS 1 -->
+            <div class="elements">
+              <img
+                src="./Pictures/icon-1.png"
+                alt="" />
+              <div class="elements__title">
+                <h3>24H SERVICE</h3>
+                <a href="#">More Info</a>
+              </div>
+            </div>
+            <!-- ICON ELEMENTS 2 -->
+            <div class="elements">
+              <img
+                src="./Pictures/icon-2.png"
+                alt="" />
+              <div class="elements__title">
+                <h3>FREE RETURNS</h3>
+                <a href="#">More Info</a>
+              </div>
+            </div>
+            <!-- ICON ELEMENTS 3 -->
+            <div class="elements">
+              <img
+                src="./Pictures/icon-3.png"
+                alt="" />
+              <div class="elements__title">
+                <h3>ORDER TRACKING</h3>
+                <a href="#">More Info</a>
+              </div>
+            </div>
+            <!-- ICON ELEMENTS 4 -->
+            <div class="elements">
+              <img
+                src="./Pictures/icon-4.png"
+                alt="" />
+              <div class="elements__title">
+                <h3>FAST DELIVERY</h3>
+                <a href="#">More Info</a>
+              </div>
+            </div>
+          </section>
+          <!-- ===== ELEMENTS END  ===== -->
+
+          <!-- ===== PICTURES SOCIAL  ===== -->
+          <section class="section__picture">
+            <!-- PICTURE SOCIAL 1 -->
+            <div class="picture__social">
+              <img
+                src="./Pictures/picture-social--1.jpg"
+                alt="" />
+              <div class="picture__hover">
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+            </div>
+            <!-- PICTURE SOCIAL 2 -->
+            <div class="picture__social">
+              <img
+                src="./Pictures/picture-social--2.jpg"
+                alt="" />
+              <div class="picture__hover">
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+            </div>
+            <!-- PICTURE SOCIAL 3 -->
+            <div class="picture__social">
+              <img
+                src="./Pictures/picture-social--3.jpg"
+                alt="" />
+              <div class="picture__hover">
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+            </div>
+            <!-- PICTURE SOCIAL 4 -->
+            <div class="picture__social">
+              <img
+                src="./Pictures/picture-social--4.jpg"
+                alt="" />
+              <div class="picture__hover">
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+            </div>
+            <!-- PICTURE SOCIAL 5 -->
+            <div class="picture__social">
+              <img
+                src="./Pictures/picture-social--5.jpg"
+                alt="" />
+              <div class="picture__hover">
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+            </div>
+            <!-- PICTURE SOCIAL 6 -->
+            <div class="picture__social">
+              <img
+                src="./Pictures/picture-social--6.jpg"
+                alt="" />
+              <div class="picture__hover">
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+            </div>
+          </section>
+          <!-- ===== PICTURES SOCIAL END  ===== -->
+        </main>
+            <!-- --- SWIPER-SLIDE 2 --- -->
+            <div data-hash="slide2" class="swiper-slide">
+              <div class="title__slide">
+                <span>Tailored</span>
+                <h1>CLASSIC INTERIORS</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+                  impedit quisquam.
+                </p>
+                <a href="#"><button class="btn__slide">Read More</button></a>
+              </div>
+              <!-- PICTURE SLIDE -->
+              <div class="picture__slide-2">
+                <img class="particle-1" src="" alt="" />
+                <img src="" alt="" />
+              </div>
+            </div>
+        </div>
+        <!-- --- BUTONS SWIPER --- -->
+        <div class="swiper-button-next" style="color: #000"></div>
+        <div class="swiper-button-prev" style="color: #000"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <!-- ===== SWIPER END  ===== -->
+
+      <!-- ===== ITEMS ===== -->
+      <div class="container__items">
+        <!-- --- ITEMS 1 --- -->
+        <div class="items">
+          <img src="https://bizweb.dktcdn.net/100/153/764/products/ke-tivi-2t.jpg?v=1607165572710" alt="" />
+          <div class="title__items">
+            <h3>Online store</h3>
+            <a href="#"><button class="btn__items">Shop Now</button></a>
           </div>
         </div>
-        <!-- --- SWIPER-SLIDE 2 --- -->
-        <div data-hash="slide2" class="swiper-slide">
-          <div class="title__slide">
-            <span>Tailored</span>
-            <h1>CLASSIC INTERIORS</h1>
+        <!-- --- ITEMS 2 --- -->
+        <div class="items">
+          <img src="https://noithattana.vn/wp-content/uploads/2020/04/N31-D.jpg" alt="" />
+          <div class="title__items">
+            <h3>ACCSESSORISE</h3>
+            <a href="#"><button class="btn__items">Shop Now</button></a>
+          </div>
+        </div>
+        <!-- --- ITEMS 3 --- -->
+        <div class="items">
+          <img src="https://bepabig.com/wp-content/uploads/Thiet-ke-chua-co-ten-1-5.png" alt="" />
+          <div class="title__items">
+            <h3>NEW ITEMS</h3>
+            <a href="#"><button class="btn__items">Shop Now</button></a>
+          </div>
+        </div>
+        <!-- --- ITEMS 4 --- -->
+        <div class="items">
+          <img
+            src="https://product.hstatic.net/200000324557/product/o1cn012shjj81xkduesbr9e___4217972962-0-cib_d520b43a02894658a71a45a789b47e0c_master.jpg"
+            alt="" />
+          <div class="title__items">
+            <h3>NEW ITEMS</h3>
+            <a href="#"><button class="btn__items">Shop Now</button></a>
+          </div>
+        </div>
+      </div>
+      <!-- ===== ITEMS END ===== -->
+
+      <main>
+        <!-- ===== CARDS ESSENTIAL ===== -->
+        <section class="section__cards contain" id="collection">
+          <!-- ---
+              # TITLE SECTIONS
+              --- -->
+          <div class="title__section">
+            <span>Latest Collection</span>
+            <h2>ESSENTIAL ITEMS</h2>
+          </div>
+
+          <div class="container__cards">
+            <!-- --- CARD 1 --- -->
+            <div class="card">
+              <!-- CARD PICTURE -->
+              <div class="card__picture">
+                <img src="https://www.target.com.au/medias/static_content/product/images/large/85/83/A1788583.jpg"
+                  alt="" />
+              </div>
+              <!-- CARD HOVER -->
+              <div class="card__hover">
+                <div class="icon__hover">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+                <div class="link__hover">
+                  <a href="#"><button class="btn__hover">View Product</button></a>
+                </div>
+              </div>
+              <!-- CARD TITLE PRODUCT -->
+              <div class="card__title">
+                <div class="cards__name">
+                  <h4>COMFY CHAIR</h4>
+                  <p>Handmade</p>
+                </div>
+                <div class="price">
+                  <span>$40.00</span>
+                </div>
+              </div>
+            </div>
+            <!-- --- CARD 2 --- -->
+            <div class="card">
+              <!-- CARD PICTURE -->
+              <div class="card__picture">
+                <img src="https://decordi.vn/wp-content/uploads/2021/08/den-am-tran.jpg" alt="" />
+              </div>
+              <!-- CARD HOVER -->
+              <div class="card__hover">
+                <div class="icon__hover">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+                <div class="link__hover">
+                  <a href="#"><button class="btn__hover">View Product</button></a>
+                </div>
+              </div>
+              <!-- CARD TITLE PRODUCT -->
+              <div class="card__title">
+                <div class="cards__name">
+                  <h4>LIGHTS</h4>
+                  <p>Handmade</p>
+                </div>
+                <div class="price">
+                  <span>$40.00</span>
+                </div>
+              </div>
+            </div>
+            <!-- --- CARD 3 --- -->
+            <div class="card">
+              <!-- CARD PICTURE -->
+              <div class="card__picture">
+                <img src="https://dehome.vn/upload_images/images/G%C6%B0%C6%A1ng-soi-to%C3%A0n-th%C3%A2n-Dehome.jpg"
+                  alt="" />
+              </div>
+              <!-- CARD HOVER -->
+              <div class="card__hover">
+                <div class="icon__hover">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+                <div class="link__hover">
+                  <a href="#"><button class="btn__hover">View Product</button></a>
+                </div>
+              </div>
+              <!-- CARD TITLE PRODUCT -->
+              <div class="card__title">
+                <div class="cards__name">
+                  <h4>DECORACTIVE MIRROR</h4>
+                  <p>Handmade</p>
+                </div>
+                <div class="price">
+                  <span>$40.00</span>
+                </div>
+              </div>
+            </div>
+            <!-- --- CARD 4 --- -->
+            <div class="card">
+              <!-- CARD PICTURE -->
+              <div class="card__picture">
+                <img
+                  src="https://bizweb.dktcdn.net/thumb/1024x1024/100/441/307/products/71c6bffa-5d0e-44b0-9804-b0b2a725e61c.jpg?v=1647691087540"
+                  alt="" />
+              </div>
+              <!-- CARD HOVER -->
+              <div class="card__hover">
+                <div class="icon__hover">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+                <div class="link__hover">
+                  <a href="#"><button class="btn__hover">View Product</button></a>
+                </div>
+              </div>
+              <!-- CARD TITLE PRODUCT -->
+              <div class="card__title">
+                <div class="cards__name">
+                  <h4>LEATHER BED</h4>
+                  <p>Handmade</p>
+                </div>
+                <div class="price">
+                  <span>$40.00</span>
+                </div>
+              </div>
+            </div>
+            <!-- --- CARD 5 --- -->
+            <div class="card">
+              <!-- CARD PICTURE -->
+              <div class="card__picture">
+                <img src="https://bizweb.dktcdn.net/100/153/764/products/ban-ghe-an-gia-re-61t.jpg?v=1576732949677"
+                  alt="" />
+              </div>
+              <!-- CARD HOVER -->
+              <div class="card__hover">
+                <div class="icon__hover">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+                <div class="link__hover">
+                  <a href="#"><button class="btn__hover">View Product</button></a>
+                </div>
+              </div>
+              <!-- CARD TITLE PRODUCT -->
+              <div class="card__title">
+                <div class="cards__name">
+                  <h4>DINING TABLE</h4>
+                  <p>Handmade</p>
+                </div>
+                <div class="price">
+                  <span>$40.00</span>
+                </div>
+              </div>
+            </div>
+            <!-- --- CARD 6 --- -->
+            <div class="card">
+              <!-- CARD PICTURE -->
+              <div class="card__picture">
+                <img src="https://down-vn.img.susercontent.com/file/866ea477093b3a2a1732fe7bfc5e9769" alt="" />
+              </div>
+              <!-- CARD HOVER -->
+              <div class="card__hover">
+                <div class="icon__hover">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+                <div class="link__hover">
+                  <a href="#"><button class="btn__hover">View Product</button></a>
+                </div>
+              </div>
+              <!-- CARD TITLE PRODUCT -->
+              <div class="card__title">
+                <div class="cards__name">
+                  <h4>LAMP</h4>
+                  <p>Handmade</p>
+                </div>
+                <div class="price">
+                  <span>$40.00</span>
+                </div>
+              </div>
+            </div>
+            <!-- --- CARD 7 --- -->
+            <div class="card">
+              <!-- CARD PICTURE -->
+              <div class="card__picture">
+                <img src="https://everon.com/upload_images/images/2021/11/24/giuong-ngu-boc-da-11.jpg" alt="" />
+              </div>
+              <!-- CARD HOVER -->
+              <div class="card__hover">
+                <div class="icon__hover">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+                <div class="link__hover">
+                  <a href="#"><button class="btn__hover">View Product</button></a>
+                </div>
+              </div>
+              <!-- CARD TITLE PRODUCT -->
+              <div class="card__title">
+                <div class="cards__name">
+                  <h4>LEATHER BED</h4>
+                  <p>Handmade</p>
+                </div>
+                <div class="price">
+                  <span>$40.00</span>
+                </div>
+              </div>
+            </div>
+            <!-- --- CARD 8 --- -->
+            <div class="card">
+              <!-- CARD PICTURE -->
+              <div class="card__picture">
+                <img src="https://ironstyle.vn/uploads/product/VgXl_vien%20sat%20vang%20mat%20den%202.jpg" alt="" />
+              </div>
+              <!-- CARD HOVER -->
+              <div class="card__hover">
+                <div class="icon__hover">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+                <div class="link__hover">
+                  <a href="#"><button class="btn__hover">View Product</button></a>
+                </div>
+              </div>
+              <!-- CARD TITLE PRODUCT -->
+              <div class="card__title">
+                <div class="cards__name">
+                  <h4>CLOCKWATCHER</h4>
+                  <p>Handmade</p>
+                </div>
+                <div class="price">
+                  <span>$40.00</span>
+                </div>
+              </div>
+            </div>
+            <!-- --- CARD 9 --- -->
+            <div class="card">
+              <!-- CARD PICTURE -->
+              <div class="card__picture">
+                <img src="https://noithatm8.com/wp-content/uploads/ban-lam-viec-go-ma-titan-cao-cap-4.jpg" alt="" />
+              </div>
+              <!-- CARD HOVER -->
+              <div class="card__hover">
+                <div class="icon__hover">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+                <div class="link__hover">
+                  <a href="#"><button class="btn__hover">View Product</button></a>
+                </div>
+              </div>
+              <!-- CARD TITLE PRODUCT -->
+              <div class="card__title">
+                <div class="cards__name">
+                  <h4>CLOCKWATCHER</h4>
+                  <p>Handmade</p>
+                </div>
+                <div class="price">
+                  <span>$40.00</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- --- CARD 10 --- -->
+            <div class="card">
+              <!-- CARD PICTURE -->
+              <div class="card__picture">
+                <img src="https://dogiadunggo.com/wp-content/uploads/2022/09/tu-giay-dep-go-soi-2-1.jpg" alt="" />
+              </div>
+              <!-- CARD HOVER -->
+              <div class="card__hover">
+                <div class="icon__hover">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+                <div class="link__hover">
+                  <a href="#"><button class="btn__hover">View Product</button></a>
+                </div>
+              </div>
+              <!-- CARD TITLE PRODUCT -->
+              <div class="card__title">
+                <div class="cards__name">
+                  <h4>CLOCKWATCHER</h4>
+                  <p>Handmade</p>
+                </div>
+                <div class="price">
+                  <span>$40.00</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- --- CARD 11 --- -->
+            <div class="card">
+              <!-- CARD PICTURE -->
+              <div class="card__picture">
+                <img
+                  src="https://product.hstatic.net/200000486527/product/img_1593_9fe38d2e664848c9aac591c575c97746_master.jpg"
+                  alt="" />
+              </div>
+              <!-- CARD HOVER -->
+              <div class="card__hover">
+                <div class="icon__hover">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+                <div class="link__hover">
+                  <a href="#"><button class="btn__hover">View Product</button></a>
+                </div>
+              </div>
+              <!-- CARD TITLE PRODUCT -->
+              <div class="card__title">
+                <div class="cards__name">
+                  <h4>CLOCKWATCHER</h4>
+                  <p>Handmade</p>
+                </div>
+                <div class="price">
+                  <span>$40.00</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- --- CARD 12 --- -->
+            <div class="card">
+              <!-- CARD PICTURE -->
+              <div class="card__picture">
+                <img src="https://bachma.vn/wp-content/uploads/2021/10/ke-sach-1m5.jpg" alt="" />
+              </div>
+              <!-- CARD HOVER -->
+              <div class="card__hover">
+                <div class="icon__hover">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+                <div class="link__hover">
+                  <a href="#"><button class="btn__hover">View Product</button></a>
+                </div>
+              </div>
+              <!-- CARD TITLE PRODUCT -->
+              <div class="card__title">
+                <div class="cards__name">
+                  <h4>CLOCKWATCHER</h4>
+                  <p>Handmade</p>
+                </div>
+                <div class="price">
+                  <span>$40.00</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- --- CARD 13 --- -->
+            <div class="card">
+              <!-- CARD PICTURE -->
+              <div class="card__picture">
+                <img
+                  src="https://ghesofa360.vn/wp-content/uploads/2022/03/277675925_114118001240495_4179969127421716240_n.jpg"
+                  alt="" />
+              </div>
+              <!-- CARD HOVER -->
+              <div class="card__hover">
+                <div class="icon__hover">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+                <div class="link__hover">
+                  <a href="#"><button class="btn__hover">View Product</button></a>
+                </div>
+              </div>
+              <!-- CARD TITLE PRODUCT -->
+              <div class="card__title">
+                <div class="cards__name">
+                  <h4>CLOCKWATCHER</h4>
+                  <p>Handmade</p>
+                </div>
+                <div class="price">
+                  <span>$40.00</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- --- CARD 14 --- -->
+            <div class="card">
+              <!-- CARD PICTURE -->
+              <div class="card__picture">
+                <img src="https://noithatmanhhe.vn/media/23178/tu-bep-am-tuong-noi-that-manh-he.jpg" alt="" />
+              </div>
+              <!-- CARD HOVER -->
+              <div class="card__hover">
+                <div class="icon__hover">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+                <div class="link__hover">
+                  <a href="#"><button class="btn__hover">View Product</button></a>
+                </div>
+              </div>
+              <!-- CARD TITLE PRODUCT -->
+              <div class="card__title">
+                <div class="cards__name">
+                  <h4>CLOCKWATCHER</h4>
+                  <p>Handmade</p>
+                </div>
+                <div class="price">
+                  <span>$40.00</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- --- CARD 15 --- -->
+            <div class="card">
+              <!-- CARD PICTURE -->
+              <div class="card__picture">
+                <img src="https://noithatandan.com/wp-content/uploads/2022/03/tu-guong-phong-tam.jpg" alt="" />
+              </div>
+              <!-- CARD HOVER -->
+              <div class="card__hover">
+                <div class="icon__hover">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+                <div class="link__hover">
+                  <a href="#"><button class="btn__hover">View Product</button></a>
+                </div>
+              </div>
+              <!-- CARD TITLE PRODUCT -->
+              <div class="card__title">
+                <div class="cards__name">
+                  <h4>CLOCKWATCHER</h4>
+                  <p>Handmade</p>
+                </div>
+                <div class="price">
+                  <span>$40.00</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- --- CARD 16 --- -->
+            <div class="card">
+              <!-- CARD PICTURE -->
+              <div class="card__picture">
+                <img
+                  src="https://cdn11.dienmaycholon.vn/filewebdmclnew/public/userupload/files/news/tu-lanh/avatar-kham-pha-cac-mau-tu-lanh-hitachi-4-canh-sang-trong-hien-dai.jpg"
+                  alt="" />
+              </div>
+              <!-- CARD HOVER -->
+              <div class="card__hover">
+                <div class="icon__hover">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+                <div class="link__hover">
+                  <a href="#"><button class="btn__hover">View Product</button></a>
+                </div>
+              </div>
+              <!-- CARD TITLE PRODUCT -->
+              <div class="card__title">
+                <div class="cards__name">
+                  <h4>CLOCKWATCHER</h4>
+                  <p>Handmade</p>
+                </div>
+                <div class="price">
+                  <span>$40.00</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- --- CARD 17 --- -->
+            <div class="card">
+              <!-- CARD PICTURE -->
+              <div class="card__picture">
+                <img src="https://tranhtreotuong.vn/uploads/images/tranh-cuu-ngu-quan-hoi-sen-vang-doi-xung.jpg" alt="" />
+              </div>
+              <!-- CARD HOVER -->
+              <div class="card__hover">
+                <div class="icon__hover">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+                <div class="link__hover">
+                  <a href="#"><button class="btn__hover">View Product</button></a>
+                </div>
+              </div>
+              <!-- CARD TITLE PRODUCT -->
+              <div class="card__title">
+                <div class="cards__name">
+                  <h4>CLOCKWATCHER</h4>
+                  <p>Handmade</p>
+                </div>
+                <div class="price">
+                  <span>$40.00</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- --- CARD 18 --- -->
+            <div class="card">
+              <!-- CARD PICTURE -->
+              <div class="card__picture">
+                <img
+                  src="https://phongkhachdep.org/wp-content/uploads/2021/02/Ke%CC%A3%CC%82-Sa%CC%81ch-Decor-Sang-Tro%CC%A3ng-.jpg"
+                  alt="" />
+              </div>
+              <!-- CARD HOVER -->
+              <div class="card__hover">
+                <div class="icon__hover">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+                <div class="link__hover">
+                  <a href="#"><button class="btn__hover">View Product</button></a>
+                </div>
+              </div>
+              <!-- CARD TITLE PRODUCT -->
+              <div class="card__title">
+                <div class="cards__name">
+                  <h4>CLOCKWATCHER</h4>
+                  <p>Handmade</p>
+                </div>
+                <div class="price">
+                  <span>$40.00</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- --- CARD 19 --- -->
+            <div class="card">
+              <!-- CARD PICTURE -->
+              <div class="card__picture">
+                <img src="https://thegioithamsan.vn/wp-content/uploads/2021/10/3-tham-long-dai-trai-san-phong-khach.jpg"
+                  alt="" />
+              </div>
+              <!-- CARD HOVER -->
+              <div class="card__hover">
+                <div class="icon__hover">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+                <div class="link__hover">
+                  <a href="#"><button class="btn__hover">View Product</button></a>
+                </div>
+              </div>
+              <!-- CARD TITLE PRODUCT -->
+              <div class="card__title">
+                <div class="cards__name">
+                  <h4>CLOCKWATCHER</h4>
+                  <p>Handmade</p>
+                </div>
+                <div class="price">
+                  <span>$40.00</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- --- CARD 20 --- -->
+            <div class="card">
+              <!-- CARD PICTURE -->
+              <div class="card__picture">
+                <img src="https://denhiendai.vn/img/p/den-ban-trang-tri-gm6021-p1239.JPG" alt="" />
+              </div>
+              <!-- CARD HOVER -->
+              <div class="card__hover">
+                <div class="icon__hover">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+                <div class="link__hover">
+                  <a href="#"><button class="btn__hover">View Product</button></a>
+                </div>
+              </div>
+              <!-- CARD TITLE PRODUCT -->
+              <div class="card__title">
+                <div class="cards__name">
+                  <h4>CLOCKWATCHER</h4>
+                  <p>Handmade</p>
+                </div>
+                <div class="price">
+                  <span>$40.00</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- --- CARD 21 --- -->
+            <div class="card">
+              <!-- CARD PICTURE -->
+              <div class="card__picture">
+                <img
+                  src="https://i1.wp.com/suminhchau.vn/wp-content/uploads/2018/08/Bo-ban-an-bat-trang-70.jpg?resize=800%2C800&ssl=1"
+                  alt="" />
+              </div>
+              <!-- CARD HOVER -->
+              <div class="card__hover">
+                <div class="icon__hover">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+                <div class="link__hover">
+                  <a href="#"><button class="btn__hover">View Product</button></a>
+                </div>
+              </div>
+              <!-- CARD TITLE PRODUCT -->
+              <div class="card__title">
+                <div class="cards__name">
+                  <h4>CLOCKWATCHER</h4>
+                  <p>Handmade</p>
+                </div>
+                <div class="price">
+                  <span>$40.00</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- --- CARD 22 --- -->
+            <div class="card">
+              <!-- CARD PICTURE -->
+              <div class="card__picture">
+                <img
+                  src="https://capta.vn/wp-content/uploads/2022/08/SL-TS0955_56-86E-bo-ban-tra-doi-mat-da-hien-dai-nhap-khau-700x700.jpg"
+                  alt="" />
+              </div>
+              <!-- CARD HOVER -->
+              <div class="card__hover">
+                <div class="icon__hover">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+                <div class="link__hover">
+                  <a href="#"><button class="btn__hover">View Product</button></a>
+                </div>
+              </div>
+              <!-- CARD TITLE PRODUCT -->
+              <div class="card__title">
+                <div class="cards__name">
+                  <h4>CLOCKWATCHER</h4>
+                  <p>Handmade</p>
+                </div>
+                <div class="price">
+                  <span>$40.00</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- --- CARD 23 --- -->
+            <div class="card">
+              <!-- CARD PICTURE -->
+              <div class="card__picture">
+                <img src="https://lzd-img-global.slatic.net/g/p/ee3a0e76101f0cbb1a3f12643cae8e4d.jpg_720x720q80.jpg"
+                  alt="" />
+              </div>
+              <!-- CARD HOVER -->
+              <div class="card__hover">
+                <div class="icon__hover">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+                <div class="link__hover">
+                  <a href="#"><button class="btn__hover">View Product</button></a>
+                </div>
+              </div>
+              <!-- CARD TITLE PRODUCT -->
+              <div class="card__title">
+                <div class="cards__name">
+                  <h4>CLOCKWATCHER</h4>
+                  <p>Handmade</p>
+                </div>
+                <div class="price">
+                  <span>$40.00</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- --- CARD 24 --- -->
+            <div class="card">
+              <!-- CARD PICTURE -->
+              <div class="card__picture">
+                <img
+                  src="https://cdn11.dienmaycholon.vn/filewebdmclnew/DMCL21/Picture//Apro/Apro_product_31930/may-loc-nuoc-no_main_3_1020.png.webp"
+                  alt="" />
+              </div>
+              <!-- CARD HOVER -->
+              <div class="card__hover">
+                <div class="icon__hover">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+                <div class="link__hover">
+                  <a href="#"><button class="btn__hover">View Product</button></a>
+                </div>
+              </div>
+              <!-- CARD TITLE PRODUCT -->
+              <div class="card__title">
+                <div class="cards__name">
+                  <h4>CLOCKWATCHER</h4>
+                  <p>Handmade</p>
+                </div>
+                <div class="price">
+                  <span>$40.00</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- --- CARD 25 --- -->
+            <div class="card">
+              <!-- CARD PICTURE -->
+              <div class="card__picture">
+                <img src="https://www.lg.com/vn/images/may-giat/md07559264/gallery/D-13.jpg" alt="" />
+              </div>
+              <!-- CARD HOVER -->
+              <div class="card__hover">
+                <div class="icon__hover">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+                <div class="link__hover">
+                  <a href="#"><button class="btn__hover">View Product</button></a>
+                </div>
+              </div>
+              <!-- CARD TITLE PRODUCT -->
+              <div class="card__title">
+                <div class="cards__name">
+                  <h4>CLOCKWATCHER</h4>
+                  <p>Handmade</p>
+                </div>
+                <div class="price">
+                  <span>$40.00</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- --- CARD 26 --- -->
+            <div class="card">
+              <!-- CARD PICTURE -->
+              <div class="card__picture">
+                <img src="https://quaqueviet.vn/upload/imgproduct/bo-am-tra-gom-su-quaqueviet-123456781.jpg" alt="" />
+              </div>
+              <!-- CARD HOVER -->
+              <div class="card__hover">
+                <div class="icon__hover">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+                <div class="link__hover">
+                  <a href="#"><button class="btn__hover">View Product</button></a>
+                </div>
+              </div>
+              <!-- CARD TITLE PRODUCT -->
+              <div class="card__title">
+                <div class="cards__name">
+                  <h4>CLOCKWATCHER</h4>
+                  <p>Handmade</p>
+                </div>
+                <div class="price">
+                  <span>$40.00</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- --- CARD 27 --- -->
+            <div class="card">
+              <!-- CARD PICTURE -->
+              <div class="card__picture">
+                <img
+                  src="https://vinafami.net/wp-content/uploads/2022/10/z3808818791242_354a18a3ea7da1f8f6bdbf338abc3373.jpg"
+                  alt="" />
+              </div>
+              <!-- CARD HOVER -->
+              <div class="card__hover">
+                <div class="icon__hover">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+                <div class="link__hover">
+                  <a href="#"><button class="btn__hover">View Product</button></a>
+                </div>
+              </div>
+              <!-- CARD TITLE PRODUCT -->
+              <div class="card__title">
+                <div class="cards__name">
+                  <h4>CLOCKWATCHER</h4>
+                  <p>Handmade</p>
+                </div>
+                <div class="price">
+                  <span>$40.00</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- --- CARD 28 --- -->
+            <div class="card">
+              <!-- CARD PICTURE -->
+              <div class="card__picture">
+                <img src="https://down-vn.img.susercontent.com/file/d74dd780f68b40edf9681aeebec9a9e6" alt="" />
+              </div>
+              <!-- CARD HOVER -->
+              <div class="card__hover">
+                <div class="icon__hover">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+                <div class="link__hover">
+                  <a href="#"><button class="btn__hover">View Product</button></a>
+                </div>
+              </div>
+              <!-- CARD TITLE PRODUCT -->
+              <div class="card__title">
+                <div class="cards__name">
+                  <h4>CLOCKWATCHER</h4>
+                  <p>Handmade</p>
+                </div>
+                <div class="price">
+                  <span>$40.00</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- --- CARD 29 --- -->
+            <div class="card">
+              <!-- CARD PICTURE -->
+              <div class="card__picture">
+                <img src="https://noithatm8.com/wp-content/uploads/2019/09/20181103033516giuong-ngu-boc-nem-dep-1.jpg"
+                  alt="" />
+              </div>
+              <!-- CARD HOVER -->
+              <div class="card__hover">
+                <div class="icon__hover">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+                <div class="link__hover">
+                  <a href="#"><button class="btn__hover">View Product</button></a>
+                </div>
+              </div>
+              <!-- CARD TITLE PRODUCT -->
+              <div class="card__title">
+                <div class="cards__name">
+                  <h4>CLOCKWATCHER</h4>
+                  <p>Handmade</p>
+                </div>
+                <div class="price">
+                  <span>$40.00</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- --- CARD 30 --- -->
+            <div class="card">
+              <!-- CARD PICTURE -->
+              <div class="card__picture">
+                <img src="https://ifurni.vn/upload/product/3_6.jpg" alt="" />
+              </div>
+              <!-- CARD HOVER -->
+              <div class="card__hover">
+                <div class="icon__hover">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+                <div class="link__hover">
+                  <a href="#"><button class="btn__hover">View Product</button></a>
+                </div>
+              </div>
+              <!-- CARD TITLE PRODUCT -->
+              <div class="card__title">
+                <div class="cards__name">
+                  <h4>CLOCKWATCHER</h4>
+                  <p>Handmade</p>
+                </div>
+                <div class="price">
+                  <span>$40.00</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- --- CARD 31 --- -->
+            <div class="card">
+              <!-- CARD PICTURE -->
+              <div class="card__picture">
+                <img
+                  src="https://gotrangtri.vn/wp-content/uploads/2018/10/Tranh-nghe-thuat-dep-treo-tuong-phong-khach-GHS-6432-ava.jpg"
+                  alt="" />
+              </div>
+              <!-- CARD HOVER -->
+              <div class="card__hover">
+                <div class="icon__hover">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+                <div class="link__hover">
+                  <a href="#"><button class="btn__hover">View Product</button></a>
+                </div>
+              </div>
+              <!-- CARD TITLE PRODUCT -->
+              <div class="card__title">
+                <div class="cards__name">
+                  <h4>CLOCKWATCHER</h4>
+                  <p>Handmade</p>
+                </div>
+                <div class="price">
+                  <span>$40.00</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- --- CARD 32 --- -->
+            <div class="card">
+              <!-- CARD PICTURE -->
+              <div class="card__picture">
+                <img
+                  src="https://tueminhdecor.com/wp-content/uploads/2023/03/thac-nuoc-phong-thuy-vien-son-luu-thuy-5.jpg"
+                  alt="" />
+              </div>
+              <!-- CARD HOVER -->
+              <div class="card__hover">
+                <div class="icon__hover">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+                <div class="link__hover">
+                  <a href="#"><button class="btn__hover">View Product</button></a>
+                </div>
+              </div>
+              <!-- CARD TITLE PRODUCT -->
+              <div class="card__title">
+                <div class="cards__name">
+                  <h4>CLOCKWATCHER</h4>
+                  <p>Handmade</p>
+                </div>
+                <div class="price">
+                  <span>$40.00</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- --- CARD 33 --- -->
+            <div class="card">
+              <!-- CARD PICTURE -->
+              <div class="card__picture">
+                <img
+                  src="https://d1iew515e5ccn3.cloudfront.net/hoanhaodecor/uploads/2022/11/binh-lo-cam-hoa-gom-su-cao-cap-01-02.png"
+                  alt="" />
+              </div>
+              <!-- CARD HOVER -->
+              <div class="card__hover">
+                <div class="icon__hover">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+                <div class="link__hover">
+                  <a href="#"><button class="btn__hover">View Product</button></a>
+                </div>
+              </div>
+              <!-- CARD TITLE PRODUCT -->
+              <div class="card__title">
+                <div class="cards__name">
+                  <h4>CLOCKWATCHER</h4>
+                  <p>Handmade</p>
+                </div>
+                <div class="price">
+                  <span>$40.00</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- --- CARD 34 --- -->
+            <div class="card">
+              <!-- CARD PICTURE -->
+              <div class="card__picture">
+                <img
+                  src="https://xuatnhapkhautheoyeucau.com/wp-content/uploads/2022/05/O1CN01qh8qgq230u30DzoQ2_750207194.jpg_400x400.jpg"
+                  alt="" />
+              </div>
+              <!-- CARD HOVER -->
+              <div class="card__hover">
+                <div class="icon__hover">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+                <div class="link__hover">
+                  <a href="#"><button class="btn__hover">View Product</button></a>
+                </div>
+              </div>
+              <!-- CARD TITLE PRODUCT -->
+              <div class="card__title">
+                <div class="cards__name">
+                  <h4>CLOCKWATCHER</h4>
+                  <p>Handmade</p>
+                </div>
+                <div class="price">
+                  <span>$40.00</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- --- CARD 35 --- -->
+            <div class="card">
+              <!-- CARD PICTURE -->
+              <div class="card__picture">
+                <img src="https://noithatluongson.vn/wp-content/uploads/2022/02/tu-quan-ao-mau-xam-18-min.png" alt="" />
+              </div>
+              <!-- CARD HOVER -->
+              <div class="card__hover">
+                <div class="icon__hover">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+                <div class="link__hover">
+                  <a href="#"><button class="btn__hover">View Product</button></a>
+                </div>
+              </div>
+              <!-- CARD TITLE PRODUCT -->
+              <div class="card__title">
+                <div class="cards__name">
+                  <h4>CLOCKWATCHER</h4>
+                  <p>Handmade</p>
+                </div>
+                <div class="price">
+                  <span>$40.00</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- --- CARD 36 --- -->
+            <div class="card">
+              <!-- CARD PICTURE -->
+              <div class="card__picture">
+                <img
+                  src="https://phongkhachdep.org/wp-content/uploads/2020/12/Bo%CC%A3%CC%82-Ba%CC%80n-A%CC%86n-Tro%CC%80n-Sang-Tro%CC%A3ng-.jpg"
+                  alt="" />
+              </div>
+              <!-- CARD HOVER -->
+              <div class="card__hover">
+                <div class="icon__hover">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+                <div class="link__hover">
+                  <a href="#"><button class="btn__hover">View Product</button></a>
+                </div>
+              </div>
+              <!-- CARD TITLE PRODUCT -->
+              <div class="card__title">
+                <div class="cards__name">
+                  <h4>CLOCKWATCHER</h4>
+                  <p>Handmade</p>
+                </div>
+                <div class="price">
+                  <span>$40.00</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- --- CARD 37 --- -->
+            <div class="card">
+              <!-- CARD PICTURE -->
+              <div class="card__picture">
+                <img
+                  src="https://vuongquocnoithat.vn/images/2022/05/27/0-uu-diem-cua-nhung-mau-ban-trang-diem-sang-chanh-2.png"
+                  alt="" />
+              </div>
+              <!-- CARD HOVER -->
+              <div class="card__hover">
+                <div class="icon__hover">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+                <div class="link__hover">
+                  <a href="#"><button class="btn__hover">View Product</button></a>
+                </div>
+              </div>
+              <!-- CARD TITLE PRODUCT -->
+              <div class="card__title">
+                <div class="cards__name">
+                  <h4>CLOCKWATCHER</h4>
+                  <p>Handmade</p>
+                </div>
+                <div class="price">
+                  <span>$40.00</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- --- CARD 38 --- -->
+            <div class="card">
+              <!-- CARD PICTURE -->
+              <div class="card__picture">
+                <img src="https://smlife.vn/wp-content/uploads/2021/08/Ban-lam-viec-ban-hoc-go-hien-dai-Doron-1.jpg"
+                  alt="" />
+              </div>
+              <!-- CARD HOVER -->
+              <div class="card__hover">
+                <div class="icon__hover">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+                <div class="link__hover">
+                  <a href="#"><button class="btn__hover">View Product</button></a>
+                </div>
+              </div>
+              <!-- CARD TITLE PRODUCT -->
+              <div class="card__title">
+                <div class="cards__name">
+                  <h4>CLOCKWATCHER</h4>
+                  <p>Handmade</p>
+                </div>
+                <div class="price">
+                  <span>$40.00</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- --- CARD 39 --- -->
+            <div class="card">
+              <!-- CARD PICTURE -->
+              <div class="card__picture">
+                <img src="https://salt.tikicdn.com/ts/tmp/70/47/5d/573d92654b46e092d45aceab771087b2.jpg" alt="" />
+              </div>
+              <!-- CARD HOVER -->
+              <div class="card__hover">
+                <div class="icon__hover">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+                <div class="link__hover">
+                  <a href="#"><button class="btn__hover">View Product</button></a>
+                </div>
+              </div>
+              <!-- CARD TITLE PRODUCT -->
+              <div class="card__title">
+                <div class="cards__name">
+                  <h4>CLOCKWATCHER</h4>
+                  <p>Handmade</p>
+                </div>
+                <div class="price">
+                  <span>$40.00</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- --- CARD 40 --- -->
+            <div class="card">
+              <!-- CARD PICTURE -->
+              <div class="card__picture">
+                <img src="https://bizweb.dktcdn.net/100/320/001/products/16498408684-1213119906.jpg?v=1622531476210"
+                  alt="" />
+              </div>
+              <!-- CARD HOVER -->
+              <div class="card__hover">
+                <div class="icon__hover">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+                <div class="link__hover">
+                  <a href="#"><button class="btn__hover">View Product</button></a>
+                </div>
+              </div>
+              <!-- CARD TITLE PRODUCT -->
+              <div class="card__title">
+                <div class="cards__name">
+                  <h4>CLOCKWATCHER</h4>
+                  <p>Handmade</p>
+                </div>
+                <div class="price">
+                  <span>$40.00</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- --- CARD 41 --- -->
+            <div class="card">
+              <!-- CARD PICTURE -->
+              <div class="card__picture">
+                <img src="https://ladora.com.vn/wp-content/uploads/2019/05/trang-tri-phong-khach-2.jpg" alt="" />
+              </div>
+              <!-- CARD HOVER -->
+              <div class="card__hover">
+                <div class="icon__hover">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+                <div class="link__hover">
+                  <a href="#"><button class="btn__hover">View Product</button></a>
+                </div>
+              </div>
+              <!-- CARD TITLE PRODUCT -->
+              <div class="card__title">
+                <div class="cards__name">
+                  <h4>CLOCKWATCHER</h4>
+                  <p>Handmade</p>
+                </div>
+                <div class="price">
+                  <span>$40.00</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- --- CARD 42 --- -->
+            <div class="card">
+              <!-- CARD PICTURE -->
+              <div class="card__picture">
+                <img src="https://hoakima.vn/wp-content/uploads/2018/07/O1CN01BOCcXV1oJTd6fpcba_733735204.jpg" alt="" />
+              </div>
+              <!-- CARD HOVER -->
+              <div class="card__hover">
+                <div class="icon__hover">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+                <div class="link__hover">
+                  <a href="#"><button class="btn__hover">View Product</button></a>
+                </div>
+              </div>
+              <!-- CARD TITLE PRODUCT -->
+              <div class="card__title">
+                <div class="cards__name">
+                  <h4>CLOCKWATCHER</h4>
+                  <p>Handmade</p>
+                </div>
+                <div class="price">
+                  <span>$40.00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- ===== CARDS ESSENTIAL END ===== -->
+
+        <!-- ===== BANNER  ===== -->
+        <section class="section__banner">
+          <!-- --- BANNER PICTURE --- -->
+          <div class="banner__picture">
+            <img
+              src="https://github.com/Mateo-codeMaxi/Ecomerce-Furniture.github.io/blob/main/TEMPLATE%20-%20FURNITURE%20STORE/img/particle-2.png?raw=true"
+              alt="" class="banner__particle-2" />
+            <img
+              src="https://raw.githubusercontent.com/dophambichtram/BichTram-MindXC4E/bc3e2650327fcf96084e05f141aa9897464576f9/SOFA-VANG-MA-121.png"
+              alt="" class="banner__cabinet" />
+          </div>
+          <!-- --- BANNER INFO --- -->
+          <div class="banner__title">
+            <h2>CABINET</h2>
+            <span>%175.00</span>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-              impedit quisquam.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus,
+              unde neque obcaecati illum nesciunt.
             </p>
             <a href="#"><button class="btn__slide">Read More</button></a>
           </div>
-          <!-- PICTURE SLIDE -->
-          <div class="picture__slide-2">
-            <img class="particle-1" src="" alt="" />
-            <img src="" alt="" />
-          </div>
-        </div>
-      </div>
-      <!-- --- BUTTONS SWIPER --- -->
-      <div class="swiper-button-next" style="color: #000"></div>
-      <div class="swiper-button-prev" style="color: #000"></div>
-      <div class="swiper-pagination"></div>
-    </div>
-  </nav>
-  <!-- ===== NAV END ===== -->
+        </section>
+        <!-- ===== BANNER END ===== -->
 
-  <!-- ===== SWIPER  ===== -->
-  <div class="swiper mySwiper">
-    <div class="swiper-wrapper">
-      <!-- --- SWIPER-SLIDE 1 --- -->
-      <div data-hash="slide1" class="swiper-slide">
-        <div class="title__slide">
-          <span>MHT</span>
-          <h1>MADE WITH LOVE</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-            impedit quisquam.
-          </p>
-          <a href="#"><button class="btn__slide">Read More</button></a>
-        </div>
-      </section>
-      <!-- ===== BANNER END ===== -->
-
-      <!-- ===== BRANDS  ===== -->
-      <section class="section__brands">
-        <img
-          src="https://github.com/Mateo-codeMaxi/Ecomerce-Furniture.github.io/blob/main/TEMPLATE%20-%20FURNITURE%20STORE/img/brand-1.png?raw=true"
-          alt=""
-        />
-        <img
-          src="https://github.com/Mateo-codeMaxi/Ecomerce-Furniture.github.io/blob/main/TEMPLATE%20-%20FURNITURE%20STORE/img/brand-2.png?raw=true"
-          alt=""
-        />
-        <img
-          src="https://github.com/Mateo-codeMaxi/Ecomerce-Furniture.github.io/blob/main/TEMPLATE%20-%20FURNITURE%20STORE/img/brand-3.png?raw=true"
-          alt=""
-        />
-        <img
-          src="https://github.com/Mateo-codeMaxi/Ecomerce-Furniture.github.io/blob/main/TEMPLATE%20-%20FURNITURE%20STORE/img/brand-4.png?raw=true"
-          alt=""
-        />
-        <img
-          src="https://github.com/Mateo-codeMaxi/Ecomerce-Furniture.github.io/blob/main/TEMPLATE%20-%20FURNITURE%20STORE/img/brand-5.png?raw=true"
-          alt=""
-        />
-      </section>
-      <!-- ===== BRANDS END  ===== -->
-
-      <!-- ===== CARDS  ===== -->
-      <section class="section__cards contain" id="features">
-        <!-- ---
-            # TITLE SECTIONS
-            --- -->
-        <div class="title__section">
-          <span>Summer Collection</span>
-          <h2>FEATURES ELEMENTS</h2>
-        </div>
-
-        <div class="container__cards">
-          <!-- --- CARD 9 --- -->
-          <div class="card card__features">
-            <!-- CARD PICTURE -->
-            <img
-              src="https://github.com/Mateo-codeMaxi/Ecomerce-Furniture.github.io/blob/main/TEMPLATE%20-%20FURNITURE%20STORE/img/cards-9.jpg?raw=true"
-              alt=""
-            />
-            <!-- CARD HOVER -->
-            <div class="card__hover card__hover--features">
-              <div class="icon__hover">
-                <i class="fa-solid fa-heart"></i>
-                <i class="fa-regular fa-eye"></i>
-              </div>
-              <div class="link__hover">
-                <a href="#"><button class="btn__hover">Add To Cart</button></a>
-              </div>
-            </div>
-            <!-- CARD TITLE PRODUCT -->
-            <div class="card__title card__title--features">
-              <div class="cards__name">
-                <h4>COMFY CHAIR</h4>
-                <p>Handmade</p>
-              </div>
-              <div class="price">
-                <span>$40.00</span>
-              </div>
-            </div>
-          </div>
-          <!-- --- CARD 10 --- -->
-          <div class="card card__features">
-            <!-- CARD PICTURE -->
-            <img
-              src="https://github.com/Mateo-codeMaxi/Ecomerce-Furniture.github.io/blob/main/TEMPLATE%20-%20FURNITURE%20STORE/img/cards-10.jpg?raw=true"
-              alt=""
-            />
-            <!-- CARD HOVER -->
-            <div class="card__hover card__hover--features">
-              <div class="icon__hover">
-                <i class="fa-solid fa-heart"></i>
-                <i class="fa-regular fa-eye"></i>
-              </div>
-              <div class="link__hover">
-                <a href="#"><button class="btn__hover">Add To Cart</button></a>
-              </div>
-            </div>
-            <!-- CARD TITLE PRODUCT -->
-            <div class="card__title card__title--features">
-              <div class="cards__name">
-                <h4>COMFY CHAIR</h4>
-                <p>Handmade</p>
-              </div>
-              <div class="price">
-                <span>$40.00</span>
-              </div>
-            </div>
-          </div>
-          <!-- --- CARD 11 --- -->
-          <div class="card card__features">
-            <!-- CARD PICTURE -->
-            <img
-              src="https://github.com/Mateo-codeMaxi/Ecomerce-Furniture.github.io/blob/main/TEMPLATE%20-%20FURNITURE%20STORE/img/cards-11.jpg?raw=true"
-              alt=""
-            />
-            <!-- CARD HOVER -->
-            <div class="card__hover card__hover--features">
-              <div class="icon__hover">
-                <i class="fa-solid fa-heart"></i>
-                <i class="fa-regular fa-eye"></i>
-              </div>
-              <div class="link__hover">
-                <a href="#"><button class="btn__hover">Add To Cart</button></a>
-              </div>
-            </div>
-            <!-- CARD TITLE PRODUCT -->
-            <div class="card__title card__title--features">
-              <div class="cards__name">
-                <h4>COMFY CHAIR</h4>
-                <p>Handmade</p>
-              </div>
-              <div class="price">
-                <span>$40.00</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- ===== CARDS END  ===== -->
-
-      <!-- ===== ELEMENTS   ===== -->
-      <section class="section__elements" id="store">
-        <!-- ICON ELEMENTS 1 -->
-        <div class="elements">
+        <!-- ===== BRANDS  ===== -->
+        <section class="section__brands">
           <img
-            src="https://github.com/Mateo-codeMaxi/Ecomerce-Furniture.github.io/blob/main/TEMPLATE%20-%20FURNITURE%20STORE/img/icon-1.png?raw=true"
-            alt=""
-          />
-          <div class="elements__title">
-            <h3>24H SERVICE</h3>
-            <a href="#">More Info</a>
-          </div>
-        </div>
-        <!-- ICON ELEMENTS 2 -->
-        <div class="elements">
-          <img
-            src="https://github.com/Mateo-codeMaxi/Ecomerce-Furniture.github.io/blob/main/TEMPLATE%20-%20FURNITURE%20STORE/img/icon-2.png?raw=true"
-            alt=""
-          />
-          <div class="elements__title">
-            <h3>FREE RETURNS</h3>
-            <a href="#">More Info</a>
-          </div>
-        </div>
-        <!-- ICON ELEMENTS 3 -->
-        <div class="elements">
-          <img
-            src="https://github.com/Mateo-codeMaxi/Ecomerce-Furniture.github.io/blob/main/TEMPLATE%20-%20FURNITURE%20STORE/img/icon-3.png?raw=true"
-            alt=""
-          />
-          <div class="elements__title">
-            <h3>ORDER TRACKING</h3>
-            <a href="#">More Info</a>
-          </div>
-        </div>
-        <!-- ICON ELEMENTS 4 -->
-        <div class="elements">
-          <img
-            src="https://github.com/Mateo-codeMaxi/Ecomerce-Furniture.github.io/blob/main/TEMPLATE%20-%20FURNITURE%20STORE/img/icon-4.png?raw=true"
-            alt=""
-          />
-          <div class="elements__title">
-            <h3>FAST DELIVERY</h3>
-            <a href="#">More Info</a>
-          </div>
-        </div>
-      </section>
-      <!-- ===== ELEMENTS END  ===== -->
-
-      <!-- ===== PICTURES SOCIAL  ===== -->
-      <section class="section__picture">
-        <!-- PICTURE SOCIAL 1 -->
-        <div class="picture__social">
-          <img
-            src="https://github.com/Mateo-codeMaxi/Ecomerce-Furniture.github.io/blob/main/TEMPLATE%20-%20FURNITURE%20STORE/img/picture-social--1.jpg?raw=true"
-            alt=""
-          />
-          <div class="picture__hover">
-            <i class="fa-brands fa-instagram"></i>
-          </div>
-        </div>
-        <!-- PICTURE SOCIAL 2 -->
-        <div class="picture__social">
-          <img
-            src="https://github.com/Mateo-codeMaxi/Ecomerce-Furniture.github.io/blob/main/TEMPLATE%20-%20FURNITURE%20STORE/img/picture-social--2.jpg?raw=true"
-            alt=""
-          />
-          <div class="picture__hover">
-            <i class="fa-brands fa-instagram"></i>
-          </div>
-        </div>
-        <!-- PICTURE SOCIAL 3 -->
-        <div class="picture__social">
-          <img
-            src="https://github.com/Mateo-codeMaxi/Ecomerce-Furniture.github.io/blob/main/TEMPLATE%20-%20FURNITURE%20STORE/img/picture-social--3.jpg?raw=true"
-            alt=""
-          />
-          <div class="picture__hover">
-            <i class="fa-brands fa-instagram"></i>
-          </div>
-        </div>
-        <!-- PICTURE SOCIAL 4 -->
-        <div class="picture__social">
-          <img
-            src="https://github.com/Mateo-codeMaxi/Ecomerce-Furniture.github.io/blob/main/TEMPLATE%20-%20FURNITURE%20STORE/img/picture-social--4.jpg?raw=true"
-            alt=""
-          />
-          <div class="picture__hover">
-            <i class="fa-brands fa-instagram"></i>
-          </div>
-        </div>
-        <!-- PICTURE SOCIAL 5 -->
-        <div class="picture__social">
-          <img
-            src="https://github.com/Mateo-codeMaxi/Ecomerce-Furniture.github.io/blob/main/TEMPLATE%20-%20FURNITURE%20STORE/img/picture-social--5.jpg?raw=true"
-            alt=""
-          />
-          <div class="picture__hover">
-            <i class="fa-brands fa-instagram"></i>
-          </div>
-        </div>
-        <!-- PICTURE SOCIAL 6 -->
-        <div class="picture__social">
-          <img
-            src="https://github.com/Mateo-codeMaxi/Ecomerce-Furniture.github.io/blob/main/TEMPLATE%20-%20FURNITURE%20STORE/img/picture-social--6.jpg?raw=true"
-            alt=""
-          />
-          <div class="picture__hover">
-            <i class="fa-brands fa-instagram"></i>
-          </div>
-        </div>
-      </section>
-      <!-- ===== PICTURES SOCIAL END  ===== -->
-    </main>
-
-    <footer class="bg-gray-900 text-white">
-      <div class="container mx-auto p-8">
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-10">
-          <div>
-            <a href="#" class="text-2xl font-bold mb-4 block">MHT</a>
-            <ul class="space-y-4">
-              <li class="flex items-center space-x-2">
-                <ion-icon name="location-sharp" aria-hidden="true"></ion-icon>
-                <address>MHT, HoChiMinh, VietNam 2023</address>
-              </li>
-              <li class="flex items-center space-x-2">
-                <ion-icon name="call-sharp" aria-hidden="true"></ion-icon>
-                <a href="tel:+1234567890">+1234567890</a>
-              </li>
-              <li class="flex space-x-8 mt-8">
-                <a href="#">
-                  <ion-icon name="logo-facebook"></ion-icon>
-                </a>
-                <a href="#">
-                  <ion-icon name="logo-twitter"></ion-icon>
-                </a>
-                <a href="#">
-                  <ion-icon name="logo-tumblr"></ion-icon>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <ul class="space-y-4">
-            <li><p class="text-lg font-medium mb-4">Công ty</p></li>
-            <li>
-              <a href="#" class="hover:text-yellow-500 py-1">Trang chủ</a>
-            </li>
-            <li>
-              <a href="#" class="hover:text-yellow-500 py-1">Về chúng tôi</a>
-            </li>
-            <li><a href="#" class="hover:text-yellow-500 py-1">Cửa hàng</a></li>
-            <li><a href="#" class="hover:text-yellow-500 py-1">Liên hệ</a></li>
-          </ul>
-          <ul class="space-y-4">
-            <li><p class="text-lg font-medium mb-4">Thông tin</p></li>
-            <li>
-              <a href="#" class="hover:text-yellow-500 py-1"
-                >Điều khoản và điều kiện</a
-              >
-            </li>
-            <li>
-              <a href="#" class="hover:text-yellow-500 py-1">Hướng dẫn mẫu</a>
-            </li>
-            <li>
-              <a href="#" class="hover:text-yellow-500 py-1"
-                >Nhật ký thay đổi</a
-              >
-            </li>
-            <li>
-              <a href="#" class="hover:text-yellow-500 py-1">Giấy phép</a>
-            </li>
-          </ul>
-          <div>
-            <p class="text-lg font-medium mb-4">Newsletter</p>
-            <form action="" class="relative mb-4">
-              <input
-                type="email"
-                name="email_address"
-                placeholder="Your email address"
-                required
-                class="border-b-2 focus:border-yellow-500 px-3 py-2 w-full pr-10"
-              />
-              <button
-                type="submit"
-                class="absolute top-2.5 right-2.5 text-gray-500"
-              >
-                <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-              </button>
-            </form>
-            <div class="flex space-x-8">
-              <a href="#" class="hover:text-yellow-500">Term & Condition</a>
-              <a href="#" class="hover:text-yellow-500">Policy</a>
-              <a href="#" class="hover:text-yellow-500">Map</a>
-            </div>
-          </div>
-        </div>
-        <div class="text-center py-5">
-          <p>
-            &copy; 2023 All Rights Reserved by
-            <a href="#" class="underline">C4EGroup2</a>.
-          </p>
-        </div>
-      </div>
-      <!-- --- SWIPER-SLIDE 2 --- -->
-      <div data-hash="slide2" class="swiper-slide">
-        <div class="title__slide">
-          <span>Tailored</span>
-          <h1>CLASSIC INTERIORS</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-            impedit quisquam.
-          </p>
-          <a href="#"><button class="btn__slide">Read More</button></a>
-        </div>
-        <!-- PICTURE SLIDE -->
-        <div class="picture__slide-2">
-          <img class="particle-1" src="" alt="" />
-          <img src="" alt="" />
-        </div>
-      </div>
-    </div>
-    <!-- --- BUTONS SWIPER --- -->
-    <div class="swiper-button-next" style="color: #000"></div>
-    <div class="swiper-button-prev" style="color: #000"></div>
-    <div class="swiper-pagination"></div>
-  </div>
-  <!-- ===== SWIPER END  ===== -->
-
-  <!-- ===== ITEMS ===== -->
-  <div class="container__items">
-    <!-- --- ITEMS 1 --- -->
-    <div class="items">
-      <img src="https://bizweb.dktcdn.net/100/153/764/products/ke-tivi-2t.jpg?v=1607165572710" alt="" />
-      <div class="title__items">
-        <h3>Online store</h3>
-        <a href="#"><button class="btn__items">Shop Now</button></a>
-      </div>
-    </div>
-    <!-- --- ITEMS 2 --- -->
-    <div class="items">
-      <img src="https://noithattana.vn/wp-content/uploads/2020/04/N31-D.jpg" alt="" />
-      <div class="title__items">
-        <h3>ACCSESSORISE</h3>
-        <a href="#"><button class="btn__items">Shop Now</button></a>
-      </div>
-    </div>
-    <!-- --- ITEMS 3 --- -->
-    <div class="items">
-      <img src="https://bepabig.com/wp-content/uploads/Thiet-ke-chua-co-ten-1-5.png" alt="" />
-      <div class="title__items">
-        <h3>NEW ITEMS</h3>
-        <a href="#"><button class="btn__items">Shop Now</button></a>
-      </div>
-    </div>
-    <!-- --- ITEMS 4 --- -->
-    <div class="items">
-      <img
-        src="https://product.hstatic.net/200000324557/product/o1cn012shjj81xkduesbr9e___4217972962-0-cib_d520b43a02894658a71a45a789b47e0c_master.jpg"
-        alt="" />
-      <div class="title__items">
-        <h3>NEW ITEMS</h3>
-        <a href="#"><button class="btn__items">Shop Now</button></a>
-      </div>
-    </div>
-  </div>
-  <!-- ===== ITEMS END ===== -->
-
-  <main>
-    <!-- ===== CARDS ESSENTIAL ===== -->
-    <section class="section__cards contain" id="collection">
-      <!-- ---
-            # TITLE SECTIONS
-            --- -->
-      <div class="title__section">
-        <span>Latest Collection</span>
-        <h2>ESSENTIAL ITEMS</h2>
-      </div>
-
-      <div class="container__cards">
-        <!-- --- CARD 1 --- -->
-        <div class="card">
-          <!-- CARD PICTURE -->
-          <div class="card__picture">
-            <img src="https://www.target.com.au/medias/static_content/product/images/large/85/83/A1788583.jpg" alt="" />
-          </div>
-          <!-- CARD HOVER -->
-          <div class="card__hover">
-            <div class="icon__hover">
-              <i class="fa-solid fa-heart"></i>
-              <i class="fa-regular fa-eye"></i>
-            </div>
-            <div class="link__hover">
-              <a href="#"><button class="btn__hover">View Product</button></a>
-            </div>
-          </div>
-          <!-- CARD TITLE PRODUCT -->
-          <div class="card__title">
-            <div class="cards__name">
-              <h4>COMFY CHAIR</h4>
-              <p>Handmade</p>
-            </div>
-            <div class="price">
-              <span>$40.00</span>
-            </div>
-          </div>
-        </div>
-        <!-- --- CARD 2 --- -->
-        <div class="card">
-          <!-- CARD PICTURE -->
-          <div class="card__picture">
-            <img src="https://decordi.vn/wp-content/uploads/2021/08/den-am-tran.jpg" alt="" />
-          </div>
-          <!-- CARD HOVER -->
-          <div class="card__hover">
-            <div class="icon__hover">
-              <i class="fa-solid fa-heart"></i>
-              <i class="fa-regular fa-eye"></i>
-            </div>
-            <div class="link__hover">
-              <a href="#"><button class="btn__hover">View Product</button></a>
-            </div>
-          </div>
-          <!-- CARD TITLE PRODUCT -->
-          <div class="card__title">
-            <div class="cards__name">
-              <h4>LIGHTS</h4>
-              <p>Handmade</p>
-            </div>
-            <div class="price">
-              <span>$40.00</span>
-            </div>
-          </div>
-        </div>
-        <!-- --- CARD 3 --- -->
-        <div class="card">
-          <!-- CARD PICTURE -->
-          <div class="card__picture">
-            <img src="https://dehome.vn/upload_images/images/G%C6%B0%C6%A1ng-soi-to%C3%A0n-th%C3%A2n-Dehome.jpg"
-              alt="" />
-          </div>
-          <!-- CARD HOVER -->
-          <div class="card__hover">
-            <div class="icon__hover">
-              <i class="fa-solid fa-heart"></i>
-              <i class="fa-regular fa-eye"></i>
-            </div>
-            <div class="link__hover">
-              <a href="#"><button class="btn__hover">View Product</button></a>
-            </div>
-          </div>
-          <!-- CARD TITLE PRODUCT -->
-          <div class="card__title">
-            <div class="cards__name">
-              <h4>DECORACTIVE MIRROR</h4>
-              <p>Handmade</p>
-            </div>
-            <div class="price">
-              <span>$40.00</span>
-            </div>
-          </div>
-        </div>
-        <!-- --- CARD 4 --- -->
-        <div class="card">
-          <!-- CARD PICTURE -->
-          <div class="card__picture">
-            <img
-              src="https://bizweb.dktcdn.net/thumb/1024x1024/100/441/307/products/71c6bffa-5d0e-44b0-9804-b0b2a725e61c.jpg?v=1647691087540"
-              alt="" />
-          </div>
-          <!-- CARD HOVER -->
-          <div class="card__hover">
-            <div class="icon__hover">
-              <i class="fa-solid fa-heart"></i>
-              <i class="fa-regular fa-eye"></i>
-            </div>
-            <div class="link__hover">
-              <a href="#"><button class="btn__hover">View Product</button></a>
-            </div>
-          </div>
-          <!-- CARD TITLE PRODUCT -->
-          <div class="card__title">
-            <div class="cards__name">
-              <h4>LEATHER BED</h4>
-              <p>Handmade</p>
-            </div>
-            <div class="price">
-              <span>$40.00</span>
-            </div>
-          </div>
-        </div>
-        <!-- --- CARD 5 --- -->
-        <div class="card">
-          <!-- CARD PICTURE -->
-          <div class="card__picture">
-            <img src="https://bizweb.dktcdn.net/100/153/764/products/ban-ghe-an-gia-re-61t.jpg?v=1576732949677"
-              alt="" />
-          </div>
-          <!-- CARD HOVER -->
-          <div class="card__hover">
-            <div class="icon__hover">
-              <i class="fa-solid fa-heart"></i>
-              <i class="fa-regular fa-eye"></i>
-            </div>
-            <div class="link__hover">
-              <a href="#"><button class="btn__hover">View Product</button></a>
-            </div>
-          </div>
-          <!-- CARD TITLE PRODUCT -->
-          <div class="card__title">
-            <div class="cards__name">
-              <h4>DINING TABLE</h4>
-              <p>Handmade</p>
-            </div>
-            <div class="price">
-              <span>$40.00</span>
-            </div>
-          </div>
-        </div>
-        <!-- --- CARD 6 --- -->
-        <div class="card">
-          <!-- CARD PICTURE -->
-          <div class="card__picture">
-            <img src="https://down-vn.img.susercontent.com/file/866ea477093b3a2a1732fe7bfc5e9769" alt="" />
-          </div>
-          <!-- CARD HOVER -->
-          <div class="card__hover">
-            <div class="icon__hover">
-              <i class="fa-solid fa-heart"></i>
-              <i class="fa-regular fa-eye"></i>
-            </div>
-            <div class="link__hover">
-              <a href="#"><button class="btn__hover">View Product</button></a>
-            </div>
-          </div>
-          <!-- CARD TITLE PRODUCT -->
-          <div class="card__title">
-            <div class="cards__name">
-              <h4>LAMP</h4>
-              <p>Handmade</p>
-            </div>
-            <div class="price">
-              <span>$40.00</span>
-            </div>
-          </div>
-        </div>
-        <!-- --- CARD 7 --- -->
-        <div class="card">
-          <!-- CARD PICTURE -->
-          <div class="card__picture">
-            <img src="https://everon.com/upload_images/images/2021/11/24/giuong-ngu-boc-da-11.jpg" alt="" />
-          </div>
-          <!-- CARD HOVER -->
-          <div class="card__hover">
-            <div class="icon__hover">
-              <i class="fa-solid fa-heart"></i>
-              <i class="fa-regular fa-eye"></i>
-            </div>
-            <div class="link__hover">
-              <a href="#"><button class="btn__hover">View Product</button></a>
-            </div>
-          </div>
-          <!-- CARD TITLE PRODUCT -->
-          <div class="card__title">
-            <div class="cards__name">
-              <h4>LEATHER BED</h4>
-              <p>Handmade</p>
-            </div>
-            <div class="price">
-              <span>$40.00</span>
-            </div>
-          </div>
-        </div>
-        <!-- --- CARD 8 --- -->
-        <div class="card">
-          <!-- CARD PICTURE -->
-          <div class="card__picture">
-            <img src="https://ironstyle.vn/uploads/product/VgXl_vien%20sat%20vang%20mat%20den%202.jpg" alt="" />
-          </div>
-          <!-- CARD HOVER -->
-          <div class="card__hover">
-            <div class="icon__hover">
-              <i class="fa-solid fa-heart"></i>
-              <i class="fa-regular fa-eye"></i>
-            </div>
-            <div class="link__hover">
-              <a href="#"><button class="btn__hover">View Product</button></a>
-            </div>
-          </div>
-          <!-- CARD TITLE PRODUCT -->
-          <div class="card__title">
-            <div class="cards__name">
-              <h4>CLOCKWATCHER</h4>
-              <p>Handmade</p>
-            </div>
-            <div class="price">
-              <span>$40.00</span>
-            </div>
-          </div>
-        </div>
-       <!-- --- CARD 9 --- -->
-        <div class="card">
-          <!-- CARD PICTURE -->
-          <div class="card__picture">
-            <img src="https://noithatm8.com/wp-content/uploads/ban-lam-viec-go-ma-titan-cao-cap-4.jpg" alt="" />
-          </div>
-          <!-- CARD HOVER -->
-          <div class="card__hover">
-            <div class="icon__hover">
-              <i class="fa-solid fa-heart"></i>
-              <i class="fa-regular fa-eye"></i>
-            </div>
-            <div class="link__hover">
-              <a href="#"><button class="btn__hover">View Product</button></a>
-            </div>
-          </div>
-          <!-- CARD TITLE PRODUCT -->
-          <div class="card__title">
-            <div class="cards__name">
-              <h4>CLOCKWATCHER</h4>
-              <p>Handmade</p>
-            </div>
-            <div class="price">
-              <span>$40.00</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- --- CARD 10 --- -->
-        <div class="card">
-          <!-- CARD PICTURE -->
-          <div class="card__picture">
-            <img src="https://dogiadunggo.com/wp-content/uploads/2022/09/tu-giay-dep-go-soi-2-1.jpg" alt="" />
-          </div>
-          <!-- CARD HOVER -->
-          <div class="card__hover">
-            <div class="icon__hover">
-              <i class="fa-solid fa-heart"></i>
-              <i class="fa-regular fa-eye"></i>
-            </div>
-            <div class="link__hover">
-              <a href="#"><button class="btn__hover">View Product</button></a>
-            </div>
-          </div>
-          <!-- CARD TITLE PRODUCT -->
-          <div class="card__title">
-            <div class="cards__name">
-              <h4>CLOCKWATCHER</h4>
-              <p>Handmade</p>
-            </div>
-            <div class="price">
-              <span>$40.00</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- --- CARD 11 --- -->
-        <div class="card">
-          <!-- CARD PICTURE -->
-          <div class="card__picture">
-            <img src="https://product.hstatic.net/200000486527/product/img_1593_9fe38d2e664848c9aac591c575c97746_master.jpg" alt="" />
-          </div>
-          <!-- CARD HOVER -->
-          <div class="card__hover">
-            <div class="icon__hover">
-              <i class="fa-solid fa-heart"></i>
-              <i class="fa-regular fa-eye"></i>
-            </div>
-            <div class="link__hover">
-              <a href="#"><button class="btn__hover">View Product</button></a>
-            </div>
-          </div>
-          <!-- CARD TITLE PRODUCT -->
-          <div class="card__title">
-            <div class="cards__name">
-              <h4>CLOCKWATCHER</h4>
-              <p>Handmade</p>
-            </div>
-            <div class="price">
-              <span>$40.00</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- --- CARD 12 --- -->
-        <div class="card">
-          <!-- CARD PICTURE -->
-          <div class="card__picture">
-            <img src="https://bachma.vn/wp-content/uploads/2021/10/ke-sach-1m5.jpg" alt="" />
-          </div>
-          <!-- CARD HOVER -->
-          <div class="card__hover">
-            <div class="icon__hover">
-              <i class="fa-solid fa-heart"></i>
-              <i class="fa-regular fa-eye"></i>
-            </div>
-            <div class="link__hover">
-              <a href="#"><button class="btn__hover">View Product</button></a>
-            </div>
-          </div>
-          <!-- CARD TITLE PRODUCT -->
-          <div class="card__title">
-            <div class="cards__name">
-              <h4>CLOCKWATCHER</h4>
-              <p>Handmade</p>
-            </div>
-            <div class="price">
-              <span>$40.00</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- --- CARD 13 --- -->
-        <div class="card">
-          <!-- CARD PICTURE -->
-          <div class="card__picture">
-            <img src="https://ghesofa360.vn/wp-content/uploads/2022/03/277675925_114118001240495_4179969127421716240_n.jpg" alt="" />
-          </div>
-          <!-- CARD HOVER -->
-          <div class="card__hover">
-            <div class="icon__hover">
-              <i class="fa-solid fa-heart"></i>
-              <i class="fa-regular fa-eye"></i>
-            </div>
-            <div class="link__hover">
-              <a href="#"><button class="btn__hover">View Product</button></a>
-            </div>
-          </div>
-          <!-- CARD TITLE PRODUCT -->
-          <div class="card__title">
-            <div class="cards__name">
-              <h4>CLOCKWATCHER</h4>
-              <p>Handmade</p>
-            </div>
-            <div class="price">
-              <span>$40.00</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- --- CARD 14 --- -->
-        <div class="card">
-          <!-- CARD PICTURE -->
-          <div class="card__picture">
-            <img src="https://noithatmanhhe.vn/media/23178/tu-bep-am-tuong-noi-that-manh-he.jpg" alt="" />
-          </div>
-          <!-- CARD HOVER -->
-          <div class="card__hover">
-            <div class="icon__hover">
-              <i class="fa-solid fa-heart"></i>
-              <i class="fa-regular fa-eye"></i>
-            </div>
-            <div class="link__hover">
-              <a href="#"><button class="btn__hover">View Product</button></a>
-            </div>
-          </div>
-          <!-- CARD TITLE PRODUCT -->
-          <div class="card__title">
-            <div class="cards__name">
-              <h4>CLOCKWATCHER</h4>
-              <p>Handmade</p>
-            </div>
-            <div class="price">
-              <span>$40.00</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- --- CARD 15 --- -->
-        <div class="card">
-          <!-- CARD PICTURE -->
-          <div class="card__picture">
-            <img src="https://noithatandan.com/wp-content/uploads/2022/03/tu-guong-phong-tam.jpg" alt="" />
-          </div>
-          <!-- CARD HOVER -->
-          <div class="card__hover">
-            <div class="icon__hover">
-              <i class="fa-solid fa-heart"></i>
-              <i class="fa-regular fa-eye"></i>
-            </div>
-            <div class="link__hover">
-              <a href="#"><button class="btn__hover">View Product</button></a>
-            </div>
-          </div>
-          <!-- CARD TITLE PRODUCT -->
-          <div class="card__title">
-            <div class="cards__name">
-              <h4>CLOCKWATCHER</h4>
-              <p>Handmade</p>
-            </div>
-            <div class="price">
-              <span>$40.00</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- --- CARD 16 --- -->
-        <div class="card">
-          <!-- CARD PICTURE -->
-          <div class="card__picture">
-            <img src="https://cdn11.dienmaycholon.vn/filewebdmclnew/public/userupload/files/news/tu-lanh/avatar-kham-pha-cac-mau-tu-lanh-hitachi-4-canh-sang-trong-hien-dai.jpg" alt="" />
-          </div>
-          <!-- CARD HOVER -->
-          <div class="card__hover">
-            <div class="icon__hover">
-              <i class="fa-solid fa-heart"></i>
-              <i class="fa-regular fa-eye"></i>
-            </div>
-            <div class="link__hover">
-              <a href="#"><button class="btn__hover">View Product</button></a>
-            </div>
-          </div>
-          <!-- CARD TITLE PRODUCT -->
-          <div class="card__title">
-            <div class="cards__name">
-              <h4>CLOCKWATCHER</h4>
-              <p>Handmade</p>
-            </div>
-            <div class="price">
-              <span>$40.00</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- --- CARD 17 --- -->
-        <div class="card">
-          <!-- CARD PICTURE -->
-          <div class="card__picture">
-            <img src="https://tranhtreotuong.vn/uploads/images/tranh-cuu-ngu-quan-hoi-sen-vang-doi-xung.jpg" alt="" />
-          </div>
-          <!-- CARD HOVER -->
-          <div class="card__hover">
-            <div class="icon__hover">
-              <i class="fa-solid fa-heart"></i>
-              <i class="fa-regular fa-eye"></i>
-            </div>
-            <div class="link__hover">
-              <a href="#"><button class="btn__hover">View Product</button></a>
-            </div>
-          </div>
-          <!-- CARD TITLE PRODUCT -->
-          <div class="card__title">
-            <div class="cards__name">
-              <h4>CLOCKWATCHER</h4>
-              <p>Handmade</p>
-            </div>
-            <div class="price">
-              <span>$40.00</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- --- CARD 18 --- -->
-        <div class="card">
-          <!-- CARD PICTURE -->
-          <div class="card__picture">
-            <img src="https://phongkhachdep.org/wp-content/uploads/2021/02/Ke%CC%A3%CC%82-Sa%CC%81ch-Decor-Sang-Tro%CC%A3ng-.jpg" alt="" />
-          </div>
-          <!-- CARD HOVER -->
-          <div class="card__hover">
-            <div class="icon__hover">
-              <i class="fa-solid fa-heart"></i>
-              <i class="fa-regular fa-eye"></i>
-            </div>
-            <div class="link__hover">
-              <a href="#"><button class="btn__hover">View Product</button></a>
-            </div>
-          </div>
-          <!-- CARD TITLE PRODUCT -->
-          <div class="card__title">
-            <div class="cards__name">
-              <h4>CLOCKWATCHER</h4>
-              <p>Handmade</p>
-            </div>
-            <div class="price">
-              <span>$40.00</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- --- CARD 19 --- -->
-        <div class="card">
-          <!-- CARD PICTURE -->
-          <div class="card__picture">
-            <img src="https://thegioithamsan.vn/wp-content/uploads/2021/10/3-tham-long-dai-trai-san-phong-khach.jpg" alt="" />
-          </div>
-          <!-- CARD HOVER -->
-          <div class="card__hover">
-            <div class="icon__hover">
-              <i class="fa-solid fa-heart"></i>
-              <i class="fa-regular fa-eye"></i>
-            </div>
-            <div class="link__hover">
-              <a href="#"><button class="btn__hover">View Product</button></a>
-            </div>
-          </div>
-          <!-- CARD TITLE PRODUCT -->
-          <div class="card__title">
-            <div class="cards__name">
-              <h4>CLOCKWATCHER</h4>
-              <p>Handmade</p>
-            </div>
-            <div class="price">
-              <span>$40.00</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- --- CARD 20 --- -->
-        <div class="card">
-          <!-- CARD PICTURE -->
-          <div class="card__picture">
-            <img src="https://denhiendai.vn/img/p/den-ban-trang-tri-gm6021-p1239.JPG" alt="" />
-          </div>
-          <!-- CARD HOVER -->
-          <div class="card__hover">
-            <div class="icon__hover">
-              <i class="fa-solid fa-heart"></i>
-              <i class="fa-regular fa-eye"></i>
-            </div>
-            <div class="link__hover">
-              <a href="#"><button class="btn__hover">View Product</button></a>
-            </div>
-          </div>
-          <!-- CARD TITLE PRODUCT -->
-          <div class="card__title">
-            <div class="cards__name">
-              <h4>CLOCKWATCHER</h4>
-              <p>Handmade</p>
-            </div>
-            <div class="price">
-              <span>$40.00</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- --- CARD 21 --- -->
-        <div class="card">
-          <!-- CARD PICTURE -->
-          <div class="card__picture">
-            <img src="https://i1.wp.com/suminhchau.vn/wp-content/uploads/2018/08/Bo-ban-an-bat-trang-70.jpg?resize=800%2C800&ssl=1" alt="" />
-          </div>
-          <!-- CARD HOVER -->
-          <div class="card__hover">
-            <div class="icon__hover">
-              <i class="fa-solid fa-heart"></i>
-              <i class="fa-regular fa-eye"></i>
-            </div>
-            <div class="link__hover">
-              <a href="#"><button class="btn__hover">View Product</button></a>
-            </div>
-          </div>
-          <!-- CARD TITLE PRODUCT -->
-          <div class="card__title">
-            <div class="cards__name">
-              <h4>CLOCKWATCHER</h4>
-              <p>Handmade</p>
-            </div>
-            <div class="price">
-              <span>$40.00</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- --- CARD 22 --- -->
-        <div class="card">
-          <!-- CARD PICTURE -->
-          <div class="card__picture">
-            <img src="https://capta.vn/wp-content/uploads/2022/08/SL-TS0955_56-86E-bo-ban-tra-doi-mat-da-hien-dai-nhap-khau-700x700.jpg" alt="" />
-          </div>
-          <!-- CARD HOVER -->
-          <div class="card__hover">
-            <div class="icon__hover">
-              <i class="fa-solid fa-heart"></i>
-              <i class="fa-regular fa-eye"></i>
-            </div>
-            <div class="link__hover">
-              <a href="#"><button class="btn__hover">View Product</button></a>
-            </div>
-          </div>
-          <!-- CARD TITLE PRODUCT -->
-          <div class="card__title">
-            <div class="cards__name">
-              <h4>CLOCKWATCHER</h4>
-              <p>Handmade</p>
-            </div>
-            <div class="price">
-              <span>$40.00</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- --- CARD 23 --- -->
-        <div class="card">
-          <!-- CARD PICTURE -->
-          <div class="card__picture">
-            <img src="https://lzd-img-global.slatic.net/g/p/ee3a0e76101f0cbb1a3f12643cae8e4d.jpg_720x720q80.jpg" alt="" />
-          </div>
-          <!-- CARD HOVER -->
-          <div class="card__hover">
-            <div class="icon__hover">
-              <i class="fa-solid fa-heart"></i>
-              <i class="fa-regular fa-eye"></i>
-            </div>
-            <div class="link__hover">
-              <a href="#"><button class="btn__hover">View Product</button></a>
-            </div>
-          </div>
-          <!-- CARD TITLE PRODUCT -->
-          <div class="card__title">
-            <div class="cards__name">
-              <h4>CLOCKWATCHER</h4>
-              <p>Handmade</p>
-            </div>
-            <div class="price">
-              <span>$40.00</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- --- CARD 24 --- -->
-        <div class="card">
-          <!-- CARD PICTURE -->
-          <div class="card__picture">
-            <img src="https://cdn11.dienmaycholon.vn/filewebdmclnew/DMCL21/Picture//Apro/Apro_product_31930/may-loc-nuoc-no_main_3_1020.png.webp" alt="" />
-          </div>
-          <!-- CARD HOVER -->
-          <div class="card__hover">
-            <div class="icon__hover">
-              <i class="fa-solid fa-heart"></i>
-              <i class="fa-regular fa-eye"></i>
-            </div>
-            <div class="link__hover">
-              <a href="#"><button class="btn__hover">View Product</button></a>
-            </div>
-          </div>
-          <!-- CARD TITLE PRODUCT -->
-          <div class="card__title">
-            <div class="cards__name">
-              <h4>CLOCKWATCHER</h4>
-              <p>Handmade</p>
-            </div>
-            <div class="price">
-              <span>$40.00</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- --- CARD 25 --- -->
-        <div class="card">
-          <!-- CARD PICTURE -->
-          <div class="card__picture">
-            <img src="https://www.lg.com/vn/images/may-giat/md07559264/gallery/D-13.jpg" alt="" />
-          </div>
-          <!-- CARD HOVER -->
-          <div class="card__hover">
-            <div class="icon__hover">
-              <i class="fa-solid fa-heart"></i>
-              <i class="fa-regular fa-eye"></i>
-            </div>
-            <div class="link__hover">
-              <a href="#"><button class="btn__hover">View Product</button></a>
-            </div>
-          </div>
-          <!-- CARD TITLE PRODUCT -->
-          <div class="card__title">
-            <div class="cards__name">
-              <h4>CLOCKWATCHER</h4>
-              <p>Handmade</p>
-            </div>
-            <div class="price">
-              <span>$40.00</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- --- CARD 26 --- -->
-        <div class="card">
-          <!-- CARD PICTURE -->
-          <div class="card__picture">
-            <img src="https://quaqueviet.vn/upload/imgproduct/bo-am-tra-gom-su-quaqueviet-123456781.jpg" alt="" />
-          </div>
-          <!-- CARD HOVER -->
-          <div class="card__hover">
-            <div class="icon__hover">
-              <i class="fa-solid fa-heart"></i>
-              <i class="fa-regular fa-eye"></i>
-            </div>
-            <div class="link__hover">
-              <a href="#"><button class="btn__hover">View Product</button></a>
-            </div>
-          </div>
-          <!-- CARD TITLE PRODUCT -->
-          <div class="card__title">
-            <div class="cards__name">
-              <h4>CLOCKWATCHER</h4>
-              <p>Handmade</p>
-            </div>
-            <div class="price">
-              <span>$40.00</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- --- CARD 27 --- -->
-        <div class="card">
-          <!-- CARD PICTURE -->
-          <div class="card__picture">
-            <img src="https://vinafami.net/wp-content/uploads/2022/10/z3808818791242_354a18a3ea7da1f8f6bdbf338abc3373.jpg" alt="" />
-          </div>
-          <!-- CARD HOVER -->
-          <div class="card__hover">
-            <div class="icon__hover">
-              <i class="fa-solid fa-heart"></i>
-              <i class="fa-regular fa-eye"></i>
-            </div>
-            <div class="link__hover">
-              <a href="#"><button class="btn__hover">View Product</button></a>
-            </div>
-          </div>
-          <!-- CARD TITLE PRODUCT -->
-          <div class="card__title">
-            <div class="cards__name">
-              <h4>CLOCKWATCHER</h4>
-              <p>Handmade</p>
-            </div>
-            <div class="price">
-              <span>$40.00</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- --- CARD 28 --- -->
-        <div class="card">
-          <!-- CARD PICTURE -->
-          <div class="card__picture">
-            <img src="https://down-vn.img.susercontent.com/file/d74dd780f68b40edf9681aeebec9a9e6" alt="" />
-          </div>
-          <!-- CARD HOVER -->
-          <div class="card__hover">
-            <div class="icon__hover">
-              <i class="fa-solid fa-heart"></i>
-              <i class="fa-regular fa-eye"></i>
-            </div>
-            <div class="link__hover">
-              <a href="#"><button class="btn__hover">View Product</button></a>
-            </div>
-          </div>
-          <!-- CARD TITLE PRODUCT -->
-          <div class="card__title">
-            <div class="cards__name">
-              <h4>CLOCKWATCHER</h4>
-              <p>Handmade</p>
-            </div>
-            <div class="price">
-              <span>$40.00</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- --- CARD 29 --- -->
-        <div class="card">
-          <!-- CARD PICTURE -->
-          <div class="card__picture">
-            <img src="https://noithatm8.com/wp-content/uploads/2019/09/20181103033516giuong-ngu-boc-nem-dep-1.jpg" alt="" />
-          </div>
-          <!-- CARD HOVER -->
-          <div class="card__hover">
-            <div class="icon__hover">
-              <i class="fa-solid fa-heart"></i>
-              <i class="fa-regular fa-eye"></i>
-            </div>
-            <div class="link__hover">
-              <a href="#"><button class="btn__hover">View Product</button></a>
-            </div>
-          </div>
-          <!-- CARD TITLE PRODUCT -->
-          <div class="card__title">
-            <div class="cards__name">
-              <h4>CLOCKWATCHER</h4>
-              <p>Handmade</p>
-            </div>
-            <div class="price">
-              <span>$40.00</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- --- CARD 30 --- -->
-        <div class="card">
-          <!-- CARD PICTURE -->
-          <div class="card__picture">
-            <img src="https://ifurni.vn/upload/product/3_6.jpg" alt="" />
-          </div>
-          <!-- CARD HOVER -->
-          <div class="card__hover">
-            <div class="icon__hover">
-              <i class="fa-solid fa-heart"></i>
-              <i class="fa-regular fa-eye"></i>
-            </div>
-            <div class="link__hover">
-              <a href="#"><button class="btn__hover">View Product</button></a>
-            </div>
-          </div>
-          <!-- CARD TITLE PRODUCT -->
-          <div class="card__title">
-            <div class="cards__name">
-              <h4>CLOCKWATCHER</h4>
-              <p>Handmade</p>
-            </div>
-            <div class="price">
-              <span>$40.00</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- --- CARD 31 --- -->
-        <div class="card">
-          <!-- CARD PICTURE -->
-          <div class="card__picture">
-            <img src="https://gotrangtri.vn/wp-content/uploads/2018/10/Tranh-nghe-thuat-dep-treo-tuong-phong-khach-GHS-6432-ava.jpg" alt="" />
-          </div>
-          <!-- CARD HOVER -->
-          <div class="card__hover">
-            <div class="icon__hover">
-              <i class="fa-solid fa-heart"></i>
-              <i class="fa-regular fa-eye"></i>
-            </div>
-            <div class="link__hover">
-              <a href="#"><button class="btn__hover">View Product</button></a>
-            </div>
-          </div>
-          <!-- CARD TITLE PRODUCT -->
-          <div class="card__title">
-            <div class="cards__name">
-              <h4>CLOCKWATCHER</h4>
-              <p>Handmade</p>
-            </div>
-            <div class="price">
-              <span>$40.00</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- --- CARD 32 --- -->
-        <div class="card">
-          <!-- CARD PICTURE -->
-          <div class="card__picture">
-            <img src="https://tueminhdecor.com/wp-content/uploads/2023/03/thac-nuoc-phong-thuy-vien-son-luu-thuy-5.jpg" alt="" />
-          </div>
-          <!-- CARD HOVER -->
-          <div class="card__hover">
-            <div class="icon__hover">
-              <i class="fa-solid fa-heart"></i>
-              <i class="fa-regular fa-eye"></i>
-            </div>
-            <div class="link__hover">
-              <a href="#"><button class="btn__hover">View Product</button></a>
-            </div>
-          </div>
-          <!-- CARD TITLE PRODUCT -->
-          <div class="card__title">
-            <div class="cards__name">
-              <h4>CLOCKWATCHER</h4>
-              <p>Handmade</p>
-            </div>
-            <div class="price">
-              <span>$40.00</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- --- CARD 33 --- -->
-        <div class="card">
-          <!-- CARD PICTURE -->
-          <div class="card__picture">
-            <img src="https://d1iew515e5ccn3.cloudfront.net/hoanhaodecor/uploads/2022/11/binh-lo-cam-hoa-gom-su-cao-cap-01-02.png" alt="" />
-          </div>
-          <!-- CARD HOVER -->
-          <div class="card__hover">
-            <div class="icon__hover">
-              <i class="fa-solid fa-heart"></i>
-              <i class="fa-regular fa-eye"></i>
-            </div>
-            <div class="link__hover">
-              <a href="#"><button class="btn__hover">View Product</button></a>
-            </div>
-          </div>
-          <!-- CARD TITLE PRODUCT -->
-          <div class="card__title">
-            <div class="cards__name">
-              <h4>CLOCKWATCHER</h4>
-              <p>Handmade</p>
-            </div>
-            <div class="price">
-              <span>$40.00</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- --- CARD 34 --- -->
-        <div class="card">
-          <!-- CARD PICTURE -->
-          <div class="card__picture">
-            <img src="https://ironstyle.vn/uploads/product/VgXl_vien%20sat%20vang%20mat%20den%202.jpg" alt="" />
-          </div>
-          <!-- CARD HOVER -->
-          <div class="card__hover">
-            <div class="icon__hover">
-              <i class="fa-solid fa-heart"></i>
-              <i class="fa-regular fa-eye"></i>
-            </div>
-            <div class="link__hover">
-              <a href="#"><button class="btn__hover">View Product</button></a>
-            </div>
-          </div>
-          <!-- CARD TITLE PRODUCT -->
-          <div class="card__title">
-            <div class="cards__name">
-              <h4>CLOCKWATCHER</h4>
-              <p>Handmade</p>
-            </div>
-            <div class="price">
-              <span>$40.00</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- --- CARD 35 --- -->
-        <div class="card">
-          <!-- CARD PICTURE -->
-          <div class="card__picture">
-            <img src="https://ironstyle.vn/uploads/product/VgXl_vien%20sat%20vang%20mat%20den%202.jpg" alt="" />
-          </div>
-          <!-- CARD HOVER -->
-          <div class="card__hover">
-            <div class="icon__hover">
-              <i class="fa-solid fa-heart"></i>
-              <i class="fa-regular fa-eye"></i>
-            </div>
-            <div class="link__hover">
-              <a href="#"><button class="btn__hover">View Product</button></a>
-            </div>
-          </div>
-          <!-- CARD TITLE PRODUCT -->
-          <div class="card__title">
-            <div class="cards__name">
-              <h4>CLOCKWATCHER</h4>
-              <p>Handmade</p>
-            </div>
-            <div class="price">
-              <span>$40.00</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- --- CARD 36 --- -->
-        <div class="card">
-          <!-- CARD PICTURE -->
-          <div class="card__picture">
-            <img src="https://ironstyle.vn/uploads/product/VgXl_vien%20sat%20vang%20mat%20den%202.jpg" alt="" />
-          </div>
-          <!-- CARD HOVER -->
-          <div class="card__hover">
-            <div class="icon__hover">
-              <i class="fa-solid fa-heart"></i>
-              <i class="fa-regular fa-eye"></i>
-            </div>
-            <div class="link__hover">
-              <a href="#"><button class="btn__hover">View Product</button></a>
-            </div>
-          </div>
-          <!-- CARD TITLE PRODUCT -->
-          <div class="card__title">
-            <div class="cards__name">
-              <h4>CLOCKWATCHER</h4>
-              <p>Handmade</p>
-            </div>
-            <div class="price">
-              <span>$40.00</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- --- CARD 37 --- -->
-        <div class="card">
-          <!-- CARD PICTURE -->
-          <div class="card__picture">
-            <img src="https://ironstyle.vn/uploads/product/VgXl_vien%20sat%20vang%20mat%20den%202.jpg" alt="" />
-          </div>
-          <!-- CARD HOVER -->
-          <div class="card__hover">
-            <div class="icon__hover">
-              <i class="fa-solid fa-heart"></i>
-              <i class="fa-regular fa-eye"></i>
-            </div>
-            <div class="link__hover">
-              <a href="#"><button class="btn__hover">View Product</button></a>
-            </div>
-          </div>
-          <!-- CARD TITLE PRODUCT -->
-          <div class="card__title">
-            <div class="cards__name">
-              <h4>CLOCKWATCHER</h4>
-              <p>Handmade</p>
-            </div>
-            <div class="price">
-              <span>$40.00</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- --- CARD 38 --- -->
-        <div class="card">
-          <!-- CARD PICTURE -->
-          <div class="card__picture">
-            <img src="https://ironstyle.vn/uploads/product/VgXl_vien%20sat%20vang%20mat%20den%202.jpg" alt="" />
-          </div>
-          <!-- CARD HOVER -->
-          <div class="card__hover">
-            <div class="icon__hover">
-              <i class="fa-solid fa-heart"></i>
-              <i class="fa-regular fa-eye"></i>
-            </div>
-            <div class="link__hover">
-              <a href="#"><button class="btn__hover">View Product</button></a>
-            </div>
-          </div>
-          <!-- CARD TITLE PRODUCT -->
-          <div class="card__title">
-            <div class="cards__name">
-              <h4>CLOCKWATCHER</h4>
-              <p>Handmade</p>
-            </div>
-            <div class="price">
-              <span>$40.00</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- --- CARD 39 --- -->
-        <div class="card">
-          <!-- CARD PICTURE -->
-          <div class="card__picture">
-            <img src="https://ironstyle.vn/uploads/product/VgXl_vien%20sat%20vang%20mat%20den%202.jpg" alt="" />
-          </div>
-          <!-- CARD HOVER -->
-          <div class="card__hover">
-            <div class="icon__hover">
-              <i class="fa-solid fa-heart"></i>
-              <i class="fa-regular fa-eye"></i>
-            </div>
-            <div class="link__hover">
-              <a href="#"><button class="btn__hover">View Product</button></a>
-            </div>
-          </div>
-          <!-- CARD TITLE PRODUCT -->
-          <div class="card__title">
-            <div class="cards__name">
-              <h4>CLOCKWATCHER</h4>
-              <p>Handmade</p>
-            </div>
-            <div class="price">
-              <span>$40.00</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- --- CARD 40 --- -->
-        <div class="card">
-          <!-- CARD PICTURE -->
-          <div class="card__picture">
-            <img src="https://ironstyle.vn/uploads/product/VgXl_vien%20sat%20vang%20mat%20den%202.jpg" alt="" />
-          </div>
-          <!-- CARD HOVER -->
-          <div class="card__hover">
-            <div class="icon__hover">
-              <i class="fa-solid fa-heart"></i>
-              <i class="fa-regular fa-eye"></i>
-            </div>
-            <div class="link__hover">
-              <a href="#"><button class="btn__hover">View Product</button></a>
-            </div>
-          </div>
-          <!-- CARD TITLE PRODUCT -->
-          <div class="card__title">
-            <div class="cards__name">
-              <h4>CLOCKWATCHER</h4>
-              <p>Handmade</p>
-            </div>
-            <div class="price">
-              <span>$40.00</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- --- CARD 41 --- -->
-        <div class="card">
-          <!-- CARD PICTURE -->
-          <div class="card__picture">
-            <img src="https://ironstyle.vn/uploads/product/VgXl_vien%20sat%20vang%20mat%20den%202.jpg" alt="" />
-          </div>
-          <!-- CARD HOVER -->
-          <div class="card__hover">
-            <div class="icon__hover">
-              <i class="fa-solid fa-heart"></i>
-              <i class="fa-regular fa-eye"></i>
-            </div>
-            <div class="link__hover">
-              <a href="#"><button class="btn__hover">View Product</button></a>
-            </div>
-          </div>
-          <!-- CARD TITLE PRODUCT -->
-          <div class="card__title">
-            <div class="cards__name">
-              <h4>CLOCKWATCHER</h4>
-              <p>Handmade</p>
-            </div>
-            <div class="price">
-              <span>$40.00</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- --- CARD 42 --- -->
-        <div class="card">
-          <!-- CARD PICTURE -->
-          <div class="card__picture">
-            <img src="https://ironstyle.vn/uploads/product/VgXl_vien%20sat%20vang%20mat%20den%202.jpg" alt="" />
-          </div>
-          <!-- CARD HOVER -->
-          <div class="card__hover">
-            <div class="icon__hover">
-              <i class="fa-solid fa-heart"></i>
-              <i class="fa-regular fa-eye"></i>
-            </div>
-            <div class="link__hover">
-              <a href="#"><button class="btn__hover">View Product</button></a>
-            </div>
-          </div>
-          <!-- CARD TITLE PRODUCT -->
-          <div class="card__title">
-            <div class="cards__name">
-              <h4>CLOCKWATCHER</h4>
-              <p>Handmade</p>
-            </div>
-            <div class="price">
-              <span>$40.00</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ===== CARDS ESSENTIAL END ===== -->
-
-    <!-- ===== BANNER  ===== -->
-    <section class="section__banner">
-      <!-- --- BANNER PICTURE --- -->
-      <div class="banner__picture">
-        <img
-          src="https://github.com/Mateo-codeMaxi/Ecomerce-Furniture.github.io/blob/main/TEMPLATE%20-%20FURNITURE%20STORE/img/particle-2.png?raw=true"
-          alt="" class="banner__particle-2" />
-        <img
-          src="https://raw.githubusercontent.com/dophambichtram/BichTram-MindXC4E/b55f349c7d3ee680a41787322e0ad101977fe1d2/ghe-sofa-ni-phong-cach-hien-dai-1.png"
-          alt="" class="banner__cabinet" />
-      </div>
-      <!-- --- BANNER INFO --- -->
-      <div class="banner__title">
-        <h2>CABINET</h2>
-        <span>%175.00</span>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus,
-          unde neque obcaecati illum nesciunt.
-        </p>
-        <a href="#"><button class="btn__slide">Read More</button></a>
-      </div>
-    </section>
-    <!-- ===== BANNER END ===== -->
-
-    <!-- ===== BRANDS  ===== -->
-    <section class="section__brands">
-      <img
-        src="https://github.com/Mateo-codeMaxi/Ecomerce-Furniture.github.io/blob/main/TEMPLATE%20-%20FURNITURE%20STORE/img/brand-1.png?raw=true"
-        alt="" />
-      <img
-        src="https://github.com/Mateo-codeMaxi/Ecomerce-Furniture.github.io/blob/main/TEMPLATE%20-%20FURNITURE%20STORE/img/brand-2.png?raw=true"
-        alt="" />
-      <img
-        src="https://github.com/Mateo-codeMaxi/Ecomerce-Furniture.github.io/blob/main/TEMPLATE%20-%20FURNITURE%20STORE/img/brand-3.png?raw=true"
-        alt="" />
-      <img
-        src="https://github.com/Mateo-codeMaxi/Ecomerce-Furniture.github.io/blob/main/TEMPLATE%20-%20FURNITURE%20STORE/img/brand-4.png?raw=true"
-        alt="" />
-      <img
-        src="https://github.com/Mateo-codeMaxi/Ecomerce-Furniture.github.io/blob/main/TEMPLATE%20-%20FURNITURE%20STORE/img/brand-5.png?raw=true"
-        alt="" />
-    </section>
-    <!-- ===== BRANDS END  ===== -->
-
-    <!-- ===== CARDS  ===== -->
-    <section class="section__cards contain" id="features">
-      <!-- ---
-            # TITLE SECTIONS
-            --- -->
-      <div class="title__section">
-        <span>Summer Collection</span>
-        <h2>FEATURES ELEMENTS</h2>
-      </div>
-
-      <div class="container__cards">
-        <!-- --- CARD 9 --- -->
-        <div class="card card__features">
-          <!-- CARD PICTURE -->
-          <img
-            src="https://github.com/Mateo-codeMaxi/Ecomerce-Furniture.github.io/blob/main/TEMPLATE%20-%20FURNITURE%20STORE/img/cards-9.jpg?raw=true"
+            src="https://github.com/Mateo-codeMaxi/Ecomerce-Furniture.github.io/blob/main/TEMPLATE%20-%20FURNITURE%20STORE/img/brand-1.png?raw=true"
             alt="" />
-          <!-- CARD HOVER -->
-          <div class="card__hover card__hover--features">
-            <div class="icon__hover">
-              <i class="fa-solid fa-heart"></i>
-              <i class="fa-regular fa-eye"></i>
-            </div>
-            <div class="link__hover">
-              <a href="#"><button class="btn__hover">Add To Cart</button></a>
-            </div>
-          </div>
-          <!-- CARD TITLE PRODUCT -->
-          <div class="card__title card__title--features">
-            <div class="cards__name">
-              <h4>COMFY CHAIR</h4>
-              <p>Handmade</p>
-            </div>
-            <div class="price">
-              <span>$40.00</span>
-            </div>
-          </div>
-        </div>
-        <!-- --- CARD 10 --- -->
-        <div class="card card__features">
-          <!-- CARD PICTURE -->
           <img
-            src="https://github.com/Mateo-codeMaxi/Ecomerce-Furniture.github.io/blob/main/TEMPLATE%20-%20FURNITURE%20STORE/img/cards-10.jpg?raw=true"
+            src="https://github.com/Mateo-codeMaxi/Ecomerce-Furniture.github.io/blob/main/TEMPLATE%20-%20FURNITURE%20STORE/img/brand-2.png?raw=true"
             alt="" />
-          <!-- CARD HOVER -->
-          <div class="card__hover card__hover--features">
-            <div class="icon__hover">
-              <i class="fa-solid fa-heart"></i>
-              <i class="fa-regular fa-eye"></i>
-            </div>
-            <div class="link__hover">
-              <a href="#"><button class="btn__hover">Add To Cart</button></a>
-            </div>
-          </div>
-          <!-- CARD TITLE PRODUCT -->
-          <div class="card__title card__title--features">
-            <div class="cards__name">
-              <h4>COMFY CHAIR</h4>
-              <p>Handmade</p>
-            </div>
-            <div class="price">
-              <span>$40.00</span>
-            </div>
-          </div>
-        </div>
-        <!-- --- CARD 11 --- -->
-        <div class="card card__features">
-          <!-- CARD PICTURE -->
           <img
-            src="https://github.com/Mateo-codeMaxi/Ecomerce-Furniture.github.io/blob/main/TEMPLATE%20-%20FURNITURE%20STORE/img/cards-11.jpg?raw=true"
+            src="https://github.com/Mateo-codeMaxi/Ecomerce-Furniture.github.io/blob/main/TEMPLATE%20-%20FURNITURE%20STORE/img/brand-3.png?raw=true"
             alt="" />
-          <!-- CARD HOVER -->
-          <div class="card__hover card__hover--features">
-            <div class="icon__hover">
-              <i class="fa-solid fa-heart"></i>
-              <i class="fa-regular fa-eye"></i>
+          <img
+            src="https://github.com/Mateo-codeMaxi/Ecomerce-Furniture.github.io/blob/main/TEMPLATE%20-%20FURNITURE%20STORE/img/brand-4.png?raw=true"
+            alt="" />
+          <img
+            src="https://github.com/Mateo-codeMaxi/Ecomerce-Furniture.github.io/blob/main/TEMPLATE%20-%20FURNITURE%20STORE/img/brand-5.png?raw=true"
+            alt="" />
+        </section>
+        <!-- ===== BRANDS END  ===== -->
+
+        <!-- ===== CARDS  ===== -->
+        <section class="section__cards contain" id="features">
+          <!-- ---
+              # TITLE SECTIONS
+              --- -->
+          <div class="title__section">
+            <span>Summer Collection</span>
+            <h2>FEATURES ELEMENTS</h2>
+          </div>
+
+          <div class="container__cards">
+            <!-- --- CARD 9 --- -->
+            <div class="card card__features">
+              <!-- CARD PICTURE -->
+              <img
+                src="https://github.com/Mateo-codeMaxi/Ecomerce-Furniture.github.io/blob/main/TEMPLATE%20-%20FURNITURE%20STORE/img/cards-9.jpg?raw=true"
+                alt="" />
+              <!-- CARD HOVER -->
+              <div class="card__hover card__hover--features">
+                <div class="icon__hover">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+                <div class="link__hover">
+                  <a href="#"><button class="btn__hover">Add To Cart</button></a>
+                </div>
+              </div>
+              <!-- CARD TITLE PRODUCT -->
+              <div class="card__title card__title--features">
+                <div class="cards__name">
+                  <h4>COMFY CHAIR</h4>
+                  <p>Handmade</p>
+                </div>
+                <div class="price">
+                  <span>$40.00</span>
+                </div>
+              </div>
             </div>
-            <div class="link__hover">
-              <a href="#"><button class="btn__hover">View Product</button></a>
+            <!-- --- CARD 10 --- -->
+            <div class="card card__features">
+              <!-- CARD PICTURE -->
+              <img
+                src="https://github.com/Mateo-codeMaxi/Ecomerce-Furniture.github.io/blob/main/TEMPLATE%20-%20FURNITURE%20STORE/img/cards-10.jpg?raw=true"
+                alt="" />
+              <!-- CARD HOVER -->
+              <div class="card__hover card__hover--features">
+                <div class="icon__hover">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+                <div class="link__hover">
+                  <a href="#"><button class="btn__hover">Add To Cart</button></a>
+                </div>
+              </div>
+              <!-- CARD TITLE PRODUCT -->
+              <div class="card__title card__title--features">
+                <div class="cards__name">
+                  <h4>COMFY CHAIR</h4>
+                  <p>Handmade</p>
+                </div>
+                <div class="price">
+                  <span>$40.00</span>
+                </div>
+              </div>
+            </div>
+            <!-- --- CARD 11 --- -->
+            <div class="card card__features">
+              <!-- CARD PICTURE -->
+              <img
+                src="https://github.com/Mateo-codeMaxi/Ecomerce-Furniture.github.io/blob/main/TEMPLATE%20-%20FURNITURE%20STORE/img/cards-11.jpg?raw=true"
+                alt="" />
+              <!-- CARD HOVER -->
+              <div class="card__hover card__hover--features">
+                <div class="icon__hover">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+                <div class="link__hover">
+                  <a href="#"><button class="btn__hover">View Product</button></a>
+                </div>
+              </div>
+              <!-- CARD TITLE PRODUCT -->
+              <div class="card__title card__title--features">
+                <div class="cards__name">
+                  <h4>COMFY CHAIR</h4>
+                  <p>Handmade</p>
+                </div>
+                <div class="price">
+                  <span>$40.00</span>
+                </div>
+              </div>
             </div>
           </div>
-          <!-- CARD TITLE PRODUCT -->
-          <div class="card__title card__title--features">
-            <div class="cards__name">
-              <h4>COMFY CHAIR</h4>
-              <p>Handmade</p>
-            </div>
-            <div class="price">
-              <span>$40.00</span>
+        </section>
+        <!-- ===== CARDS END  ===== -->
+
+        <!-- ===== ELEMENTS   ===== -->
+        <section class="section__elements" id="store">
+          <!-- ICON ELEMENTS 1 -->
+          <div class="elements">
+            <img
+              src="https://github.com/Mateo-codeMaxi/Ecomerce-Furniture.github.io/blob/main/TEMPLATE%20-%20FURNITURE%20STORE/img/icon-1.png?raw=true"
+              alt="" />
+            <div class="elements__title">
+              <h3>24H SERVICE</h3>
+              <a href="#">More Info</a>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-    <!-- ===== CARDS END  ===== -->
+          <!-- ICON ELEMENTS 2 -->
+          <div class="elements">
+            <img
+              src="https://github.com/Mateo-codeMaxi/Ecomerce-Furniture.github.io/blob/main/TEMPLATE%20-%20FURNITURE%20STORE/img/icon-2.png?raw=true"
+              alt="" />
+            <div class="elements__title">
+              <h3>FREE RETURNS</h3>
+              <a href="#">More Info</a>
+            </div>
+          </div>
+          <!-- ICON ELEMENTS 3 -->
+          <div class="elements">
+            <img
+              src="https://github.com/Mateo-codeMaxi/Ecomerce-Furniture.github.io/blob/main/TEMPLATE%20-%20FURNITURE%20STORE/img/icon-3.png?raw=true"
+              alt="" />
+            <div class="elements__title">
+              <h3>ORDER TRACKING</h3>
+              <a href="#">More Info</a>
+            </div>
+          </div>
+          <!-- ICON ELEMENTS 4 -->
+          <div class="elements">
+            <img
+              src="https://github.com/Mateo-codeMaxi/Ecomerce-Furniture.github.io/blob/main/TEMPLATE%20-%20FURNITURE%20STORE/img/icon-4.png?raw=true"
+              alt="" />
+            <div class="elements__title">
+              <h3>FAST DELIVERY</h3>
+              <a href="#">More Info</a>
+            </div>
+          </div>
+        </section>
+        <!-- ===== ELEMENTS END  ===== -->
 
-    <!-- ===== ELEMENTS   ===== -->
-    <section class="section__elements" id="store">
-      <!-- ICON ELEMENTS 1 -->
-      <div class="elements">
-        <img
-          src="https://github.com/Mateo-codeMaxi/Ecomerce-Furniture.github.io/blob/main/TEMPLATE%20-%20FURNITURE%20STORE/img/icon-1.png?raw=true"
-          alt="" />
-        <div class="elements__title">
-          <h3>24H SERVICE</h3>
-          <a href="#">More Info</a>
-        </div>
-      </div>
-      <!-- ICON ELEMENTS 2 -->
-      <div class="elements">
-        <img
-          src="https://github.com/Mateo-codeMaxi/Ecomerce-Furniture.github.io/blob/main/TEMPLATE%20-%20FURNITURE%20STORE/img/icon-2.png?raw=true"
-          alt="" />
-        <div class="elements__title">
-          <h3>FREE RETURNS</h3>
-          <a href="#">More Info</a>
-        </div>
-      </div>
-      <!-- ICON ELEMENTS 3 -->
-      <div class="elements">
-        <img
-          src="https://github.com/Mateo-codeMaxi/Ecomerce-Furniture.github.io/blob/main/TEMPLATE%20-%20FURNITURE%20STORE/img/icon-3.png?raw=true"
-          alt="" />
-        <div class="elements__title">
-          <h3>ORDER TRACKING</h3>
-          <a href="#">More Info</a>
-        </div>
-      </div>
-      <!-- ICON ELEMENTS 4 -->
-      <div class="elements">
-        <img
-          src="https://github.com/Mateo-codeMaxi/Ecomerce-Furniture.github.io/blob/main/TEMPLATE%20-%20FURNITURE%20STORE/img/icon-4.png?raw=true"
-          alt="" />
-        <div class="elements__title">
-          <h3>FAST DELIVERY</h3>
-          <a href="#">More Info</a>
-        </div>
-      </div>
-    </section>
-    <!-- ===== ELEMENTS END  ===== -->
+        <!-- ===== PICTURES SOCIAL  ===== -->
+        <section class="section__picture">
+          <!-- PICTURE SOCIAL 1 -->
+          <div class="picture__social">
+            <img
+              src="https://github.com/Mateo-codeMaxi/Ecomerce-Furniture.github.io/blob/main/TEMPLATE%20-%20FURNITURE%20STORE/img/picture-social--1.jpg?raw=true"
+              alt="" />
+            <div class="picture__hover">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+          <!-- PICTURE SOCIAL 2 -->
+          <div class="picture__social">
+            <img
+              src="https://github.com/Mateo-codeMaxi/Ecomerce-Furniture.github.io/blob/main/TEMPLATE%20-%20FURNITURE%20STORE/img/picture-social--2.jpg?raw=true"
+              alt="" />
+            <div class="picture__hover">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+          <!-- PICTURE SOCIAL 3 -->
+          <div class="picture__social">
+            <img
+              src="https://github.com/Mateo-codeMaxi/Ecomerce-Furniture.github.io/blob/main/TEMPLATE%20-%20FURNITURE%20STORE/img/picture-social--3.jpg?raw=true"
+              alt="" />
+            <div class="picture__hover">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+          <!-- PICTURE SOCIAL 4 -->
+          <div class="picture__social">
+            <img
+              src="https://github.com/Mateo-codeMaxi/Ecomerce-Furniture.github.io/blob/main/TEMPLATE%20-%20FURNITURE%20STORE/img/picture-social--4.jpg?raw=true"
+              alt="" />
+            <div class="picture__hover">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+          <!-- PICTURE SOCIAL 5 -->
+          <div class="picture__social">
+            <img
+              src="https://github.com/Mateo-codeMaxi/Ecomerce-Furniture.github.io/blob/main/TEMPLATE%20-%20FURNITURE%20STORE/img/picture-social--5.jpg?raw=true"
+              alt="" />
+            <div class="picture__hover">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+          <!-- PICTURE SOCIAL 6 -->
+          <div class="picture__social">
+            <img
+              src="https://github.com/Mateo-codeMaxi/Ecomerce-Furniture.github.io/blob/main/TEMPLATE%20-%20FURNITURE%20STORE/img/picture-social--6.jpg?raw=true"
+              alt="" />
+            <div class="picture__hover">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+        </section>
+        <!-- ===== PICTURES SOCIAL END  ===== -->
 
-    <!-- ===== PICTURES SOCIAL  ===== -->
-    <section class="section__picture">
-      <!-- PICTURE SOCIAL 1 -->
-      <div class="picture__social">
-        <img
-          src="https://github.com/Mateo-codeMaxi/Ecomerce-Furniture.github.io/blob/main/TEMPLATE%20-%20FURNITURE%20STORE/img/picture-social--1.jpg?raw=true"
-          alt="" />
-        <div class="picture__hover">
-          <i class="fa-brands fa-instagram"></i>
-        </div>
-      </div>
-      <!-- PICTURE SOCIAL 2 -->
-      <div class="picture__social">
-        <img
-          src="https://github.com/Mateo-codeMaxi/Ecomerce-Furniture.github.io/blob/main/TEMPLATE%20-%20FURNITURE%20STORE/img/picture-social--2.jpg?raw=true"
-          alt="" />
-        <div class="picture__hover">
-          <i class="fa-brands fa-instagram"></i>
-        </div>
-      </div>
-      <!-- PICTURE SOCIAL 3 -->
-      <div class="picture__social">
-        <img
-          src="https://github.com/Mateo-codeMaxi/Ecomerce-Furniture.github.io/blob/main/TEMPLATE%20-%20FURNITURE%20STORE/img/picture-social--3.jpg?raw=true"
-          alt="" />
-        <div class="picture__hover">
-          <i class="fa-brands fa-instagram"></i>
-        </div>
-      </div>
-      <!-- PICTURE SOCIAL 4 -->
-      <div class="picture__social">
-        <img
-          src="https://github.com/Mateo-codeMaxi/Ecomerce-Furniture.github.io/blob/main/TEMPLATE%20-%20FURNITURE%20STORE/img/picture-social--4.jpg?raw=true"
-          alt="" />
-        <div class="picture__hover">
-          <i class="fa-brands fa-instagram"></i>
-        </div>
-      </div>
-      <!-- PICTURE SOCIAL 5 -->
-      <div class="picture__social">
-        <img
-          src="https://github.com/Mateo-codeMaxi/Ecomerce-Furniture.github.io/blob/main/TEMPLATE%20-%20FURNITURE%20STORE/img/picture-social--5.jpg?raw=true"
-          alt="" />
-        <div class="picture__hover">
-          <i class="fa-brands fa-instagram"></i>
-        </div>
-      </div>
-      <!-- PICTURE SOCIAL 6 -->
-      <div class="picture__social">
-        <img
-          src="https://github.com/Mateo-codeMaxi/Ecomerce-Furniture.github.io/blob/main/TEMPLATE%20-%20FURNITURE%20STORE/img/picture-social--6.jpg?raw=true"
-          alt="" />
-        <div class="picture__hover">
-          <i class="fa-brands fa-instagram"></i>
-        </div>
-      </div>
-    </section>
-    <!-- ===== PICTURES SOCIAL END  ===== -->
-  </main>
-
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-top section">
-        <div class="footer-brand">
-          <a href="#" class="logo">MHT</a>
-
-          <ul>
-            <li class="footer-list-item">
-              <ion-icon name="location-sharp" aria-hidden="true"></ion-icon>
-
-              <address class="address">MHT, HoChiMinh, VietNam 2023</address>
-            </li>
-
-            <li class="footer-list-item">
-              <ion-icon name="call-sharp" aria-hidden="true"></ion-icon>
-
-              <a href="tel:+1234567890" class="footer-link">+1234567890</a>
-            </li>
-
-            <li>
-              <ul class="social-list">
-                <li>
-                  <a href="#" class="social-link">
+      <footer class="bg-gray-900 text-white">
+        <div class="container mx-auto p-8">
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-10">
+            <div>
+              <a href="#" class="text-2xl font-bold mb-4 block">MHT</a>
+              <ul class="space-y-4">
+                <li class="flex items-center space-x-2">
+                  <ion-icon name="location-sharp" aria-hidden="true"></ion-icon>
+                  <address>MHT, HoChiMinh, VietNam 2023</address>
+                </li>
+                <li class="flex items-center space-x-2">
+                  <ion-icon name="call-sharp" aria-hidden="true"></ion-icon>
+                  <a href="tel:+1234567890">+1234567890</a>
+                </li>
+                <li class="flex space-x-8 mt-8">
+                  <a href="#">
                     <ion-icon name="logo-facebook"></ion-icon>
                   </a>
-                </li>
-
-                <li>
-                  <a href="#" class="social-link">
+                  <a href="#">
                     <ion-icon name="logo-twitter"></ion-icon>
                   </a>
-                </li>
-
-                <li>
-                  <a href="#" class="social-link">
+                  <a href="#">
                     <ion-icon name="logo-tumblr"></ion-icon>
                   </a>
                 </li>
               </ul>
-            </li>
-          </ul>
-        </div>
-
-        <ul class="footer-list">
-          <li>
-            <p class="footer-list-title">Công ty</p>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Trang chủ</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Về chúng tôi</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Cửa hàng</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Liên hệ</a>
-          </li>
-        </ul>
-
-        <ul class="footer-list">
-          <li>
-            <p class="footer-list-title">Thông tin</p>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Điều khoản và điều kiện </a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Hương dẫn mẫu</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Nhật ký thay đổi</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Giấy phép</a>
-          </li>
-        </ul>
-
-        <div class="footer-list">
-          <p class="footer-list-title">Newsletter</p>
-
-          <form action="" class="footer-form">
-            <input type="email" name="email_address" placeholder="Your email address" required class="email-field" />
-
-            <button type="submit" class="footer-form-btn">
-              <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-            </button>
-          </form>
-
-          <div class="wrapper">
-            <a href="#" class="footer-link">Term & Condition</a>
-            <a href="#" class="footer-link">Policy</a>
-            <a href="#" class="footer-link">Map</a>
+            </div>
+            <ul class="space-y-4">
+              <li>
+                <p class="text-lg font-medium mb-4">Công ty</p>
+              </li>
+              <li><a href="#" class="hover:text-yellow-500 py-1">Trang chủ</a></li>
+              <li><a href="#" class="hover:text-yellow-500 py-1">Về chúng tôi</a></li>
+              <li><a href="#" class="hover:text-yellow-500 py-1">Cửa hàng</a></li>
+              <li><a href="#" class="hover:text-yellow-500 py-1">Liên hệ</a></li>
+            </ul>
+            <ul class="space-y-4">
+              <li>
+                <p class="text-lg font-medium mb-4">Thông tin</p>
+              </li>
+              <li><a href="#" class="hover:text-yellow-500 py-1">Điều khoản và điều kiện</a></li>
+              <li><a href="#" class="hover:text-yellow-500 py-1">Hướng dẫn mẫu</a></li>
+              <li><a href="#" class="hover:text-yellow-500 py-1">Nhật ký thay đổi</a></li>
+              <li><a href="#" class="hover:text-yellow-500 py-1">Giấy phép</a></li>
+            </ul>
+            <div>
+              <p class="text-lg font-medium mb-4">Newsletter</p>
+              <form action="" class="relative mb-4">
+                <input type="email" name="email_address" placeholder="Your email address" required
+                  class="border-b-2 focus:border-yellow-500 px-3 py-2 w-full pr-10" />
+                <button type="submit" class="absolute top-2.5 right-2.5 text-gray-500">
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </button>
+              </form>
+              <div class="flex space-x-8">
+                <a href="#" class="hover:text-yellow-500">Term & Condition</a>
+                <a href="#" class="hover:text-yellow-500">Policy</a>
+                <a href="#" class="hover:text-yellow-500">Map</a>
+              </div>
+            </div>
+          </div>
+          <div class="text-center py-5">
+            <p>&copy; 2023 All Rights Reserved by <a href="#" class="underline">C4EGroup2</a>.</p>
           </div>
         </div>
-      </div>
+      </footer>
 
-      <div class="footer-bottom">
-        <p class="copyright">
-          &copy; 2022 All Rights Reserved by
-          <a href="#" class="copyright-link">codewithsadee</a>.
-        </p>
-      </div>
-    </div>
-  </footer>
+      <!-- 
+      - #BACK TO TOP
+    -->
 
-  <!-- 
-    - #BACK TO TOP
-  -->
+      <!-- ===== SCRIPTS ===== -->
+      <script src="main.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
-  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
-    <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
-  </a>
-
-  <!-- ===== SCRIPTS ===== -->
-  <script src="main.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-
-  <!-- 
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-</body>
-
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          spaceBetween: 30,
+          hashNavigation: {
+            watchState: true,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+  </body>
 </html>

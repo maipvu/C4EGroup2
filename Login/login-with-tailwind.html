@@ -54,5 +54,30 @@
         >REGISTER</a
       >
     </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const loginButton = document.querySelector(".login-button");
+        const registrationStatus = localStorage.getItem("registrationStatus");
+
+        if (registrationStatus === "success") {
+          // Auto-fill login form fields if registration was successful
+          const emailInput = document.querySelector('input[type="text"]');
+          const passwordInput = document.querySelector(
+            'input[type="password"]'
+          );
+
+          emailInput.value = localStorage.getItem("registeredEmail");
+          passwordInput.focus(); // Focus on the password field
+
+          // Clear the registration status after using it
+          localStorage.removeItem("registrationStatus");
+          localStorage.removeItem("registeredEmail");
+        }
+
+        loginButton.addEventListener("click", () => {
+          // ... (your login logic)
+        });
+      });
+    </script>
   </body>
 </html>
