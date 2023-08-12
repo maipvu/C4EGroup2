@@ -441,11 +441,11 @@ nav {
     align-items: center;
     gap: 4rem;
     width: 100%;
-    height: 600px;
+    height: 450px;
 }
 
 .banner__picture {
-    width: 50%;
+    width: 60%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -461,7 +461,7 @@ nav {
 }
 
 .banner__title p {
-    width: 70%;
+    width: 80%;
 }
 
 .banner__cabinet {
