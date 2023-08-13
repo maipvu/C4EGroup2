@@ -191,19 +191,23 @@ nav {
 .picture__slide-1 {
     width: 60%;
     height: 100%;
-    background: url("../img/bg-slider--1.png") no-repeat;
+    background: url("Pictures/bg-slider--1.png") no-repeat;
     background-size: cover;
-    margin-right: -18rem;
+    margin-left: 40rem;
+    margin-top: -245px;
     display: flex;
     align-items: center;
 }
 
 .picture__slide-2 {
-    margin-top: -18rem;
+    width: 47%;
+    height: 100%;
+    margin-top: -22rem;
+    margin-left: 40rem;
     display: flex;
     align-items: center;
     gap: 4rem;
-    background: url("../img/particle-3.png") no-repeat;
+    background: url("Pictures/particle-3.png") no-repeat;
 }
 
 .picture__slide-2 img {
@@ -741,6 +745,7 @@ nav {
     .title__slide {
         width: 90%;
         margin-left: 2rem;
+        margin-top: 5rem;
     }
 
     .title__slide p {
@@ -748,11 +753,25 @@ nav {
     }
 
     .picture__slide-1 {
-        display: none;
+        width: 100%;
+        height: 100%;
+        background: url("Pictures/bg-slider--1.png") no-repeat;
+        background-size: cover;
+        margin-left: 9rem;
+        margin-top: -20rem;
+        display: flex;
+        align-items: center;
+        
     }
 
     .picture__slide-2 {
-        display: none;
+        width: 70%;
+        height: 100%;
+        margin-top: -17rem;
+        margin-left: 10rem;
+        display: flex;
+        align-items: center;
+        gap: 4rem;
     }
 
     .btn__slide {
@@ -766,14 +785,14 @@ nav {
     }
 
     .swiper-slide:nth-child(1) {
-        background-image: url(../img/bg-slider--1.png);
+        background-image: url(Pictures/bg-slider--1.png);
         background-position-x: -20%;
         background-repeat: no-repeat;
     }
 
     .swiper-slide:nth-child(2) {
         background-color: #e9f0f3;
-        background-image: url(../img/particle-3.png);
+        background-image: url(Pictures/particle-3.png);
         background-repeat: no-repeat;
     }
 
@@ -842,21 +861,22 @@ nav {
     }
 
     .picture__slide-1 {
-        width: 80%;
+        width: 100%;
         height: 100%;
-        background: url("../img/bg-slider--1.png") no-repeat;
+        background: url("Pictures/bg-slider--1.png") no-repeat;
         background-size: cover;
-        margin-right: -18rem;
+        margin-left: 9rem;
         display: flex;
         align-items: center;
     }
 
     .picture__slide-2 {
-        margin-top: -18rem;
+        margin-top: -19rem;
+        margin-left: 3rem;
         display: flex;
         align-items: center;
         gap: 4rem;
-        background: url("../img/particle-3.png") no-repeat;
+        background: url("Pictures/particle-3.png") no-repeat;
     }
 
     .picture__slide-2 img {
