@@ -3,15 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <link rel="stylesheet" href="detail.css" />
     <script src="./detail.js" defer></script>
     <title>Product Detail</title>
   </head>
   <body>
     <!-- test button -->
-
+    <div>
+      <button id="01" onclick="myFunction(this.id)">Test</button>
+    </div>
+    <!-- container -->
     <div class="container mx-auto px-4 flex flex-column">
+      <!-- navbar -->
       <div
         class="flex justify-between items-center w-full fixed top-0 left-0 right-0"
       >
@@ -28,14 +32,16 @@
           <a href="../index.html">HOME</a>
         </div>
       </div>
-
+      <!-- product detail -->
       <div class="product-detail">
         <div class="pic"></div>
         <div class="product-name"></div>
         <div></div>
         <div></div>
       </div>
+      <!-- related items -->
       <div class="related-items"></div>
+      <!-- footer -->
       <div class="footer"></div>
     </div>
   </body>
