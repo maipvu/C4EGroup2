@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>Register</title>
+  </head>
+  <body class="bg-gray-100 flex items-center justify-center h-screen">
+    <div class="container bg-white p-8 rounded-lg shadow-md w-96">
+      <div class="header mb-4 text-center">
+        <h2 class="text-2xl font-semibold">Create Account</h2>
+      </div>
+      <form id="form" class="form">
+        <div class="form-control mb-4">
+          <label for="username" class="block text-sm font-medium text-gray-600"
+            >Username</label
+          >
+          <input
+            type="text"
+            placeholder="Username "
+            id="username"
+            class="mt-1 p-2 w-full border rounded-md"
+          />
+          <small class="text-red-500">Error Message</small>
+        </div>
+        <div class="form-control mb-4">
+          <label for="email" class="block text-sm font-medium text-gray-600"
+            >Email</label
+          >
+          <input
+            type="email"
+            placeholder="example@email.com"
+            id="email"
+            class="mt-1 p-2 w-full border rounded-md"
+          />
+          <small class="text-red-500">Error Message</small>
+        </div>
+        <div class="form-control mb-4">
+          <label for="password" class="block text-sm font-medium text-gray-600"
+            >Password</label
+          >
+          <input
+            type="password"
+            placeholder="Password"
+            id="password"
+            class="mt-1 p-2 w-full border rounded-md"
+          />
+          <small class="text-red-500">Error Message</small>
+        </div>
+        <div class="form-control mb-4">
+          <label for="password2" class="block text-sm font-medium text-gray-600"
+            >Password check</label
+          >
+          <input
+            type="password"
+            placeholder="Password two"
+            id="password2"
+            class="mt-1 p-2 w-full border rounded-md"
+          />
+          <small class="text-red-500">Error Message</small>
+        </div>
+        <button
+          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full"
+        >
+          Submit
+        </button>
+      </form>
+    </div>
+    <script src="/C4EGroup2/Register/script.js"></script>
+  </body>
+</html>
