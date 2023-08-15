@@ -182,22 +182,27 @@ nav {
 }
 
 .picture__slide-1 {
-  width: 60%;
-  height: 100%;
-  background: url("Pictures/bg-slider--1.png") no-repeat;
-  background-size: cover;
-  margin-right: -18rem;
-  display: flex;
-  align-items: center;
+    width: 60%;
+    height: 100%;
+    background: url("Pictures/bg-slider--1.png") no-repeat;
+    background-size: cover;
+    margin-left: 40rem;
+    margin-top: -245px;
+    display: flex;
+    align-items: center;
 }
 
 .picture__slide-2 {
-  margin-top: -18rem;
-  display: flex;
-  align-items: center;
-  gap: 4rem;
-  background: url("Pictures/particle-3.png") no-repeat;
+    width: 47%;
+    height: 100%;
+    margin-top: -22rem;
+    margin-left: 40rem;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    background: url("Pictures/particle-3.png") no-repeat;
 }
+
 
 .picture__slide-2 img {
   width: 30%;
@@ -698,6 +703,7 @@ nav {
   .title__slide {
     width: 90%;
     margin-left: 2rem;
+    margin-top: 3rem;
   }
 
   .title__slide p {
@@ -705,12 +711,26 @@ nav {
   }
 
   .picture__slide-1 {
-    display: none;
-  }
+    width: 100%;
+    height: 100%;
+    background: url("Pictures/bg-slider--1.png") no-repeat;
+    background-size: cover;
+    margin-left: 7rem;
+    margin-top: -16rem;
+    display: flex;
+    align-items: center;
+    
+}
 
-  .picture__slide-2 {
-    display: none;
-  }
+.picture__slide-2 {
+    width: 100%;
+    height: 100%;
+    margin-top: -13rem;
+    margin-left: 4rem;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
 
   .btn__slide {
     background-color: transparent;
@@ -800,22 +820,24 @@ nav {
   }
 
   .picture__slide-1 {
-    width: 80%;
+    width: 100%;
     height: 100%;
     background: url("Pictures/bg-slider--1.png") no-repeat;
     background-size: cover;
-    margin-right: -18rem;
+    margin-left: 9rem;
     display: flex;
     align-items: center;
-  }
+}
 
-  .picture__slide-2 {
-    margin-top: -18rem;
+.picture__slide-2 {
+    width: 57%;
+    margin-top: -16rem;
+    margin-left: 8rem;
     display: flex;
     align-items: center;
     gap: 4rem;
     background: url("Pictures/particle-3.png") no-repeat;
-  }
+}
 
   .picture__slide-2 img {
     width: 40%;
