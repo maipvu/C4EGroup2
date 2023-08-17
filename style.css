@@ -8,16 +8,10 @@
 /*-----------------------------------*\
   # RESET
 \*-----------------------------------*/
-*,
-*::before,
-*::after {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 button {
@@ -25,7 +19,7 @@ button {
   color: inherit;
   cursor: pointer;
   transition: var(--transition);
-  font-family: "Kaushan Script", cursive;
+  font-family: "Kaushan Script";
 }
 
 a {
@@ -96,33 +90,8 @@ p {
 /*-----------------------------------*\
   # NAV
 \*-----------------------------------*/
-nav {
-  width: 100%;
-  background-color: #fff;
-}
-
-.navigation {
-  width: 95%;
-  margin: 0 auto;
-  padding: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.logo {
-  width: 160px;
-}
-
-.menu {
-  display: flex;
-  column-gap: 5rem;
-}
 
 .menu a {
-  color: #000;
-  text-transform: uppercase;
-  font-size: 0.9rem;
   transition: var(--transition);
 }
 
@@ -130,30 +99,10 @@ nav {
   color: var(--main-color);
 }
 
-.icon__links {
-  display: flex;
-  gap: 2rem;
-  font-size: 18px;
-}
-
-.icon__links i {
-  cursor: pointer;
-}
-
-.hamburguer {
-  display: none;
-}
-
-.btn__close {
-  display: none;
-  color: transparent;
-}
-
 /*-----------------------------------*\
   # HEADER -- SWIPER
 \*-----------------------------------*/
 .swiper {
-  width: 100%;
   height: 66vh;
 }
 
@@ -161,7 +110,6 @@ nav {
   width: 100%;
   height: 100%;
   display: flex;
-  align-items: center;
 }
 
 .swiper-slide:nth-child(1) {
@@ -599,13 +547,6 @@ nav {
 .picture__social:hover .picture__hover {
   opacity: 1;
 }
-
-/*-----------------------------------*\
-  # WEBSITE DESIGN FURNITURE STORE
-\*-----------------------------------*/
-/**
- * copyright 2022 CODEMAXI
- */
 
 /*-----------------------------------*\
   # RESPONSIVE MOBILE
