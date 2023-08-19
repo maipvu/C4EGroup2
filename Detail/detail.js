@@ -4,13 +4,15 @@ import { products } from "./productData.js";
 const urlParams = new URLSearchParams(window.location.search);
 const index = urlParams.get("index");
 let pd = products[index];
-console.log(pd);
 
 // DOM for Product detail
 const pdPic = document.getElementById("product-pic");
 const pdName = document.getElementById("product-name");
 const pdCat = document.getElementById("category");
 const pdPrice = document.getElementById("price");
+const pdStock = document.getElementById("stock");
+const pdQuant = document.getElementById("quantity");
+const buyBtn = document.getElementById("buyBtn");
 
 // DOM for Related items
 const rel1Pic = document.getElementById("related1-pic");
@@ -45,23 +47,31 @@ pdPic.src = `../Pictures/card_picture-${pd.id}.jpg`;
 pdName.innerHTML = pd.name;
 pdCat.innerHTML = pd.category;
 pdPrice.innerHTML = pd.price;
+pdStock.innerHTML = pd.stock;
+
+// Check stock
+buyBtn.addEventListener("click", () => {
+  let quant = pdQuant.value;
+  if (quant > pd.stock) {
+    alert("Not enough stock available");
+  } else {
+    alert(`${quant} items added to cart`);
+  }
+});
 
 // Generate related items
 let rand1 = null;
 while (rand1 === null || rand1 == index) {
   rand1 = Math.floor(Math.random() * (products.length - 1));
 }
-console.log(rand1);
 let rand2 = null;
 while (rand2 === null || rand2 == index || rand2 === rand1) {
   rand2 = Math.floor(Math.random() * (products.length - 2));
 }
-console.log(rand2);
 let rand3 = null;
 while (rand3 === null || rand3 == index || rand3 === rand1 || rand3 === rand2) {
   rand3 = Math.floor(Math.random() * (products.length - 3));
 }
-console.log(rand3);
 let rand4 = null;
 while (
   rand4 === null ||
@@ -72,7 +82,6 @@ while (
 ) {
   rand4 = Math.floor(Math.random() * (products.length - 4));
 }
-console.log(rand4);
 
 rel1URL.href = `./detail.html?index=${rand1}`;
 rel1Pic.src = `../Pictures/card_picture-${products[rand1].id}.jpg`;

@@ -2,7 +2,7 @@
   width: 130px;
 }
 
-.home-button:hover {
+.nav-button:hover {
   color: #ef5e47;
 }
 
@@ -22,4 +22,10 @@ p {
 
 h6 {
   font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .logo {
+    width: 160px;
+  }
 }
