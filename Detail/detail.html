@@ -3,41 +3,254 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./detail.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <script type="module" src="./detail.js" defer></script>
     <title>Product Detail</title>
   </head>
   <body>
-    <!-- test button -->
-    <!-- test -->
-    <!-- <div>
-      <button id="01" onclick="myFunction(this.id)">Test</button>
-    </div> -->
     <!-- navbar -->
     <div
-      class="flex justify-between items-center w-full fixed top-0 left-0 right-0 h-85px"
+      class="flex justify-between items-center w-full fixed top-0 left-0 right-0 h-20 p-4 border-b border-slate-300 bg-white"
     >
       <div class="w-full">
         <!-- logo -->
         <img
           src="https://github.com/Mateo-codeMaxi/Ecomerce-Furniture.github.io/blob/main/TEMPLATE%20-%20FURNITURE%20STORE/img/logo.png?raw=true"
           alt=""
-          class="w-130px"
+          class="logo"
         />
       </div>
-      <div>HOME</div>
-    </div>
-    <!-- container -->
-    <div class="container mx-auto px-4 flex flex-column">
-      <div class="flex flex-column product-detail">
-        <div class="pic"></div>
-        <div class="product-name">White Aesthetic Chair</div>
-        <div>Combination of wood and wool</div>
-        <div>Color</div>
+      <div>
+        <a href="../index.html" class="home-button cursor-pointer">HOME</a>
       </div>
-      <div class="related-items"></div>
-      <div class="footer"></div>
     </div>
+    <!-- Main -->
+    <div class="container mx-auto mt-85px p-4 flex flex-col">
+      <!-- Product pic -->
+      <div class="w-full place-content-center">
+        <img id="product-pic" src="../Pictures/card_picture-1.jpg" />
+      </div>
+      <!-- Product name -->
+      <div class="mt-4">
+        <h4 id="product-name" class="text-xl">HALO LOUNGE CHAIR</h4>
+        <p id="category">Handmade</p>
+      </div>
+      <!-- Color -->
+      <div class="mt-4">
+        <h5 class="font-semibold">Color</h5>
+        <div class="flex flex-row">
+          <div class="w-8 h-8 bg-black cursor:pointer"></div>
+          <div class="w-8 h-8 bg-teal-900"></div>
+          <div class="w-8 h-8 bg-amber-800"></div>
+          <div class="w-8 h-8 bg-neutral-400"></div>
+        </div>
+      </div>
+      <!-- Description -->
+      <div class="my-4">
+        <p id="desc">
+          Laboris ullamco cillum ut exercitation mollit sit tempor commodo dolor
+          laboris commodo. Laborum mollit veniam consequat sunt nostrud mollit
+          aliquip excepteur est Lorem deserunt. Ullamco sunt id laborum
+          incididunt.
+        </p>
+        <br />
+        <h4>$<span id="price">99.98</span></h4>
+      </div>
+      <!-- Buy now -->
+      <button
+        class="cursor-pointer w-full h-10 bg-emerald-800 text-white font-semibold"
+      >
+        Buy Now
+      </button>
+      <!-- Related items -->
+      <div class="mt-16">
+        <h5 class="text-lg font-semibold">Related items</h5>
+        <div class="my-6 grid gap-4 grid-cols-2">
+          <!-- Related item 1 -->
+          <a href="./detail.html?index=1">
+            <div class="cursor-pointer">
+              <div>
+                <img
+                  id="related1-pic"
+                  src="../Pictures/card_picture-2.jpg"
+                  class=""
+                />
+              </div>
+              <div>
+                <p id="related1-cat" class="text-sm">Decoration</p>
+                <h6 id="related1-name" class="font-semibold text-sm">
+                  CEILING LAMPS
+                </h6>
+                <h6 class="text-sm">$<span id="related1-price">90.00</span></h6>
+              </div>
+            </div>
+          </a>
+          <!-- Related item 2 -->
+          <a href="./detail.html?index=1">
+            <div class="cursor-pointer">
+              <div>
+                <img
+                  id="related2-pic"
+                  src="../Pictures/card_picture-3.jpg"
+                  class=""
+                />
+              </div>
+              <div>
+                <p id="related2-cat" class="text-sm">Decoration</p>
+                <h6 id="related2-name" class="font-semibold text-sm">
+                  CEILING LAMPS
+                </h6>
+                <h6 class="text-sm">$<span id="related2-price">90.00</span></h6>
+              </div>
+            </div>
+          </a>
+          <!-- Related item 3 -->
+          <a href="./detail.html?index=1">
+            <div class="cursor-pointer">
+              <div>
+                <img
+                  id="related3-pic"
+                  src="../Pictures/card_picture-5.jpg"
+                  class=""
+                />
+              </div>
+              <div>
+                <p id="related3-cat" class="text-sm">Decoration</p>
+                <h6 id="related3-name" class="font-semibold text-sm">
+                  CEILING LAMPS
+                </h6>
+                <h6 class="text-sm">$<span id="related3-price">90.00</span></h6>
+              </div>
+            </div>
+          </a>
+
+          <!-- Related item 4 -->
+          <a href="./detail.html?index=1">
+            <div class="cursor-pointer">
+              <div>
+                <img
+                  id="related4-pic"
+                  src="../Pictures/card_picture-9.jpg"
+                  class=""
+                />
+              </div>
+              <div>
+                <p id="related4-cat" class="text-sm">Decoration</p>
+                <h6 id="related4-name" class="font-semibold text-sm">
+                  CEILING LAMPS
+                </h6>
+                <h6 class="text-sm">$<span id="related4-price">90.00</span></h6>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white">
+      <div class="container mx-auto p-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-10">
+          <div>
+            <a href="#" class="text-2xl font-bold mb-4 block">KONSEPT</a>
+            <ul class="space-y-4">
+              <li class="flex items-center space-x-2">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>10800 East 45th Ave. Denver, CO 80239</span>
+              </li>
+              <li class="flex items-center space-x-2">
+                <i class="fas fa-phone"></i>
+                <a href="tel:+1-844-763-6278">+1-844-763-6278</a>
+              </li>
+              <li class="flex space-x-8 mt-8">
+                <a href="#">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-youtube"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <ul class="space-y-4">
+            <li>
+              <p class="text-lg font-medium mb-4 font-bold">HELP</p>
+            </li>
+            <li>
+              <a href="#" class="hover:text-yellow-500 py-1">FAQs</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-yellow-500 py-1">Pricing Plans</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-yellow-500 py-1">Track</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-yellow-500 py-1">Your Order</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-yellow-500 py-1">My Account</a>
+            </li>
+          </ul>
+          <ul class="space-y-4">
+            <li>
+              <p class="text-lg font-medium mb-4 font-bold">ABOUT US</p>
+            </li>
+            <li>
+              <a href="#" class="hover:text-yellow-500 py-1">Our Story</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-yellow-500 py-1"
+                >Job Opportunities</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-yellow-500 py-1">Store Locator</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-yellow-500 py-1">Contact Us</a>
+            </li>
+          </ul>
+          <div>
+            <p class="text-md font-medium mb-4 font-bold text-white">
+              Enter your email to receive special offers and more!
+            </p>
+            <form action="" class="relative mb-4">
+              <input
+                type="email"
+                name="email_address"
+                placeholder="Your email address"
+                required
+                class="border-b-2 focus:border-yellow-500 px-3 py-2 w-full pr-10 text-black"
+              />
+              <button
+                type="submit"
+                class="absolute top-2.5 right-2.5 text-gray-500"
+              >
+                <i class="fas fa-arrow-right"></i>
+              </button>
+            </form>
+            <div class="flex space-x-8">
+              <a href="#" class="hover:text-yellow-500">Term & Condition</a>
+              <a href="#" class="hover:text-yellow-500">Policy</a>
+              <a href="#" class="hover:text-yellow-500">Map</a>
+            </div>
+          </div>
+        </div>
+        <div class="text-center py-5">
+          <p>
+            Copyright &copy; 2023
+            <a href="#" class="underline">C4EGroup2</a>. All Rights Reserved
+          </p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

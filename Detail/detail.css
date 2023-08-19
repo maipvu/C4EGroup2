@@ -2,6 +2,24 @@
   width: 130px;
 }
 
+.home-button:hover {
+  color: #ef5e47;
+}
+
 .container {
   margin-top: 85px;
+}
+
+h4 {
+  font-family: "Reem Kufi Ink", sans-serif;
+  letter-spacing: 2.5px;
+  font-weight: 300;
+}
+
+p {
+  color: #afadb5;
+}
+
+h6 {
+  font-weight: 500;
 }
