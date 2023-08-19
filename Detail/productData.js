@@ -1,14 +1,13 @@
 export const products = [
-  { name: "abc", Price: 100000, desc: "xyz" },
-  { name: "abc", Price: 100000, desc: "xyz" },
-  { name: "abc", Price: 100000, desc: "xyz" },
-  { name: "abc", Price: 100000, desc: "xyz" },
-  { name: "abc", Price: 100000, desc: "xyz" },
-  { name: "abc", Price: 100000, desc: "xyz" },
-  { name: "abc", Price: 100000, desc: "xyz" },
-  { name: "abc", Price: 100000, desc: "xyz" },
-  { name: "abc", Price: 100000, desc: "xyz" },
-  { name: "abc", Price: 100000, desc: "xyz" },
-  { name: "abc", Price: 100000, desc: "xyz" },
-  { name: "abc", Price: 100000, desc: "xyz" },
+  { id: 1, name: "HALO LOUNGE CHAIR", price: 149.0 },
+  {
+    id: 2,
+    name: "CEILING LAMPS",
+    Price: 59.0,
+  },
+  {
+    id: 3,
+    name: "DECORATIVE MIRROR",
+    Price: 69.0,
+  },
 ];

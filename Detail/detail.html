@@ -4,36 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="./style.css" />
-    <script src="./detail.js" defer></script>
+    <link rel="stylesheet" href="./detail.css" />
+    <script type="module" src="./detail.js" defer></script>
     <title>Product Detail</title>
   </head>
   <body>
     <!-- test button -->
     <!-- test -->
-    <div>
+    <!-- <div>
       <button id="01" onclick="myFunction(this.id)">Test</button>
+    </div> -->
+    <!-- navbar -->
+    <div
+      class="flex justify-between items-center w-full fixed top-0 left-0 right-0 h-85px"
+    >
+      <div class="w-full">
+        <!-- logo -->
+        <img
+          src="https://github.com/Mateo-codeMaxi/Ecomerce-Furniture.github.io/blob/main/TEMPLATE%20-%20FURNITURE%20STORE/img/logo.png?raw=true"
+          alt=""
+          class="w-130px"
+        />
+      </div>
+      <div>HOME</div>
     </div>
     <!-- container -->
     <div class="container mx-auto px-4 flex flex-column">
-      <!-- navbar -->
-      <div
-        class="flex justify-between items-center w-full fixed top-0 left-0 right-0"
-      >
-        <div class="w-full">
-          <!-- logo -->
-          <img
-            src="https://github.com/Mateo-codeMaxi/Ecomerce-Furniture.github.io/blob/main/TEMPLATE%20-%20FURNITURE%20STORE/img/logo.png?raw=true"
-            alt=""
-            class="logo"
-          />
-        </div>
-        <div class="profile">
-          <div class="cart"></div>
-          <div class="profile"></div>
-        </div>
-      </div>
-      <div class="product-detail">
+      <div class="flex flex-column product-detail">
         <div class="pic"></div>
         <div class="product-name">White Aesthetic Chair</div>
         <div>Combination of wood and wool</div>
