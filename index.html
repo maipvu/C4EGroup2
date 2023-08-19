@@ -12,7 +12,6 @@
       src="https://kit.fontawesome.com/d71051032c.js"
       crossorigin="anonymous"
     ></script>
-    <!-- ===== SWIPER ===== -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
@@ -20,7 +19,7 @@
     <link
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
-    />
+    /> 
   </head>
 
   <body>
@@ -35,7 +34,7 @@
             # MENU
             --- -->
         <div class="menu">
-          <i class="fa-sharp fa-solid fa-xmark btn__close"></i>
+          <a href=""><i class="fa-sharp fa-solid fa-xmark btn__close"></i></a>
           <a href="#home">HOME</a>
           <a href="#collection">COLLECTION</a>
           <a href="#features">FEATURES</a>
@@ -46,9 +45,11 @@
             # ICONS LINKS
             --- -->
         <div class="icon__links">
-          <i class="fa-regular fa-user"></i>
-          <i class="fa-regular fa-heart"></i>
-          <i class="fa-solid fa-truck-fast"></i>
+          <a href="./Login/login-with-tailwind.html"
+            ><i class="fa-regular fa-user"></i
+          ></a>
+          <a href=""><i class="fa-regular fa-heart"></i></a>
+          <a href=""><i class="fa-solid fa-truck-fast"></i></a>
         </div>
         <!-- ---
             # HAMBURGUER
@@ -1553,7 +1554,9 @@
       <div class="container mx-auto p-8">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-10">
           <div>
-            <a href="#" class="text-2xl font-bold mb-4 block">KONSEPT</a>
+            <a href="#" class="text-2xl font-bold mb-4 block"
+              >KONSEPT HOMEPLUS</a
+            >
             <ul class="space-y-4">
               <li class="flex items-center space-x-2">
                 <i class="fas fa-map-marker-alt"></i>
@@ -1561,7 +1564,7 @@
               </li>
               <li class="flex items-center space-x-2">
                 <i class="fas fa-phone"></i>
-                <a href="tel:+1-844-763-6278">+1-844-763-6278</a>
+                <a href="tel:+1-844-763-6278">+844-763-6278</a>
               </li>
               <li class="flex space-x-8 mt-8">
                 <a href="#">
@@ -1659,6 +1662,10 @@
 
     <script>
       const swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        hashNavigation: {
+          watchState: true,
+        },
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
