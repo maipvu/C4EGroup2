@@ -48,6 +48,7 @@ pdName.innerHTML = pd.name;
 pdCat.innerHTML = pd.category;
 pdPrice.innerHTML = pd.price;
 pdStock.innerHTML = pd.stock;
+pdQuant.max = pd.stock;
 
 // Check stock
 buyBtn.addEventListener("click", () => {
