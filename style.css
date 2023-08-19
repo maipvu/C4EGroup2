@@ -1,20 +1,11 @@
-/*-----------------------------------*\
-  # WEBSITE DESIGN FURNITURE STORE
-\*-----------------------------------*/
-/**
- * copyright 2022 CODEMAXI
- */
+/* GOOGLE FONTS */
 
-/*-----------------------------------*\
-  # GOOGLE FONTS
-\*-----------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Reem+Kufi+Ink&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&family=Reem+Kufi+Ink&display=swap");
 
-/*-----------------------------------*\
-  # RESET
-\*-----------------------------------*/
+/* RESET */
+
 *,
 *::before,
 *::after {
@@ -32,7 +23,7 @@ button {
   color: inherit;
   cursor: pointer;
   transition: var(--transition);
-  font-family: "Kaushan Script", cursive;
+  font-family: "Kaushan Script";
 }
 
 a {
@@ -44,13 +35,12 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-/*-----------------------------------*\
-  # REUSED STYLE
-\*-----------------------------------*/
+/* REUSED COMPONENTS */
+
 .title__slide span {
   color: var(--main-color);
   font-size: 2.4rem;
-  font-family: "Kaushan Script", cursive;
+  font-family: "Kaushan Script";
 }
 
 h1 {
@@ -82,7 +72,7 @@ p {
 .title__section span {
   color: var(--main-color);
   font-size: 1.2rem;
-  font-family: "Kaushan Script", cursive;
+  font-family: "Kaushan Script";
 }
 
 .contain {
@@ -156,9 +146,8 @@ nav {
   color: transparent;
 }
 
-/*-----------------------------------*\
-  # HEADER -- SWIPER
-\*-----------------------------------*/
+/* HEADER -- SWIPER COMPONENTS */
+
 .swiper {
   width: 100%;
   height: 66vh;
@@ -240,9 +229,8 @@ nav {
   color: #000;
 }
 
-/*-----------------------------------*\
-  # ITEMS
-\*-----------------------------------*/
+/* ITEMS */
+
 .container__items {
   display: flex;
   justify-content: center;
@@ -314,9 +302,8 @@ nav {
   width: 100%;
 }
 
-/*-----------------------------------*\
-  # CARDS
-\*-----------------------------------*/
+/* CARDS COMPONENTS */
+
 .section__cards {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -435,9 +422,8 @@ nav {
   font-family: "Kaushan Script", cursive;
 }
 
-/*-----------------------------------*\
-  # BANNER
-\*-----------------------------------*/
+/* BANNER COMPONENTS */
+
 .section__banner {
   background-color: #e9f0f3;
   display: flex;
@@ -530,9 +516,8 @@ nav {
   height: 100%;
 }
 
-/*-----------------------------------*\
-  # ELEMENTS
-\*-----------------------------------*/
+/* ELEMENTS */
+
 .section__elements {
   display: flex;
   flex-wrap: wrap;
@@ -560,9 +545,8 @@ nav {
   color: var(--main-color);
 }
 
-/*-----------------------------------*\
-  # PICTURE SOCIAL
-\*-----------------------------------*/
+/* PICTURE SOCIAL */
+
 .section__picture {
   display: flex;
   align-items: center;
@@ -606,13 +590,6 @@ nav {
 .picture__social:hover .picture__hover {
   opacity: 1;
 }
-
-/*-----------------------------------*\
-  # WEBSITE DESIGN FURNITURE STORE
-\*-----------------------------------*/
-/**
- * copyright 2022 CODEMAXI
- */
 
 /*-----------------------------------*\
   # RESPONSIVE MOBILE
