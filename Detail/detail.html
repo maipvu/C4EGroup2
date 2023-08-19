@@ -10,26 +10,29 @@
   </head>
   <body>
     <!-- navbar -->
-    <div
-      class="flex justify-between items-center w-full fixed top-0 left-0 right-0 h-20 p-4 border-b border-slate-300 bg-white"
-    >
-      <div class="w-full">
-        <!-- logo -->
-        <img
-          src="https://github.com/Mateo-codeMaxi/Ecomerce-Furniture.github.io/blob/main/TEMPLATE%20-%20FURNITURE%20STORE/img/logo.png?raw=true"
-          alt=""
-          class="logo"
-        />
+    <nav>
+      <div
+        class="flex justify-between items-center w-full fixed top-0 left-0 right-0 h-20 p-5 mx-2 border-b border-slate-300 bg-white"
+      >
+        <div class="w-full">
+          <!-- logo -->
+          <img
+            src="https://github.com/Mateo-codeMaxi/Ecomerce-Furniture.github.io/blob/main/TEMPLATE%20-%20FURNITURE%20STORE/img/logo.png?raw=true"
+            alt=""
+            class="logo"
+          />
+        </div>
+        <div>
+          <a href="../index.html" class="home-button cursor-pointer">HOME</a>
+        </div>
       </div>
-      <div>
-        <a href="../index.html" class="home-button cursor-pointer">HOME</a>
-      </div>
-    </div>
+    </nav>
+
     <!-- Main -->
-    <div class="container mx-auto mt-85px p-4 flex flex-col">
+    <div class="container mx-auto mt-85px p-8 flex flex-col">
       <!-- Product pic -->
       <div class="w-full place-content-center">
-        <img id="product-pic" src="../Pictures/card_picture-1.jpg" />
+        <img id="product-pic" src="" />
       </div>
       <!-- Product name -->
       <div class="mt-4">
@@ -55,7 +58,7 @@
           incididunt.
         </p>
         <br />
-        <h4>$<span id="price">99.98</span></h4>
+        <h4 id="price" class="text-xl font-medium">$99.98</h4>
       </div>
       <!-- Buy now -->
       <button
@@ -68,7 +71,7 @@
         <h5 class="text-lg font-semibold">Related items</h5>
         <div class="my-6 grid gap-4 grid-cols-2">
           <!-- Related item 1 -->
-          <a href="./detail.html?index=1">
+          <a id="related1-url" href="./detail.html?index=1">
             <div class="cursor-pointer">
               <div>
                 <img
@@ -82,12 +85,12 @@
                 <h6 id="related1-name" class="font-semibold text-sm">
                   CEILING LAMPS
                 </h6>
-                <h6 class="text-sm">$<span id="related1-price">90.00</span></h6>
+                <h6 id="related1-price" class="text-sm">$90.00</h6>
               </div>
             </div>
           </a>
           <!-- Related item 2 -->
-          <a href="./detail.html?index=1">
+          <a id="related2-url" href="./detail.html?index=1">
             <div class="cursor-pointer">
               <div>
                 <img
@@ -101,12 +104,12 @@
                 <h6 id="related2-name" class="font-semibold text-sm">
                   CEILING LAMPS
                 </h6>
-                <h6 class="text-sm">$<span id="related2-price">90.00</span></h6>
+                <h6 id="related2-price" class="text-sm">$90.00</h6>
               </div>
             </div>
           </a>
           <!-- Related item 3 -->
-          <a href="./detail.html?index=1">
+          <a id="related3-url" href="./detail.html?index=1">
             <div class="cursor-pointer">
               <div>
                 <img
@@ -120,13 +123,13 @@
                 <h6 id="related3-name" class="font-semibold text-sm">
                   CEILING LAMPS
                 </h6>
-                <h6 class="text-sm">$<span id="related3-price">90.00</span></h6>
+                <h6 id="related3-price" class="text-sm">$90.00</h6>
               </div>
             </div>
           </a>
 
           <!-- Related item 4 -->
-          <a href="./detail.html?index=1">
+          <a id="related4-url" href="./detail.html?index=1">
             <div class="cursor-pointer">
               <div>
                 <img
@@ -140,7 +143,7 @@
                 <h6 id="related4-name" class="font-semibold text-sm">
                   CEILING LAMPS
                 </h6>
-                <h6 class="text-sm">$<span id="related4-price">90.00</span></h6>
+                <h6 id="related4-price" class="text-sm">$90.00</h6>
               </div>
             </div>
           </a>
