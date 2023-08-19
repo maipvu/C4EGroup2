@@ -14,5 +14,4 @@ const urlParams = new URLSearchParams(window.location.search);
 const myParam = urlParams.get("index");
 
 let pd = products[myParam];
-
-document.getElementById("test").innerHTML = `${pd.name}`;
+console.log(pd.name);
