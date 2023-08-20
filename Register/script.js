@@ -10,7 +10,7 @@ form.addEventListener("submit", (e) => {
     localStorage.setItem("username", username.value.trim());
     localStorage.setItem("password", password.value.trim());
     alert("Register successfully. Please login your account!");
-    window.location.href = "../C4EGroup2/Login/login.html ";
+    window.location.href = "../Login/login.html ";
   }
 });
 

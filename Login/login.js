@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
       enteredPassword === storedPassword
     ) {
       alert("Login successful. Welcome back," + enteredUsername + "!");
-      window.location.href = "../../C4EGroup2/index.html";
+      window.location.href = "../index.html";
     } else {
       alert(
         "Username and password are incorrect. Please login again or Register new account!"
