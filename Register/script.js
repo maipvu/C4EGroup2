@@ -6,7 +6,12 @@ const password2 = document.getElementById("password2");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-  checkInputs();
+  if (checkInputs()) {
+    localStorage.setItem("username", username.value.trim());
+    localStorage.setItem("password", password.value.trim());
+    alert("Register successfully. Please login your account!");
+    window.location.href = "../C4EGroup2/Login/login.html ";
+  }
 });
 
 function checkInputs() {
@@ -15,45 +20,42 @@ function checkInputs() {
   const passwordValue = password.value.trim();
   const password2Value = password2.value.trim();
 
-  if (usernameValue === "") {
-    setErrorFor(username, "Username cannot be blank");
-  } else {
-    setSuccessFor(username);
+  let isValid = true;
+
+  if (usernameValue.length < 6 || /[^a-zA-Z0-9]/.test(usernameValue)) {
+    alert(
+      "Username have more than 6 digits and cannot have special characters!"
+    );
+    isValid = false;
   }
 
   if (emailValue === "") {
-    setErrorFor(email, "Email cannot be blank");
+    alert("Email cannot be blank");
+    isValid = false;
   } else if (!isEmail(emailValue)) {
-    setErrorFor(email, "Not a valid email");
-  } else {
-    setSuccessFor(email);
+    alert("Invalid email, please input again!");
+    isValid = false;
   }
 
-  if (passwordValue === "") {
-    setErrorFor(password, "Password cannot be blank");
-  } else {
-    setSuccessFor(password);
+  if (
+    passwordValue.length < 8 ||
+    !/[0-9]/.test(passwordValue) ||
+    !/[^a-zA-Z0-9]/.test(passwordValue)
+  ) {
+    alert(`Invalid password.
+    Password have:
+    - More than 8 digits.
+    - At least have 1 number.
+    - At least have a special character.`);
+    isValid = false;
   }
 
-  if (password2Value === "") {
-    setErrorFor(password2, "Password2 cannot be blank");
-  } else if (passwordValue !== password2Value) {
-    setErrorFor(password2, "Passwords do not match");
-  } else {
-    setSuccessFor(password2);
+  if (password2Value !== passwordValue) {
+    alert("Password and Recheck Password does not match. Please input again!");
+    isValid = false;
   }
-}
 
-function setErrorFor(input, message) {
-  const formControl = input.parentElement;
-  const small = formControl.querySelector("small");
-  formControl.className = "form-control error";
-  small.innerText = message;
-}
-
-function setSuccessFor(input) {
-  const formControl = input.parentElement;
-  formControl.className = "form-control success";
+  return isValid;
 }
 
 function isEmail(email) {
